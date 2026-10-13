@@ -3,7 +3,7 @@ title: "Home"
 description: "Open, vendor-neutral AI security wiki: governance, risk, security controls, agentic AI standards, vendor evaluation, regional compliance and 653 test cases."
 nav_order: 1
 document_type: Enterprise AI Security Reference Architecture and Governance Wiki
-version: 2.26
+version: 2.27
 status: Published
 author: Nachiket Sathaye
 coauthors: Ankush Jain
@@ -45,7 +45,9 @@ This wiki is the implementation layer: control objectives, evidence, audit proce
 |---|---|---|
 | Build a financial-services AI risk catalogue | FINOS AI Governance Framework | Controls, evidence and tests per risk, through the [FINOS crosswalk](23_Framework_Crosswalks/01_FINOS_AIGF_Crosswalk.md) |
 | Set up a first, short AI governance baseline | AI Baseline Control Framework (AI BCF) | Control objectives, evidence and tests, through the [AI BCF crosswalk](23_Framework_Crosswalks/02_AI_BCF_Crosswalk.md) |
-| Structure a management system | ISO/IEC 42001 with ISO/IEC 27001 | Technical control objectives and test criteria |
+| Structure a management system | ISO/IEC 42001 with ISO/IEC 27001 | Technical control objectives and test criteria, through the [ISO/IEC 42001](23_Framework_Crosswalks/05_ISO_IEC_42001_Crosswalk.md) and [ISO/IEC 27001](23_Framework_Crosswalks/08_ISO_IEC_27001_Crosswalk.md) crosswalks |
+| Extend an existing security programme to AI | NIST CSF, CIS Controls or SOC 2 | The AI control objectives under each category, control or criterion, through the [NIST CSF](23_Framework_Crosswalks/09_NIST_CSF_Crosswalk.md), [CIS Controls](23_Framework_Crosswalks/10_CIS_Controls_Crosswalk.md) and [SOC 2](23_Framework_Crosswalks/11_SOC_2_Crosswalk.md) crosswalks |
+| Compare privacy duties across jurisdictions | GDPR, CCPA, Quebec Law 25, Singapore PDPA and the GCC data protection laws | Controls per theme, through the [Privacy Law Crosswalk](23_Framework_Crosswalks/13_Privacy_Law_Crosswalk.md) |
 | Structure risk language and a programme | NIST AI RMF | Engineering controls, evidence and scoring |
 | Define attack classes for testing | OWASP lists, MITRE ATLAS, NIST AI 100-2 | The 653-case test library |
 | Meet regional legal duties | The primary legal texts | The [Regional AI Regulatory Hub](11_GCC_AI_Compliance/index.md) sections |
@@ -225,8 +227,9 @@ The cycle then repeats: each use case is reviewed, improved, renewed or retired,
   Regulatory hub for the US (federal orders and enforcement, NIST AI RMF, state AI laws), role guide,\n  three templates, and regulatory crosswalk.
 
 23_Framework_Crosswalks/
-  Cross-references from this wiki to other AI governance frameworks, the FINOS AI Governance Framework (risk and
-  mitigation identifiers) and the AI Baseline Control Framework (20 baseline controls).
+  Cross-references from this wiki to other frameworks: AI frameworks (FINOS AIGF, AI BCF, NIST AI RMF, NIST AI 600-1,
+  ISO/IEC 42001, OWASP, MITRE ATLAS, OECD AI Principles), security frameworks (ISO/IEC 27001, NIST CSF, CIS Controls,
+  SOC 2) and a comparison of eight privacy laws.
 
 09_Reference/
   Glossary, taxonomy, abbreviations, mapping references, patterns, and reusable templates.
@@ -271,18 +274,20 @@ The wiki supports mapping AI security requirements to recognized control and gov
 
 | Framework / Requirement Area | Wiki Mapping Purpose |
 |---|---|
-| ISO/IEC 27001 | Information security governance, risk management, access control, operations, supplier security, and audit evidence. |
+| ISO/IEC 27001 | Information security governance, risk management, access control, operations, supplier security, and audit evidence. See the [ISO/IEC 27001 Crosswalk](23_Framework_Crosswalks/08_ISO_IEC_27001_Crosswalk.md). |
 | ISO/IEC 42001 | AI management system governance, accountability, lifecycle controls, risk treatment, and continuous improvement. |
 | NIST AI RMF | AI risk identification, measurement, management, governance, and trustworthiness characteristics. |
 | NIST AI 100-2 (Adversarial Machine Learning) | Shared vocabulary for attack classes and the scope of adversarial testing. |
 | OWASP Top 10 for LLM Applications and for Agentic Applications | Application and agent risk categories for developer guidance, threat modeling, and test-case design. |
 | MITRE ATLAS | Adversary tactics and techniques against AI-enabled systems for threat-informed testing and incident description. |
 | EU AI Act | Legal obligations for in-scope providers and deployers of AI systems. |
-| NIST Cybersecurity Framework | Identify, Protect, Detect, Respond, and Recover coverage for AI-enabled systems. |
-| CIS Controls | Practical safeguards for inventory, identity, access, endpoint, network, data protection, monitoring, and response. |
+| NIST Cybersecurity Framework | Govern, Identify, Protect, Detect, Respond, and Recover coverage for AI-enabled systems. See the [NIST CSF Crosswalk](23_Framework_Crosswalks/09_NIST_CSF_Crosswalk.md). |
+| CIS Controls | Practical safeguards for inventory, identity, access, endpoint, network, data protection, monitoring, and response. See the [CIS Controls Crosswalk](23_Framework_Crosswalks/10_CIS_Controls_Crosswalk.md). |
+| SOC 2 | Trust Services Criteria for service organizations that put AI systems in the scope of an independent report. See the [SOC 2 Crosswalk](23_Framework_Crosswalks/11_SOC_2_Crosswalk.md). |
+| OECD AI Principles | Values-based principles that many national AI policies borrow from. See the [OECD AI Principles Crosswalk](23_Framework_Crosswalks/12_OECD_AI_Principles_Crosswalk.md). |
 | UAE Information Assurance and Cybersecurity Expectations | Alignment to local cybersecurity governance, data handling, hosting, resilience, and assurance obligations. |
 | UAE Data Residency and Sovereignty Requirements | Jurisdictional control over regulated data, hosting location, cross-border processing, vendor access, and evidence. |
-| Privacy and Data Protection Obligations | Data minimization, purpose limitation, consent/legal basis, retention, access, and breach response considerations. |
+| Privacy and Data Protection Obligations | Data minimization, purpose limitation, consent/legal basis, retention, access, and breach response considerations. See the [Privacy Law Crosswalk](23_Framework_Crosswalks/13_Privacy_Law_Crosswalk.md). |
 
 ## 13. Key Control Domains
 
@@ -415,6 +420,7 @@ These metrics measure coverage. For control-effectiveness metrics such as inject
 | 2.24 | 2026-10-10 | Nachiket Sathaye | Singapore AI Compliance: updated from the MAS Guidelines on Artificial Intelligence Risk Management issued on 7 October 2026, which take effect on 7 October 2027. The crosswalk now maps the Guidelines paragraph by paragraph to wiki controls and test cases, and the SG-T2 template follows the final text. The sector overlays cite the Guidelines. |
 | 2.25 | 2026-10-10 | Nachiket Sathaye | Foundations, section 7.2: replaced the text diagram of the reference architecture with an image of the secure agentic AI system architecture, which shows the policy decision point and governance. Added a policy decision row to the layer table. |
 | 2.26 | 2026-10-10 | Nachiket Sathaye | Home, section 6: replaced the text flow of the AI security operating model with an image of the secure AI agent operating lifecycle. |
+| 2.27 | 2026-10-13 | Nachiket Sathaye | Framework Crosswalks: added six pages. Four are generated at build time from new fields in every control record (ISO/IEC 27001, NIST CSF, CIS Controls and SOC 2). The other two map the OECD AI Principles to wiki controls and compare eight privacy laws by theme. The section home page now has a table of every control's identifiers in every framework. Added NAIC, Colorado SB 21-169, FTC and HIPAA rows to the US section, and PCI DSS, insurance and health rows to the sector overlays. |
 
 ## 21. Quick Links
 
@@ -443,7 +449,7 @@ These metrics measure coverage. For control-effectiveness metrics such as inject
 - [South Korea AI Compliance (regulatory hub, role guide and templates)](20_South_Korea_AI_Compliance/index.md)
 - [UK AI Compliance (regulatory hub, role guide and templates)](21_UK_AI_Compliance/index.md)
 - [US AI Compliance (regulatory hub, role guide and templates)](22_US_AI_Compliance/index.md)
-- [Framework Crosswalks (FINOS AIGF, AI BCF, NIST AI RMF, NIST AI 600-1, ISO/IEC 42001, OWASP, MITRE ATLAS)](23_Framework_Crosswalks/index.md)
+- [Framework Crosswalks (AI frameworks, ISO/IEC 27001, NIST CSF, CIS Controls, SOC 2, OECD AI Principles and privacy laws)](23_Framework_Crosswalks/index.md)
 - [Community Rules](community-rules.md)
 - [AI Security Audit and Evidence Checklist](06_Testing_and_Assurance/14_AI_Security_Audit_and_Evidence_Checklist.md)
 - [AI Product Developer Playbook](07_Role_Based_Playbooks/15A_AI_Product_Developer_Playbook.md)

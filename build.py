@@ -98,6 +98,27 @@ NIST_CORE = {"GOVERN": [7, 3, 2, 3, 2, 2], "MAP": [6, 3, 5, 2, 2], "MEASURE": [3
 # ISO/IEC 42001:2023 Annex A control numbers.
 ISO_ANNEX_A = ("A.2.2 A.2.3 A.2.4 A.3.2 A.3.3 A.4.2 A.4.3 A.4.4 A.4.5 A.4.6 A.5.2 A.5.3 A.5.4 A.5.5 A.6.1.2 A.6.1.3 A.6.2.2 A.6.2.3 A.6.2.4 "
                "A.6.2.5 A.6.2.6 A.6.2.7 A.6.2.8 A.7.2 A.7.3 A.7.4 A.7.5 A.7.6 A.8.2 A.8.3 A.8.4 A.8.5 A.9.2 A.9.3 A.9.4 A.10.2 A.10.3 A.10.4").split()
+# The control record fields that hold the AI framework identifiers matched by ITEM.
+AI_FIELDS = ("OWASP", "MITRE ATLAS Techniques", "MITRE ATLAS Mitigations", "NIST AI RMF", "ISO/IEC 42001")
+
+
+def numbered(groups):
+    """Identifiers such as CC6.1 to CC6.8 from pairs of (prefix, how many)."""
+    return [f"{prefix}{n}" for prefix, last in groups for n in range(1, last + 1)]
+
+
+# General security frameworks. Each has a control record field of its own, because ISO/IEC 27001 Annex A numbers look
+# like ISO/IEC 42001 ones. Marker name -> (field, identifier pattern, every identifier, column heading, what the items are called).
+SECURITY = {
+    "iso-27001": ("ISO/IEC 27001", r"A\.[5-8]\.\d+|Clause [\d.]+\d", numbered([("A.5.", 37), ("A.6.", 8), ("A.7.", 14), ("A.8.", 34)]),
+                  "Annex A control", "Annex A controls"),
+    "nist-csf": ("NIST CSF", r"[A-Z]{2}\.[A-Z]{2}", ("GV.OC GV.RM GV.RR GV.PO GV.OV GV.SC ID.AM ID.RA ID.IM PR.AA PR.AT PR.DS PR.PS PR.IR "
+                                                  "DE.CM DE.AE RS.MA RS.AN RS.CO RS.MI RC.RP RC.CO").split(), "Category", "categories"),
+    "cis-controls": ("CIS Controls", r"CIS \d+", numbered([("CIS ", 18)]), "Control", "CIS Controls"),
+    "soc-2": ("SOC 2", r"(?:CC\d|A1|C1|PI1|P\d)\.\d+",
+              numbered([("CC1.", 5), ("CC2.", 3), ("CC3.", 4), ("CC4.", 2), ("CC5.", 3), ("CC6.", 8), ("CC7.", 5), ("CC8.", 1), ("CC9.", 2), ("A1.", 3), ("C1.", 2),
+                        ("PI1.", 5), ("P1.", 1), ("P2.", 1), ("P3.", 2), ("P4.", 3), ("P5.", 2), ("P6.", 7), ("P7.", 1), ("P8.", 1)]), "Criterion", "criteria"),
+}
 
 
 def framework_crosswalk(page, kind):
@@ -108,18 +129,23 @@ def framework_crosswalk(page, kind):
     def parent(identifier):
         return identifier[:9] if identifier.startswith("AML.T") else identifier  # sub-techniques count under their technique
 
-    def entries(field):
+    def entries(field, pattern=ITEM):
         for entry in field.split(";"):
-            m = re.match(rf"\s*({ITEM})(?![\d.]*\d) ?(.*)", entry)
+            m = re.match(rf"\s*({pattern})(?![\d.]*\d) ?(.*)", entry)
             if m:
                 yield parent(m.group(1)), m.group(2).strip() if parent(m.group(1)) == m.group(1) else ""
 
     library = next(p["body"] for p in pages if p["src"].replace(os.sep, "/") == LIBRARY)
     records = re.split(r"^#### (AI-CTRL-\d{3}): .+$", library, flags=re.M)[1:]
+
+    def fields(record, labels):
+        return re.findall(r"^\| \*\*(?:" + "|".join(map(re.escape, labels)) + r")\*\* \| (.*) \|$", record, re.M)
+
+    labels, pattern = (SECURITY[kind][:1], SECURITY[kind][1]) if kind in SECURITY else (AI_FIELDS, ITEM)
     cited, names = {}, {}  # identifier -> controls that cite it; identifier -> name
     for control, record in zip(records[::2], records[1::2]):
-        for field in re.findall(r"^\| \*\*(?:OWASP|MITRE ATLAS Techniques|MITRE ATLAS Mitigations|NIST AI RMF|ISO/IEC 42001)\*\* \| (.*) \|$", record, re.M):
-            for identifier, name in entries(field):
+        for field in fields(record, labels):
+            for identifier, name in entries(field, pattern):
                 cited.setdefault(identifier, []).append(control)
                 if name:
                     names.setdefault(identifier, name)
@@ -176,6 +202,23 @@ def framework_crosswalk(page, kind):
     elif kind == "mitre-atlas":
         out += ["### Techniques", ""] + table([i for i in known if i.startswith("AML.T")], "Technique")
         out += ["", "### Mitigations", ""] + table([i for i in known if i.startswith("AML.M")], "Mitigation", with_direct=False)
+    elif kind in SECURITY:
+        everything, first, plural = SECURITY[kind][2:]
+        out += [f"{sum(1 for i in everything if i in cited)} of the {len(everything)} {plural} are cited by at least one wiki control.", "",
+                f"### {plural[0].upper()}{plural[1:]}", ""] + table(everything, first, with_direct=False)
+        clauses = sorted((i for i in cited if i.startswith("Clause")), key=order)
+        if clauses:
+            out += ["", "### Management system clauses", ""] + table(clauses, "Clause", with_direct=False)
+        out += ["", f"### {plural[0].upper()}{plural[1:]} that no wiki control cites", "", uncited(everything) + "."]
+    elif kind == "summary":
+        columns = [("OWASP", AI_FIELDS[:1], ITEM), ("MITRE ATLAS", AI_FIELDS[1:3], ITEM), ("NIST AI RMF", AI_FIELDS[3:4], ITEM), ("ISO/IEC 42001", AI_FIELDS[4:], ITEM)]
+        columns += [(s[0], s[:1], s[1]) for s in SECURITY.values()]
+        titles = dict(re.findall(r"^#### (AI-CTRL-\d{3}): (.+)$", library, re.M))
+        out += ["| Control | Name | " + " | ".join(c[0] for c in columns) + " |", "|" + "---|" * (len(columns) + 2)]
+        for control, record in sorted(zip(records[::2], records[1::2])):
+            cells = [", ".join(dict.fromkeys(i for field in fields(record, labels) for i, _ in entries(field, pattern))) or "None"
+                     for _, labels, pattern in columns]
+            out.append(f"| [{control}]({link(LIBRARY, '#' + control.lower())}) | {titles[control]} | " + " | ".join(cells) + " |")
     else:
         raise SystemExit(f"{page['src']}: unknown framework crosswalk '{kind}'")
     return "\n".join(out)

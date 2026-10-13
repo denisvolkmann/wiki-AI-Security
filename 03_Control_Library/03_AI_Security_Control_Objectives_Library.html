@@ -252,6 +252,12 @@
 <li><a href="../23_Framework_Crosswalks/05_ISO_IEC_42001_Crosswalk.html">ISO/IEC 42001 Crosswalk</a></li>
 <li><a href="../23_Framework_Crosswalks/06_OWASP_Top_10_Crosswalk.html">OWASP Top 10 Crosswalk</a></li>
 <li><a href="../23_Framework_Crosswalks/07_MITRE_ATLAS_Crosswalk.html">MITRE ATLAS Crosswalk</a></li>
+<li><a href="../23_Framework_Crosswalks/08_ISO_IEC_27001_Crosswalk.html">ISO/IEC 27001 Crosswalk</a></li>
+<li><a href="../23_Framework_Crosswalks/09_NIST_CSF_Crosswalk.html">NIST CSF Crosswalk</a></li>
+<li><a href="../23_Framework_Crosswalks/10_CIS_Controls_Crosswalk.html">CIS Controls Crosswalk</a></li>
+<li><a href="../23_Framework_Crosswalks/11_SOC_2_Crosswalk.html">SOC 2 Crosswalk</a></li>
+<li><a href="../23_Framework_Crosswalks/12_OECD_AI_Principles_Crosswalk.html">OECD AI Principles Crosswalk</a></li>
+<li><a href="../23_Framework_Crosswalks/13_Privacy_Law_Crosswalk.html">Privacy Law Crosswalk</a></li>
 </ul></details></li>
 <li><a href="../community-rules.html">Community Rules</a></li>
 </ul>
@@ -304,12 +310,33 @@
 <td>Annex A controls, for example <code>A.6.2.4</code>; management system clauses, for example <code>Clause 9.2</code></td>
 </tr>
 <tr>
+<td>ISO/IEC 27001</td>
+<td>2022</td>
+<td>Annex A controls, for example <code>A.8.15</code>; management system clauses, for example <code>Clause 6.1.2</code></td>
+</tr>
+<tr>
+<td>NIST Cybersecurity Framework</td>
+<td>2.0</td>
+<td>Categories, for example <code>PR.DS</code></td>
+</tr>
+<tr>
+<td>CIS Critical Security Controls</td>
+<td>8</td>
+<td>Controls <code>CIS 1</code> to <code>CIS 18</code></td>
+</tr>
+<tr>
+<td>SOC 2 (AICPA Trust Services Criteria)</td>
+<td>2017, with the 2022 points of focus</td>
+<td>Criteria, for example <code>CC6.1</code></td>
+</tr>
+<tr>
 <td>AI Security Wiki (own)</td>
 <td>This page</td>
 <td><code>AI-CTRL-001</code> to <code>AI-CTRL-046</code></td>
 </tr>
 </tbody>
 </table></div>
+<p>The last four are general security frameworks with no AI-specific content. A control cites the entries it supports when it is applied to an AI system. The labels after the SOC 2 criteria numbers are this wiki's own short descriptions, because the criteria text belongs to the AICPA.</p>
 <blockquote class="callout caution">
 <p><strong>Verify before use.</strong> Frameworks are revised. MITRE ATLAS in particular is updated monthly and renames techniques. Check identifiers against the current published versions before quoting them in an RFP or audit. Owners and review frequencies are starting values; set your own.</p>
 </blockquote>
@@ -770,6 +797,22 @@
 <td>A.10.3 Suppliers; A.4.5 System and computing resources</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.14 Information transfer; A.5.23 Information security for use of cloud services; A.5.31 Legal, statutory, regulatory and contractual requirements; A.5.33 Protection of records; A.8.10 Information deletion</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.OC Organizational Context; GV.SC Cybersecurity Supply Chain Risk Management; PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection; CIS 15 Service Provider Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>C1.1 Identification of confidential information; C1.2 Disposal of confidential information; CC9.2 Vendor and business partner risk; P4.2 Retention</td>
+</tr>
+<tr>
 <td><strong>Tested By (14 cases)</strong></td>
 <td><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-012">012</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-013">013</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-014">014</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-001">001</a><br><strong>L10:</strong> <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-012">012</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-013">013</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-014">014</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-015">015</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-025">025</a><br><strong>L15:</strong> <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-013">013</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-014">014</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-015">015</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-020">020</a><br><strong>L16:</strong> <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-019">019</a></td>
 </tr>
@@ -836,6 +879,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.4.2 Resource documentation; A.5.2 AI system impact assessment process; A.9.4 Intended use of the AI system</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.8 Information security in project management; A.5.9 Inventory of information and other associated assets; A.5.12 Classification of information</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.RM Risk Management Strategy; ID.AM Asset Management; ID.RA Risk Assessment</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 1 Inventory and Control of Enterprise Assets; CIS 2 Inventory and Control of Software Assets</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC3.1 Objectives for risk assessment; CC3.2 Risk identification and analysis</td>
 </tr>
 <tr>
 <td><strong>Tested By (18 cases)</strong></td>
@@ -906,6 +965,22 @@
 <td>A.2.2 AI policy; A.2.4 Review of the AI policy; A.3.2 AI roles and responsibilities</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.1 Policies for information security; A.5.2 Information security roles and responsibilities; A.5.4 Management responsibilities; A.5.10 Acceptable use of information and other associated assets</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.PO Policy; GV.RR Roles, Responsibilities, and Authorities</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-012.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC1.3 Structures, reporting lines and responsibilities; CC2.2 Internal communication; CC5.3 Policies and procedures</td>
+</tr>
+<tr>
 <td><strong>Tested By (7 cases)</strong></td>
 <td><strong>L02:</strong> <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-001">001</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-002">002</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-004">004</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-005">005</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-022">022</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-023">023</a><br><strong>L04:</strong> <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-011">011</a></td>
 </tr>
@@ -972,6 +1047,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.5.2 AI system impact assessment process; A.5.3 Documentation of AI system impact assessments; A.5.4 Assessing AI system impact on individuals or groups of individuals</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.31 Legal, statutory, regulatory and contractual requirements; A.5.34 Privacy and protection of PII; A.8.10 Information deletion; A.8.11 Data masking</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.OC Organizational Context; PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>P1.1 Notice; P3.1 Collection; P4.1 Use; P4.2 Retention; P5.1 Access by data subjects</td>
 </tr>
 <tr>
 <td><strong>Tested By (39 cases)</strong></td>
@@ -1042,6 +1133,22 @@
 <td>A.10.2 Allocating responsibilities; A.10.3 Suppliers</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.19 Information security in supplier relationships; A.5.20 Addressing information security within supplier agreements; A.5.21 Managing information security in the ICT supply chain; A.5.22 Monitoring, review and change management of supplier services; A.5.23 Information security for use of cloud services</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.SC Cybersecurity Supply Chain Risk Management</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 15 Service Provider Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC9.2 Vendor and business partner risk</td>
+</tr>
+<tr>
 <td><strong>Tested By (24 cases)</strong></td>
 <td><strong>D09:</strong> <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-018">018</a><br><strong>D12:</strong> <a href="../10_Test_Case_Library/D12-ai-incident-response-and-forensics.html#tc-d12-017">017</a><br><strong>D13:</strong> <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-019">019</a><br><strong>L01:</strong> <a href="../10_Test_Case_Library/L01-business-and-use-cases.html#tc-l01-017">017</a><br><strong>L02:</strong> <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-021">021</a><br><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-020">020</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-021">021</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-032">032</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-043">043</a><br><strong>L10:</strong> <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-025">025</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-009">009</a><br><strong>L15:</strong> <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-016">016</a><br><strong>L16:</strong> <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-008">008</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-009">009</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-010">010</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-011">011</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-012">012</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-018">018</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-019">019</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-020">020</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-021">021</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-022">022</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-023">023</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-025">025</a></td>
 </tr>
@@ -1108,6 +1215,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>Clause 6.1.2 AI risk assessment; Clause 6.1.3 AI risk treatment</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>Clause 6.1.2 Information security risk assessment; Clause 6.1.3 Information security risk treatment</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.RM Risk Management Strategy; ID.RA Risk Assessment</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-037.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC3.1 Objectives for risk assessment; CC3.2 Risk identification and analysis; CC9.1 Risk mitigation for business disruption</td>
 </tr>
 <tr>
 <td><strong>Tested By (10 cases)</strong></td>
@@ -1178,6 +1301,22 @@
 <td>A.5.2 AI system impact assessment process; A.5.3 Documentation of AI system impact assessments; A.5.4 Assessing AI system impact on individuals or groups of individuals; A.5.5 Assessing societal impacts of AI systems</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.8 Information security in project management; A.5.31 Legal, statutory, regulatory and contractual requirements; A.5.34 Privacy and protection of PII</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.OC Organizational Context; ID.RA Risk Assessment</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-042.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC3.2 Risk identification and analysis</td>
+</tr>
+<tr>
 <td><strong>Tested By (1 case)</strong></td>
 <td><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-034">034</a></td>
 </tr>
@@ -1246,6 +1385,22 @@
 <td>Clause 4.2 Understanding the needs and expectations of interested parties; A.8.3 External reporting; A.8.5 Information for interested parties</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.5 Contact with authorities; A.5.31 Legal, statutory, regulatory and contractual requirements</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.OC Organizational Context; RS.CO Incident Response Reporting and Communication</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 17 Incident Response Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC2.3 External communication</td>
+</tr>
+<tr>
 <td><strong>Tested By (1 case)</strong></td>
 <td><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-039">039</a></td>
 </tr>
@@ -1312,6 +1467,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>Clause 7.2 Competence; Clause 7.3 Awareness; A.4.6 Human resources</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.6.3 Information security awareness, education and training</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AT Awareness and Training</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 14 Security Awareness and Skills Training</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC1.4 Competence; CC2.2 Internal communication</td>
 </tr>
 <tr>
 <td><strong>Tested By (1 case)</strong></td>
@@ -1386,6 +1557,22 @@
 <td>A.9.2 Processes for responsible use of AI systems; A.9.3 Objectives for responsible use of AI system</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>None published in ISO/IEC 27001 Annex A. The wiki's own identifier applies: AI-CTRL-045.</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.RR Roles, Responsibilities, and Authorities</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-045.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>None published in the SOC 2 criteria. The wiki's own identifier applies: AI-CTRL-045.</td>
+</tr>
+<tr>
 <td><strong>Tested By (3 cases)</strong></td>
 <td><strong>L01:</strong> <a href="../10_Test_Case_Library/L01-business-and-use-cases.html#tc-l01-012">012</a><br><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-040">040</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-041">041</a></td>
 </tr>
@@ -1458,6 +1645,22 @@
 <td>A.7.5 Data provenance; A.10.3 Suppliers</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.20 Addressing information security within supplier agreements; A.5.31 Legal, statutory, regulatory and contractual requirements; A.5.32 Intellectual property rights</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.OC Organizational Context</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-046.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>None published in the SOC 2 criteria. The wiki's own identifier applies: AI-CTRL-046.</td>
+</tr>
+<tr>
 <td><strong>Tested By (4 cases)</strong></td>
 <td><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-028">028</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-042">042</a><br><strong>L05:</strong> <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-035">035</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-007">007</a></td>
 </tr>
@@ -1525,6 +1728,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.4.2 Resource documentation</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.9 Inventory of information and other associated assets; A.8.16 Monitoring activities; A.8.23 Web filtering</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>ID.AM Asset Management; DE.CM Continuous Monitoring</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 1 Inventory and Control of Enterprise Assets; CIS 2 Inventory and Control of Software Assets; CIS 9 Email and Web Browser Protections</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.8 Unauthorized or malicious software; CC7.2 Monitoring for anomalies</td>
 </tr>
 <tr>
 <td><strong>Tested By (33 cases)</strong></td>
@@ -1595,6 +1814,22 @@
 <td>A.9.2 Processes for responsible use of AI systems</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.12 Classification of information; A.8.11 Data masking; A.8.12 Data leakage prevention</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.DS Data Security; DE.CM Continuous Monitoring</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.7 Transmission, movement and removal of information; C1.1 Identification of confidential information</td>
+</tr>
+<tr>
 <td><strong>Tested By (16 cases)</strong></td>
 <td><strong>D11:</strong> <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-006">006</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-015">015</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-016">016</a><br><strong>L04:</strong> <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-012">012</a>, <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-017">017</a>, <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-019">019</a>, <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-028">028</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-004">004</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-005">005</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-006">006</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-007">007</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-008">008</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-010">010</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-011">011</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-014">014</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-027">027</a></td>
 </tr>
@@ -1661,6 +1896,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.9.2 Processes for responsible use of AI systems</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.10 Acceptable use of information and other associated assets; A.5.14 Information transfer; A.8.12 Data leakage prevention</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection; CIS 9 Email and Web Browser Protections</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.7 Transmission, movement and removal of information; C1.1 Identification of confidential information</td>
 </tr>
 <tr>
 <td><strong>Tested By (6 cases)</strong></td>
@@ -1731,6 +1982,22 @@
 <td>A.9.2 Processes for responsible use of AI systems; A.4.4 Tooling resources</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.4 Access to source code; A.8.12 Data leakage prevention; A.8.28 Secure coding</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.DS Data Security; PR.PS Platform Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection; CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.7 Transmission, movement and removal of information; CC8.1 Change management</td>
+</tr>
+<tr>
 <td><strong>Tested By (18 cases)</strong></td>
 <td><strong>L04:</strong> <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-019">019</a>, <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-031">031</a>, <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-032">032</a><br><strong>L05:</strong> <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-004">004</a>, <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-031">031</a>, <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-032">032</a>, <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-033">033</a>, <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-034">034</a>, <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-035">035</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-037">037</a><br><strong>L07:</strong> <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-041">041</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-007">007</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-041">041</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-042">042</a><br><strong>L09:</strong> <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-026">026</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-021">021</a><br><strong>L16:</strong> <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-026">026</a><br><strong>L17:</strong> <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-031">031</a></td>
 </tr>
@@ -1797,6 +2064,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.9.2 Processes for responsible use of AI systems; A.2.2 AI policy</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.10 Acceptable use of information and other associated assets; A.5.12 Classification of information; A.8.12 Data leakage prevention; A.8.23 Web filtering</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.PO Policy; PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection; CIS 9 Email and Web Browser Protections</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC5.3 Policies and procedures; CC6.7 Transmission, movement and removal of information</td>
 </tr>
 <tr>
 <td><strong>Tested By (27 cases)</strong></td>
@@ -1868,6 +2151,22 @@
 <td>None published in ISO/IEC 42001. The wiki's own identifier applies: AI-CTRL-015.</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.16 Identity management; A.5.17 Authentication information; A.8.5 Secure authentication</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 5 Account Management; CIS 6 Access Control Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC6.2 Registration and removal of access</td>
+</tr>
+<tr>
 <td><strong>Tested By (44 cases)</strong></td>
 <td><strong>D09:</strong> <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-001">001</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-002">002</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-003">003</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-004">004</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-008">008</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-011">011</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-012">012</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-013">013</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-015">015</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-016">016</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-017">017</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-018">018</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-019">019</a>, <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-020">020</a><br><strong>D10:</strong> <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-015">015</a><br><strong>D11:</strong> <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-017">017</a><br><strong>L04:</strong> <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-030">030</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-010">010</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-018">018</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-035">035</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-038">038</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-041">041</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-042">042</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-043">043</a><br><strong>L09:</strong> <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-001">001</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-002">002</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-010">010</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-011">011</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-012">012</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-017">017</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-018">018</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-020">020</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-021">021</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-024">024</a>, <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-025">025</a><br><strong>L12:</strong> <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-013">013</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-026">026</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-027">027</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-030">030</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-031">031</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-021">021</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-024">024</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-025">025</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-026">026</a></td>
 </tr>
@@ -1934,6 +2233,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>None published in ISO/IEC 42001. The wiki's own identifier applies: AI-CTRL-016.</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.15 Access control; A.5.18 Access rights; A.8.2 Privileged access rights; A.8.3 Information access restriction</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 5 Account Management; CIS 6 Access Control Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC6.3 Role-based access and least privilege</td>
 </tr>
 <tr>
 <td><strong>Tested By (50 cases)</strong></td>
@@ -2005,6 +2320,22 @@
 <td>A.4.3 Data resources; A.7.6 Data preparation</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.12 Classification of information; A.5.13 Labelling of information; A.8.10 Information deletion; A.8.11 Data masking; A.8.12 Data leakage prevention; A.8.24 Use of cryptography; A.8.33 Test information</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>ID.AM Asset Management; PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC6.7 Transmission, movement and removal of information; C1.1 Identification of confidential information; C1.2 Disposal of confidential information</td>
+</tr>
+<tr>
 <td><strong>Tested By (31 cases)</strong></td>
 <td><strong>D08:</strong> <a href="../10_Test_Case_Library/D08-ai-red-teaming-and-continuous-testing.html#tc-d08-023">023</a><br><strong>D10:</strong> <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-017">017</a><br><strong>D11:</strong> <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-022">022</a><br><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-015">015</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-018">018</a><br><strong>L05:</strong> <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-023">023</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-044">044</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-040">040</a><br><strong>L10:</strong> <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-001">001</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-002">002</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-003">003</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-004">004</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-005">005</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-007">007</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-008">008</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-009">009</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-010">010</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-011">011</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-015">015</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-016">016</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-020">020</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-023">023</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-029">029</a><br><strong>L11:</strong> <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-007">007</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-012">012</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-015">015</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-023">023</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-006">006</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-009">009</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-015">015</a><br><strong>L15:</strong> <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-012">012</a></td>
 </tr>
@@ -2073,6 +2404,22 @@
 <td>None published in ISO/IEC 42001. The wiki's own identifier applies: AI-CTRL-018.</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.15 Access control; A.8.3 Information access restriction</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control; PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection; CIS 6 Access Control Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC6.3 Role-based access and least privilege</td>
+</tr>
+<tr>
 <td><strong>Tested By (9 cases)</strong></td>
 <td><strong>L10:</strong> <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-006">006</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-018">018</a>, <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-019">019</a><br><strong>L11:</strong> <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-004">004</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-005">005</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-006">006</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-007">007</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-016">016</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-019">019</a></td>
 </tr>
@@ -2139,6 +2486,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.7.3 Acquisition of data; A.7.4 Quality of data for AI systems; A.7.5 Data provenance</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.32 Change management</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-019.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>PI1.2 Inputs; CC8.1 Change management</td>
 </tr>
 <tr>
 <td><strong>Tested By (12 cases)</strong></td>
@@ -2210,6 +2573,22 @@
 <td>A.6.2.4 AI system verification and validation; A.6.2.6 AI system operation and monitoring</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.16 Monitoring activities; A.8.26 Application security requirements; A.8.27 Secure system architecture and engineering principles</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.PS Platform Security; PR.DS Data Security; DE.CM Continuous Monitoring</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 13 Network Monitoring and Defense; CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.6 Protection against threats from outside the boundary; CC7.2 Monitoring for anomalies</td>
+</tr>
+<tr>
 <td><strong>Tested By (52 cases)</strong></td>
 <td><strong>D10:</strong> <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-010">010</a>, <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-011">011</a>, <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-012">012</a><br><strong>D11:</strong> <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-002">002</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-003">003</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-012">012</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-013">013</a><br><strong>L05:</strong> <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-012">012</a>, <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-026">026</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-020">020</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-027">027</a><br><strong>L07:</strong> <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-001">001</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-002">002</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-003">003</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-004">004</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-005">005</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-006">006</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-007">007</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-008">008</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-009">009</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-010">010</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-011">011</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-012">012</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-013">013</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-014">014</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-015">015</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-016">016</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-017">017</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-018">018</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-019">019</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-020">020</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-021">021</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-022">022</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-023">023</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-024">024</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-025">025</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-026">026</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-031">031</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-032">032</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-033">033</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-035">035</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-036">036</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-037">037</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-039">039</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-041">041</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-015">015</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-016">016</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-019">019</a><br><strong>L11:</strong> <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-014">014</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-020">020</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-022">022</a><br><strong>L16:</strong> <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-016">016</a></td>
 </tr>
@@ -2276,6 +2655,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.6.2.4 AI system verification and validation; A.6.2.6 AI system operation and monitoring</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.26 Application security requirements; A.8.28 Secure coding</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.PS Platform Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>PI1.4 Outputs</td>
 </tr>
 <tr>
 <td><strong>Tested By (13 cases)</strong></td>
@@ -2346,6 +2741,22 @@
 <td>A.6.2.4 AI system verification and validation</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.7 Protection against malware; A.8.12 Data leakage prevention; A.8.26 Application security requirements</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.DS Data Security; DE.CM Continuous Monitoring</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection; CIS 10 Malware Defenses</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.7 Transmission, movement and removal of information; CC6.8 Unauthorized or malicious software</td>
+</tr>
+<tr>
 <td><strong>Tested By (28 cases)</strong></td>
 <td><strong>D11:</strong> <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-001">001</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-002">002</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-003">003</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-004">004</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-005">005</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-006">006</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-007">007</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-008">008</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-009">009</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-010">010</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-011">011</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-012">012</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-013">013</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-014">014</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-015">015</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-016">016</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-017">017</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-018">018</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-019">019</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-020">020</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-021">021</a>, <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-022">022</a><br><strong>L04:</strong> <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-020">020</a>, <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-021">021</a>, <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-022">022</a><br><strong>L07:</strong> <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-014">014</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-023">023</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-013">013</a></td>
 </tr>
@@ -2412,6 +2823,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.6.2.4 AI system verification and validation; A.8.2 System documentation and information for users</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>None published in ISO/IEC 27001 Annex A. The wiki's own identifier applies: AI-CTRL-039.</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>None published in the NIST CSF categories. The wiki's own identifier applies: AI-CTRL-039.</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-039.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>PI1.3 Processing; PI1.4 Outputs</td>
 </tr>
 <tr>
 <td><strong>Tested By (8 cases)</strong></td>
@@ -2483,6 +2910,22 @@
 <td>A.4.2 Resource documentation; A.6.2.6 AI system operation and monitoring</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.15 Access control; A.8.15 Logging; A.8.16 Monitoring activities</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control; DE.CM Continuous Monitoring</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 6 Access Control Management; CIS 8 Audit Log Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC7.2 Monitoring for anomalies</td>
+</tr>
+<tr>
 <td><strong>Tested By (15 cases)</strong></td>
 <td><strong>D09:</strong> <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-020">020</a><br><strong>D10:</strong> <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-001">001</a>, <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-023">023</a><br><strong>L04:</strong> <a href="../10_Test_Case_Library/L04-human-interaction-layer.html#tc-l04-023">023</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-001">001</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-002">002</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-003">003</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-004">004</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-017">017</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-029">029</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-034">034</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-035">035</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-038">038</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-045">045</a><br><strong>L17:</strong> <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-012">012</a></td>
 </tr>
@@ -2549,6 +2992,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.6.2.2 AI system requirements and specification</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.3 Segregation of duties; A.5.15 Access control; A.8.3 Information access restriction</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 6 Access Control Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC6.3 Role-based access and least privilege</td>
 </tr>
 <tr>
 <td><strong>Tested By (18 cases)</strong></td>
@@ -2619,6 +3078,22 @@
 <td>A.9.2 Processes for responsible use of AI systems; A.9.3 Objectives for responsible use of AI system</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.3 Segregation of duties</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-023.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>None published in the SOC 2 criteria. The wiki's own identifier applies: AI-CTRL-023.</td>
+</tr>
+<tr>
 <td><strong>Tested By (7 cases)</strong></td>
 <td><strong>D10:</strong> <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-006">006</a>, <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-013">013</a><br><strong>L01:</strong> <a href="../10_Test_Case_Library/L01-business-and-use-cases.html#tc-l01-012">012</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-015">015</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-016">016</a><br><strong>L07:</strong> <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-038">038</a><br><strong>L09:</strong> <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-012">012</a></td>
 </tr>
@@ -2685,6 +3160,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.10.3 Suppliers; A.4.4 Tooling resources</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.19 Information security in supplier relationships; A.5.21 Managing information security in the ICT supply chain; A.8.9 Configuration management; A.8.19 Installation of software on operational systems; A.8.32 Change management</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.SC Cybersecurity Supply Chain Risk Management; PR.PS Platform Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 2 Inventory and Control of Software Assets; CIS 15 Service Provider Management; CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.8 Unauthorized or malicious software; CC8.1 Change management; CC9.2 Vendor and business partner risk</td>
 </tr>
 <tr>
 <td><strong>Tested By (15 cases)</strong></td>
@@ -2755,6 +3246,22 @@
 <td>A.6.2.6 AI system operation and monitoring</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.18 Access rights; A.5.26 Response to information security incidents</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>RS.MA Incident Management; RS.MI Incident Mitigation</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 6 Access Control Management; CIS 17 Incident Response Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.2 Registration and removal of access; CC7.4 Incident response</td>
+</tr>
+<tr>
 <td><strong>Tested By (11 cases)</strong></td>
 <td><strong>D09:</strong> <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-016">016</a><br><strong>D10:</strong> <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-019">019</a>, <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-020">020</a><br><strong>D12:</strong> <a href="../10_Test_Case_Library/D12-ai-incident-response-and-forensics.html#tc-d12-011">011</a><br><strong>D13:</strong> <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-009">009</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-021">021</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-022">022</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-023">023</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-024">024</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-046">046</a><br><strong>L17:</strong> <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-019">019</a></td>
 </tr>
@@ -2823,6 +3330,22 @@
 <td>A.6.2.6 AI system operation and monitoring</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.3 Information access restriction</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; PI1.5 Stored items</td>
+</tr>
+<tr>
 <td><strong>Tested By (5 cases)</strong></td>
 <td><strong>L07:</strong> <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-027">027</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-028">028</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-029">029</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-030">030</a>, <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-035">035</a></td>
 </tr>
@@ -2889,6 +3412,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.4.5 System and computing resources; A.6.2.5 AI system deployment</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.22 Segregation of networks; A.8.27 Secure system architecture and engineering principles; A.8.31 Separation of development, test and production environments</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.PS Platform Security; PR.IR Technology Infrastructure Resilience</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 4 Secure Configuration of Enterprise Assets and Software; CIS 12 Network Infrastructure Management; CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.6 Protection against threats from outside the boundary; CC6.8 Unauthorized or malicious software</td>
 </tr>
 <tr>
 <td><strong>Tested By (11 cases)</strong></td>
@@ -2960,6 +3499,22 @@
 <td>A.6.2.4 AI system verification and validation; A.6.2.6 AI system operation and monitoring</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.15 Access control; A.8.3 Information access restriction; A.8.12 Data leakage prevention; A.8.24 Use of cryptography</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control; PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection; CIS 6 Access Control Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC6.7 Transmission, movement and removal of information; C1.1 Identification of confidential information</td>
+</tr>
+<tr>
 <td><strong>Tested By (18 cases)</strong></td>
 <td><strong>D11:</strong> <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-004">004</a><br><strong>L12:</strong> <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-002">002</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-003">003</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-004">004</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-007">007</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-008">008</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-009">009</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-010">010</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-011">011</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-012">012</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-013">013</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-015">015</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-024">024</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-028">028</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-029">029</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-017">017</a><br><strong>L15:</strong> <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-011">011</a><br><strong>L16:</strong> <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-005">005</a></td>
 </tr>
@@ -3028,6 +3583,22 @@
 <td>A.7.2 Data for development and enhancement of AI system; A.7.3 Acquisition of data; A.7.4 Quality of data for AI systems; A.7.5 Data provenance</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.9 Inventory of information and other associated assets; A.5.21 Managing information security in the ICT supply chain; A.8.33 Test information</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.SC Cybersecurity Supply Chain Risk Management; ID.AM Asset Management; PR.DS Data Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 3 Data Protection</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>PI1.2 Inputs</td>
+</tr>
+<tr>
 <td><strong>Tested By (16 cases)</strong></td>
 <td><strong>D12:</strong> <a href="../10_Test_Case_Library/D12-ai-incident-response-and-forensics.html#tc-d12-013">013</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-001">001</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-002">002</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-003">003</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-004">004</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-005">005</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-006">006</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-007">007</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-008">008</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-013">013</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-014">014</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-015">015</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-016">016</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-018">018</a>, <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-022">022</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-014">014</a></td>
 </tr>
@@ -3094,6 +3665,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.6.2.5 AI system deployment; A.6.2.3 Documentation of AI system design and development</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.4 Access to source code; A.8.9 Configuration management; A.8.25 Secure development life cycle; A.8.29 Security testing in development and acceptance; A.8.31 Separation of development, test and production environments; A.8.32 Change management</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.AA Identity Management, Authentication, and Access Control; PR.PS Platform Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 4 Secure Configuration of Enterprise Assets and Software; CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC8.1 Change management</td>
 </tr>
 <tr>
 <td><strong>Tested By (16 cases)</strong></td>
@@ -3165,6 +3752,22 @@
 <td>A.10.3 Suppliers; A.4.2 Resource documentation; A.7.5 Data provenance</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.9 Inventory of information and other associated assets; A.5.21 Managing information security in the ICT supply chain; A.8.8 Management of technical vulnerabilities; A.8.19 Installation of software on operational systems; A.8.30 Outsourced development</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.SC Cybersecurity Supply Chain Risk Management; ID.AM Asset Management; ID.RA Risk Assessment</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 2 Inventory and Control of Software Assets; CIS 7 Continuous Vulnerability Management; CIS 15 Service Provider Management; CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC7.1 Detection of configuration changes and vulnerabilities; CC9.2 Vendor and business partner risk</td>
+</tr>
+<tr>
 <td><strong>Tested By (24 cases)</strong></td>
 <td><strong>L05:</strong> <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-019">019</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-028">028</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-042">042</a><br><strong>L12:</strong> <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-001">001</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-002">002</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-005">005</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-006">006</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-018">018</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-019">019</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-014">014</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-009">009</a><br><strong>L16:</strong> <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-001">001</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-002">002</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-003">003</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-004">004</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-005">005</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-006">006</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-007">007</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-013">013</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-014">014</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-015">015</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-016">016</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-017">017</a>, <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-024">024</a></td>
 </tr>
@@ -3233,6 +3836,22 @@
 <td>A.4.5 System and computing resources</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.23 Information security for use of cloud services; A.8.8 Management of technical vulnerabilities; A.8.9 Configuration management; A.8.20 Networks security; A.8.22 Segregation of networks; A.8.24 Use of cryptography</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.DS Data Security; PR.PS Platform Security; PR.IR Technology Infrastructure Resilience</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 4 Secure Configuration of Enterprise Assets and Software; CIS 7 Continuous Vulnerability Management; CIS 12 Network Infrastructure Management; CIS 13 Network Monitoring and Defense</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC6.1 Logical access security; CC6.6 Protection against threats from outside the boundary; CC7.1 Detection of configuration changes and vulnerabilities</td>
+</tr>
+<tr>
 <td><strong>Tested By (27 cases)</strong></td>
 <td><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-042">042</a><br><strong>L09:</strong> <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-019">019</a><br><strong>L10:</strong> <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-023">023</a><br><strong>L11:</strong> <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-002">002</a>, <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-003">003</a><br><strong>L12:</strong> <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-020">020</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-011">011</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-006">006</a>, <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-007">007</a>, <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-010">010</a>, <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-011">011</a>, <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-020">020</a><br><strong>L15:</strong> <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-001">001</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-002">002</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-003">003</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-004">004</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-005">005</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-006">006</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-007">007</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-008">008</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-009">009</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-010">010</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-011">011</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-012">012</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-015">015</a>, <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-016">016</a><br><strong>L16:</strong> <a href="../10_Test_Case_Library/L16-supply-chain-and-third-party.html#tc-l16-017">017</a></td>
 </tr>
@@ -3299,6 +3918,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.6.2.6 AI system operation and monitoring; A.4.5 System and computing resources</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.29 Information security during disruption; A.5.30 ICT readiness for business continuity; A.8.6 Capacity management; A.8.13 Information backup; A.8.14 Redundancy of information processing facilities</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.IR Technology Infrastructure Resilience; RC.RP Incident Recovery Plan Execution</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 11 Data Recovery</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>A1.1 Capacity; A1.2 Backup and recovery infrastructure; A1.3 Recovery plan testing; CC9.1 Risk mitigation for business disruption</td>
 </tr>
 <tr>
 <td><strong>Tested By (13 cases)</strong></td>
@@ -3370,6 +4005,22 @@
 <td>A.5.2 AI system impact assessment process; A.6.2.2 AI system requirements and specification; A.6.2.4 AI system verification and validation; A.6.2.5 AI system deployment</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.8 Information security in project management; A.8.25 Secure development life cycle; A.8.27 Secure system architecture and engineering principles; A.8.29 Security testing in development and acceptance; A.8.32 Change management</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>ID.RA Risk Assessment; PR.PS Platform Security</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 16 Application Software Security</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC3.4 Assessment of change; CC8.1 Change management</td>
+</tr>
+<tr>
 <td><strong>Tested By (6 cases)</strong></td>
 <td><strong>L01:</strong> <a href="../10_Test_Case_Library/L01-business-and-use-cases.html#tc-l01-002">002</a>, <a href="../10_Test_Case_Library/L01-business-and-use-cases.html#tc-l01-013">013</a>, <a href="../10_Test_Case_Library/L01-business-and-use-cases.html#tc-l01-014">014</a>, <a href="../10_Test_Case_Library/L01-business-and-use-cases.html#tc-l01-015">015</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-034">034</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-012">012</a></td>
 </tr>
@@ -3436,6 +4087,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.6.2.4 AI system verification and validation</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.8 Management of technical vulnerabilities; A.8.29 Security testing in development and acceptance</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>ID.RA Risk Assessment; ID.IM Improvement</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 7 Continuous Vulnerability Management; CIS 18 Penetration Testing</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC4.1 Ongoing and separate evaluations; CC7.1 Detection of configuration changes and vulnerabilities</td>
 </tr>
 <tr>
 <td><strong>Tested By (36 cases)</strong></td>
@@ -3506,6 +4173,22 @@
 <td>Clause 9.1 Monitoring, measurement, analysis and evaluation; Clause 9.2 Internal audit; Clause 9.3 Management review; Clause 10.2 Nonconformity and corrective action</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.33 Protection of records; A.5.35 Independent review of information security; A.5.36 Compliance with policies, rules and standards for information security; Clause 9.2 Internal audit</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>GV.OV Oversight; ID.IM Improvement</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-038.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC4.1 Ongoing and separate evaluations; CC4.2 Communication of deficiencies</td>
+</tr>
+<tr>
 <td><strong>Tested By (17 cases)</strong></td>
 <td><strong>D09:</strong> <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-019">019</a><br><strong>L02:</strong> <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-003">003</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-013">013</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-014">014</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-015">015</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-016">016</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-017">017</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-018">018</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-019">019</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-024">024</a>, <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-025">025</a><br><strong>L03:</strong> <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-022">022</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-023">023</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-024">024</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-025">025</a>, <a href="../10_Test_Case_Library/L03-legal-privacy-and-compliance.html#tc-l03-026">026</a><br><strong>L10:</strong> <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-030">030</a></td>
 </tr>
@@ -3572,6 +4255,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.5.4 Assessing AI system impact on individuals or groups of individuals; A.6.2.4 AI system verification and validation; A.8.2 System documentation and information for users</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>None published in ISO/IEC 27001 Annex A. The wiki's own identifier applies: AI-CTRL-041.</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>None published in the NIST CSF categories. The wiki's own identifier applies: AI-CTRL-041.</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-041.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>None published in the SOC 2 criteria. The wiki's own identifier applies: AI-CTRL-041.</td>
 </tr>
 <tr>
 <td><strong>Tested By (3 cases)</strong></td>
@@ -3643,6 +4342,22 @@
 <td>A.6.2.8 AI system recording of event logs</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.28 Collection of evidence; A.5.33 Protection of records; A.8.15 Logging; A.8.17 Clock synchronization</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.PS Platform Security; DE.CM Continuous Monitoring</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 8 Audit Log Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC7.2 Monitoring for anomalies</td>
+</tr>
+<tr>
 <td><strong>Tested By (22 cases)</strong></td>
 <td><strong>D09:</strong> <a href="../10_Test_Case_Library/D09-agent-and-non-human-identity-governance.html#tc-d09-012">012</a><br><strong>D10:</strong> <a href="../10_Test_Case_Library/D10-browser-and-computer-use-agents.html#tc-d10-018">018</a><br><strong>D12:</strong> <a href="../10_Test_Case_Library/D12-ai-incident-response-and-forensics.html#tc-d12-006">006</a><br><strong>L02:</strong> <a href="../10_Test_Case_Library/L02-governance-and-risk-mgmt.html#tc-l02-025">025</a><br><strong>L05:</strong> <a href="../10_Test_Case_Library/L05-ai-applications.html#tc-l05-025">025</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-028">028</a>, <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-045">045</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-040">040</a><br><strong>L09:</strong> <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-025">025</a><br><strong>L10:</strong> <a href="../10_Test_Case_Library/L10-data-layer.html#tc-l10-026">026</a><br><strong>L11:</strong> <a href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-024">024</a><br><strong>L12:</strong> <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-031">031</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-025">025</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-019">019</a><br><strong>L15:</strong> <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-018">018</a><br><strong>L17:</strong> <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-001">001</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-002">002</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-004">004</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-005">005</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-020">020</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-030">030</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-031">031</a></td>
 </tr>
@@ -3711,6 +4426,22 @@
 <td>A.6.2.6 AI system operation and monitoring; A.6.2.8 AI system recording of event logs</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.25 Assessment and decision on information security events; A.8.15 Logging; A.8.16 Monitoring activities</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>DE.CM Continuous Monitoring; DE.AE Adverse Event Analysis</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 8 Audit Log Management; CIS 13 Network Monitoring and Defense</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC7.2 Monitoring for anomalies; CC7.3 Evaluation of security events</td>
+</tr>
+<tr>
 <td><strong>Tested By (22 cases)</strong></td>
 <td><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-029">029</a><br><strong>L07:</strong> <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-037">037</a><br><strong>L09:</strong> <a href="../10_Test_Case_Library/L09-identity-and-access-mgmt.html#tc-l09-017">017</a><br><strong>L14:</strong> <a href="../10_Test_Case_Library/L14-mlops-llmops-layer.html#tc-l14-016">016</a><br><strong>L17:</strong> <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-001">001</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-003">003</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-006">006</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-007">007</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-008">008</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-009">009</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-010">010</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-011">011</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-012">012</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-013">013</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-014">014</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-015">015</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-016">016</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-024">024</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-025">025</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-027">027</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-028">028</a>, <a href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-029">029</a></td>
 </tr>
@@ -3777,6 +4508,22 @@
 <tr>
 <td><strong>ISO/IEC 42001</strong></td>
 <td>A.8.4 Communication of incidents; A.8.3 External reporting; A.3.3 Reporting of concerns; A.6.2.6 AI system operation and monitoring</td>
+</tr>
+<tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.5.24 Information security incident management planning and preparation; A.5.25 Assessment and decision on information security events; A.5.26 Response to information security incidents; A.5.27 Learning from information security incidents; A.5.28 Collection of evidence; A.6.8 Information security event reporting</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>DE.AE Adverse Event Analysis; RS.MA Incident Management; RS.AN Incident Analysis; RS.CO Incident Response Reporting and Communication; RS.MI Incident Mitigation; RC.RP Incident Recovery Plan Execution</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>CIS 17 Incident Response Management</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>CC7.3 Evaluation of security events; CC7.4 Incident response; CC7.5 Recovery from incidents</td>
 </tr>
 <tr>
 <td><strong>Tested By (39 cases)</strong></td>
@@ -3848,6 +4595,22 @@
 <td>A.4.5 System and computing resources</td>
 </tr>
 <tr>
+<td><strong>ISO/IEC 27001</strong></td>
+<td>A.8.6 Capacity management; A.8.16 Monitoring activities</td>
+</tr>
+<tr>
+<td><strong>NIST CSF</strong></td>
+<td>PR.IR Technology Infrastructure Resilience; DE.CM Continuous Monitoring</td>
+</tr>
+<tr>
+<td><strong>CIS Controls</strong></td>
+<td>None published in the CIS Controls. The wiki's own identifier applies: AI-CTRL-036.</td>
+</tr>
+<tr>
+<td><strong>SOC 2</strong></td>
+<td>A1.1 Capacity</td>
+</tr>
+<tr>
 <td><strong>Tested By (30 cases)</strong></td>
 <td><strong>D11:</strong> <a href="../10_Test_Case_Library/D11-multimodal-and-voice-input-security.html#tc-d11-011">011</a><br><strong>D13:</strong> <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-001">001</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-002">002</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-003">003</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-004">004</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-005">005</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-006">006</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-007">007</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-008">008</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-009">009</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-010">010</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-011">011</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-012">012</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-013">013</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-014">014</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-015">015</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-016">016</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-017">017</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-018">018</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-019">019</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-020">020</a>, <a href="../10_Test_Case_Library/D13-ai-cost-and-abuse-controls.html#tc-d13-021">021</a><br><strong>L06:</strong> <a href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-021">021</a><br><strong>L07:</strong> <a href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-032">032</a><br><strong>L08:</strong> <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-030">030</a>, <a href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-031">031</a><br><strong>L12:</strong> <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-013">013</a>, <a href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-022">022</a><br><strong>L13:</strong> <a href="../10_Test_Case_Library/L13-training-and-fine-tuning-layer.html#tc-l13-020">020</a><br><strong>L15:</strong> <a href="../10_Test_Case_Library/L15-infrastructure-layer.html#tc-l15-017">017</a></td>
 </tr>
@@ -3885,7 +4648,7 @@ OWASP / MITRE ATLAS techniques and mitigations / NIST AI RMF / ISO/IEC 42001
 <p>Evidence should be exportable, timestamped, attributable to user/device/application where applicable, and suitable for audit or incident investigation.</p>
 </article>
 <nav class="pager" aria-label="Previous and next page"><a class="prev" href="index.html">&larr; Control Library</a><a class="next" href="04_Existing_Security_Control_Baseline.html">Existing Security Control Baseline &rarr;</a></nav>
-<footer class="site-footer">Author: Nachiket Sathaye &middot; Updated 10 October 2026 &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener license">CC BY-SA 4.0</a> &middot; <a href="https://github.com/nachi065/AI-Security-Wiki/edit/main/source/03_Control_Library/03_AI_Security_Control_Objectives_Library.md" rel="noopener">Suggest an edit to this page</a> &middot; <a href="../community-rules.html">Community rules</a> &middot; <a href="https://github.com/nachi065/AI-Security-Wiki/blob/main/CONTRIBUTING.md" rel="noopener">How to contribute</a>
+<footer class="site-footer">Author: Nachiket Sathaye &middot; Updated 13 October 2026 &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener license">CC BY-SA 4.0</a> &middot; <a href="https://github.com/nachi065/AI-Security-Wiki/edit/main/source/03_Control_Library/03_AI_Security_Control_Objectives_Library.md" rel="noopener">Suggest an edit to this page</a> &middot; <a href="../community-rules.html">Community rules</a> &middot; <a href="https://github.com/nachi065/AI-Security-Wiki/blob/main/CONTRIBUTING.md" rel="noopener">How to contribute</a>
 <div class="site-notice">
 <p><strong>Licence.</strong> <svg class="cc-icon" viewBox="5.5 -3.5 64 64" aria-hidden="true"><path d="M37.441-3.5c8.951,0,16.572,3.125,22.857,9.372c3.008,3.009,5.295,6.448,6.857,10.314 c1.561,3.867,2.344,7.971,2.344,12.314c0,4.381-0.773,8.486-2.314,12.313c-1.543,3.828-3.82,7.21-6.828,10.143 c-3.123,3.085-6.666,5.448-10.629,7.086c-3.961,1.638-8.057,2.457-12.285,2.457s-8.276-0.808-12.143-2.429 c-3.866-1.618-7.333-3.961-10.4-7.027c-3.067-3.066-5.4-6.524-7-10.372S5.5,32.767,5.5,28.5c0-4.229,0.809-8.295,2.428-12.2 c1.619-3.905,3.972-7.4,7.057-10.486C21.08-0.394,28.565-3.5,37.441-3.5z M37.557,2.272c-7.314,0-13.467,2.553-18.458,7.657 c-2.515,2.553-4.448,5.419-5.8,8.6c-1.354,3.181-2.029,6.505-2.029,9.972c0,3.429,0.675,6.734,2.029,9.913 c1.353,3.183,3.285,6.021,5.8,8.516c2.514,2.496,5.351,4.399,8.515,5.715c3.161,1.314,6.476,1.971,9.943,1.971 c3.428,0,6.75-0.665,9.973-1.999c3.219-1.335,6.121-3.257,8.713-5.771c4.99-4.876,7.484-10.99,7.484-18.344 c0-3.543-0.648-6.895-1.943-10.057c-1.293-3.162-3.18-5.98-5.654-8.458C50.984,4.844,44.795,2.272,37.557,2.272z M37.156,23.187 l-4.287,2.229c-0.458-0.951-1.019-1.619-1.685-2c-0.667-0.38-1.286-0.571-1.858-0.571c-2.856,0-4.286,1.885-4.286,5.657 c0,1.714,0.362,3.084,1.085,4.113c0.724,1.029,1.791,1.544,3.201,1.544c1.867,0,3.181-0.915,3.944-2.743l3.942,2 c-0.838,1.563-2,2.791-3.486,3.686c-1.484,0.896-3.123,1.343-4.914,1.343c-2.857,0-5.163-0.875-6.915-2.629 c-1.752-1.752-2.628-4.19-2.628-7.313c0-3.048,0.886-5.466,2.657-7.257c1.771-1.79,4.009-2.686,6.715-2.686 C32.604,18.558,35.441,20.101,37.156,23.187z M55.613,23.187l-4.229,2.229c-0.457-0.951-1.02-1.619-1.686-2 c-0.668-0.38-1.307-0.571-1.914-0.571c-2.857,0-4.287,1.885-4.287,5.657c0,1.714,0.363,3.084,1.086,4.113 c0.723,1.029,1.789,1.544,3.201,1.544c1.865,0,3.18-0.915,3.941-2.743l4,2c-0.875,1.563-2.057,2.791-3.541,3.686 c-1.486,0.896-3.105,1.343-4.857,1.343c-2.896,0-5.209-0.875-6.941-2.629c-1.736-1.752-2.602-4.19-2.602-7.313 c0-3.048,0.885-5.466,2.658-7.257c1.77-1.79,4.008-2.686,6.713-2.686C51.117,18.558,53.938,20.101,55.613,23.187z"/></svg><svg class="cc-icon" viewBox="5.5 -3.5 64 64" aria-hidden="true"><path d="M37.443-3.5c8.988,0,16.57,3.085,22.742,9.257C66.393,11.967,69.5,19.548,69.5,28.5c0,8.991-3.049,16.476-9.145,22.456 C53.879,57.319,46.242,60.5,37.443,60.5c-8.649,0-16.153-3.144-22.514-9.43C8.644,44.784,5.5,37.262,5.5,28.5 c0-8.761,3.144-16.342,9.429-22.742C21.101-0.415,28.604-3.5,37.443-3.5z M37.557,2.272c-7.276,0-13.428,2.553-18.457,7.657 c-5.22,5.334-7.829,11.525-7.829,18.572c0,7.086,2.59,13.22,7.77,18.398c5.181,5.182,11.352,7.771,18.514,7.771 c7.123,0,13.334-2.607,18.629-7.828c5.029-4.838,7.543-10.952,7.543-18.343c0-7.276-2.553-13.465-7.656-18.571 C50.967,4.824,44.795,2.272,37.557,2.272z M46.129,20.557v13.085h-3.656v15.542h-9.944V33.643h-3.656V20.557 c0-0.572,0.2-1.057,0.599-1.457c0.401-0.399,0.887-0.6,1.457-0.6h13.144c0.533,0,1.01,0.2,1.428,0.6 C45.918,19.5,46.129,19.986,46.129,20.557z M33.042,12.329c0-3.008,1.485-4.514,4.458-4.514s4.457,1.504,4.457,4.514 c0,2.971-1.486,4.457-4.457,4.457S33.042,15.3,33.042,12.329z"/></svg>This wiki is open to the community under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener license">Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0)</a>. You may copy, share and adapt it for any purpose, including commercially, as long as you credit the authors and release anything you build from it under the same licence.</p>
 <p><strong>Disclaimer.</strong> This wiki is an open, community driven educational reference, not legal, regulatory or professional advice. Regional regulatory content is compiled from secondary sources and its verification status is shown per row; verify against primary sources before relying on it. Content is provided "as is" without warranty. Named products and companies belong to their owners; statements about them reflect public information at the date shown. Views are the author's own.</p>

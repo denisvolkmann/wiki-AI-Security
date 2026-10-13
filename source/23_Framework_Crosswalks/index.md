@@ -1,14 +1,16 @@
 ---
 title: "Framework Crosswalks"
 author: Nachiket Sathaye
-description: "Cross-references from this wiki to other AI frameworks: FINOS AIGF, AI BCF, NIST AI RMF, NIST AI 600-1, ISO/IEC 42001, the OWASP Top 10 lists and MITRE ATLAS."
+description: "Cross-references from this wiki to other frameworks: FINOS AIGF, AI BCF, NIST AI RMF, NIST AI 600-1, ISO/IEC 42001, OWASP, MITRE ATLAS, ISO/IEC 27001, NIST CSF, CIS Controls, SOC 2, the OECD AI Principles and eight privacy laws."
 nav_order: 13
 has_children: true
 ---
 
 # Framework Crosswalks
 
-This section connects the wiki to other AI governance frameworks. The wiki cites their identifiers without copying their text, so a team that works from another catalogue can find the matching risks, control objectives, evidence and tests here.
+This section connects the wiki to other frameworks. The wiki cites their identifiers without copying their text, so a team that works from another catalogue can find the matching risks, control objectives, evidence and tests here.
+
+## AI frameworks
 
 | Crosswalk | Use it when |
 |---|---|
@@ -19,7 +21,31 @@ This section connects the wiki to other AI governance frameworks. The wiki cites
 | [ISO/IEC 42001 Crosswalk](05_ISO_IEC_42001_Crosswalk.md) | You are building or auditing an AI management system and need the control objectives and tests behind each Annex A control. |
 | [OWASP Top 10 Crosswalk](06_OWASP_Top_10_Crosswalk.md) | You name application risks with the OWASP lists for LLM and agentic applications and need the controls and test cases for each item. |
 | [MITRE ATLAS Crosswalk](07_MITRE_ATLAS_Crosswalk.md) | You work from ATLAS techniques and need the controls that address each one and the test cases that exercise it. |
+| [OECD AI Principles Crosswalk](12_OECD_AI_Principles_Crosswalk.md) | Your AI policy is written against the five OECD values-based principles and you need the controls that put each one into practice. |
 
-The NIST AI RMF, ISO/IEC 42001, OWASP and MITRE ATLAS pages are generated from the control library and the test cases each time the site is built, so they stay in step with them.
+## Security frameworks
 
-For regional laws and regulators, see the [Regional AI Regulatory Hub](../11_GCC_AI_Compliance/index.md) sections instead.
+These four have no AI-specific content. Each crosswalk shows which wiki controls extend the framework's entries to AI systems.
+
+| Crosswalk | Use it when |
+|---|---|
+| [ISO/IEC 27001 Crosswalk](08_ISO_IEC_27001_Crosswalk.md) | You run an information security management system and are bringing AI systems into its scope and statement of applicability. |
+| [NIST CSF Crosswalk](09_NIST_CSF_Crosswalk.md) | Your security programme reports against the six functions and 22 categories of the Cybersecurity Framework 2.0. |
+| [CIS Controls Crosswalk](10_CIS_Controls_Crosswalk.md) | Your baseline is the 18 CIS Critical Security Controls and you need to know what AI systems add to each. |
+| [SOC 2 Crosswalk](11_SOC_2_Crosswalk.md) | You are a service organization with AI in the scope of a SOC 2 report, or you read vendors' reports. |
+
+## Privacy laws
+
+| Crosswalk | Use it when |
+|---|---|
+| [Privacy Law Crosswalk](13_Privacy_Law_Crosswalk.md) | You run AI systems under more than one of the GDPR, the CCPA, Quebec Law 25, the Singapore PDPA and the UAE, Saudi, Qatar and Bahrain data protection laws, and need to see where they differ. |
+
+The NIST AI RMF, ISO/IEC 42001, OWASP, MITRE ATLAS, ISO/IEC 27001, NIST CSF, CIS Controls and SOC 2 pages are generated from the control library and the test cases each time the site is built, so they stay in step with them. So is the table below.
+
+For regional laws and regulators, see the [Regional AI Regulatory Hub](../11_GCC_AI_Compliance/index.md) sections. For sector rules such as HIPAA, PCI DSS and insurance regulation, see the [Sector Overlays](../04_Domain_Standards/10B_Sector_Overlays.md).
+
+## All mappings by control
+
+One row for each wiki control, with the identifiers it cites in each framework. "None" means the framework has no entry that the control supports. Open the control for the names behind the identifiers, or the framework's crosswalk to read the mapping from the other direction.
+
+<!-- framework-crosswalk: summary -->

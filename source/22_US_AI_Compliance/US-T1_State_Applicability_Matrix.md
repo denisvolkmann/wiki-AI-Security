@@ -30,6 +30,8 @@ Wiki control: [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objecti
 | NYC Local Law 144 | In force | | | Annual bias audit of hiring tools | | |
 | New York RAISE Act | Targeted 2027 | | | Frontier developer duties | | |
 | Utah SB 149 | In force | | | Disclosure | | |
+| Colorado SB 21-169 (insurers only) | In force; rules by line of insurance | | | No unfair discrimination from external data, algorithms or predictive models; governance and testing | | |
+| NAIC Model Bulletin, where the state has adopted it (insurers only) | Varies by state | | | Written AI programme; third-party due diligence | | |
 | Other states | | | | | | |
 
 For each row, also record the linked systems (inventory IDs), the evidence location and the last review date.
