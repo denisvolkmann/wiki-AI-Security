@@ -52,6 +52,23 @@ version: 1.0
 
 The distinction between AI security, security of AI and AI for security is explained in [Terminology and the Two-Axis Model](../00_Foundations/01-Terminology-and-Two-Axis-Model.md).
 
+## Standard Vocabulary
+
+ISO/IEC 22989:2022 (Artificial intelligence concepts and terminology) is the international vocabulary for AI. Its clause 3 holds the defined terms, and other ISO/IEC AI standards reuse them. Where a term on this page is used in a standard, prefer the standard's definition in documents that will be audited against that standard, and record which one you used. Clause numbers and headings were checked against the publisher's contents preview on 15 October 2026; the definitions themselves were not read.
+
+ISO/IEC 22989 clause 5.19 names six AI stakeholder roles. The table shows how they relate to the roles used elsewhere in this wiki and in the EU AI Act. The correspondence is approximate and this wiki's own reading.
+
+| ISO/IEC 22989 role | Closest role in this wiki or the EU AI Act |
+|---|---|
+| AI provider | Provider (EU AI Act); AI vendor |
+| AI producer | Model developer; AI engineering |
+| AI customer | Deployer (EU AI Act); the organization adopting AI |
+| AI partner | System integrator, data supplier, auditor |
+| AI subject | Affected person; data subject |
+| Relevant authorities | Regulators and market surveillance authorities |
+
+See the [ISO/IEC AI Standards Crosswalk](../23_Framework_Crosswalks/15_ISO_IEC_AI_Standards_Crosswalk.md) and [Terminology and the Two-Axis Model](../00_Foundations/01-Terminology-and-Two-Axis-Model.md).
+
 ## Usage Guidance
 
 Use this glossary to standardize language in risk reviews, control descriptions, architecture documents, vendor questionnaires and audit evidence.

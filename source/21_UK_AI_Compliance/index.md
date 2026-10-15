@@ -36,6 +36,7 @@ The UK has no AI Act. AI is governed through existing law and sector regulators 
 | **[Recalled]** | Stated from memory of the law or guidance and not re-checked. Verify before citing it. |
 | **[Conflict]** | Secondary sources disagree. Resolve from the primary text. |
 | **[Unverified]** | Single source, marketing-grade source, or not researched. |
+| **[Verified]** | The point stated was checked against the government's own document at the URL given, on the date given. The document was read with a retrieval tool and not line by line, so confirm the wording before you cite it. |
 
 The templates are working documents, not regulator-approved forms.
 

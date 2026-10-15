@@ -8,7 +8,7 @@ nav_order: 1
 
 # Reference Index
 
-17-layer AI lifecycle model | 7 use-case domains | 6 emerging domains | 653 test cases
+17-layer AI lifecycle model | 7 use-case domains | 6 emerging domains | 656 test cases
 
 *Status: draft for review. Case counts, domain assignments and mappings are proposals until approved.*
 
@@ -39,7 +39,7 @@ Where a case is the detailed version of a scenario in the wiki's [AI Security Po
 | L07 | [Prompt & Context Layer](L07-prompt-and-context-layer.md) | prompt injection (direct/indirect), jailbreak, context and memory poisoning | 41 |
 | L08 | [AI Gateway & Security Controls](L08-ai-gateway-and-security-controls.md) | inline policy, DLP, guardrails, bypass resistance, latency | 42 |
 | L09 | [Identity & Access Mgmt](L09-identity-and-access-mgmt.md) | user and agent (non-human) identity, scoped tokens, RBAC | 26 |
-| L10 | [Data Layer](L10-data-layer.md) | sensitive-data classification, DLP, lineage, tenant isolation | 30 |
+| L10 | [Data Layer](L10-data-layer.md) | sensitive-data classification, DLP, lineage, tenant isolation, data quality | 33 |
 | L11 | [Knowledge & Retrieval Layer](L11-knowledge-and-retrieval-layer.md) | RAG poisoning, vector-store access control, retrieval leakage | 25 |
 | L12 | [Model Layer](L12-model-layer.md) | model theft, extraction, adversarial inputs, model scanning, identity for model access | 31 |
 | L13 | [Training & Fine-Tuning Layer](L13-training-and-fine-tuning-layer.md) | data poisoning, dataset provenance, fine-tune integrity, training job identity | 26 |
@@ -47,7 +47,7 @@ Where a case is the detailed version of a scenario in the wiki's [AI Security Po
 | L15 | [Infrastructure Layer](L15-infrastructure-layer.md) | GPU/cluster hardening, secrets, network segmentation, sovereignty of control plane | 20 |
 | L16 | [Supply Chain & Third Party](L16-supply-chain-and-third-party.md) | AI-BOM, model and package provenance, third-party SaaS AI risk | 26 |
 | L17 | [Monitoring, Detection & Response](L17-monitoring-detection-and-response.md) | telemetry, SIEM/SOAR integration, AI incident response, forensics | 31 |
-| | **Total** | | **520** |
+| | **Total** | | **523** |
 
 ## 4. Use-case domain tags
 

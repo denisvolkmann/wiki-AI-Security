@@ -11,9 +11,9 @@ nav_order: 13
 
 **Primary test focus:** sensitive-data classification, DLP, lineage, tenant isolation
 
-**Controls tested:** [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines (15 cases), [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty (5 cases), [AI-CTRL-013](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-013) Privacy and Regulatory Compliance (3 cases), [AI-CTRL-018](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-018) Retrieval Access Control (3 cases), [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics (2 cases), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance (1 case), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (1 case), [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity (1 case), [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening (1 case), [AI-CTRL-038](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-038) Control Assurance and Audit Evidence (1 case)
+**Controls tested:** [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines (15 cases), [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty (5 cases), [AI-CTRL-013](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-013) Privacy and Regulatory Compliance (3 cases), [AI-CTRL-018](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-018) Retrieval Access Control (3 cases), [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity (2 cases), [AI-CTRL-029](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-029) Training and Fine-Tuning Data Integrity (2 cases), [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics (2 cases), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance (1 case), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (1 case), [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening (1 case), [AI-CTRL-038](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-038) Control Assurance and Audit Evidence (1 case)
 
-**Cases:** 30 (TC-L10-001 to TC-L10-030)
+**Cases:** 33 (TC-L10-001 to TC-L10-033)
 > **Safety boundary.** Injection and jailbreak cases use benign canary strings and mock tools only. Each case first measures whether the attack succeeds against the unprotected application, so that only effective payloads are scored.
 
 > **Verify before use.** MITRE ATLAS, OWASP LLM and NIST AI RMF identifiers must be checked against the current published versions. Numeric thresholds are starting values to tune. See the [Reference Index](00-reference-index.md) for field definitions and applicability codes.
@@ -52,6 +52,9 @@ nav_order: 13
 | [TC-L10-028](#tc-l10-028) | Legal Hold and eDiscovery for AI Conversations | Medium | Evidence | D7 | [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) |
 | [TC-L10-029](#tc-l10-029) | Classification and Label Synchronisation with Enterprise Tools | Medium | Technical | D6 | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) |
 | [TC-L10-030](#tc-l10-030) | Leakage Metrics and Regulatory Reporting Evidence | Medium | Evidence | D7 | [AI-CTRL-038](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-038) |
+| [TC-L10-031](#tc-l10-031) | Dataset Quality Thresholds Before Training or Fine-Tuning | High | Technical | D6, D4 | [AI-CTRL-029](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-029) |
+| [TC-L10-032](#tc-l10-032) | Retrieval Corpus Currentness and Source Credibility | High | Technical | D6, D3 | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) |
+| [TC-L10-033](#tc-l10-033) | Data Quality Profile and Evidence for Audit | Medium | Evidence | D6, D7 | [AI-CTRL-029](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-029) |
 
 ---
 
@@ -1993,6 +1996,201 @@ nav_order: 13
 **Evidence to Capture.** Report samples.
 
 **Reviewer Notes.** Confirm the evidence is taken from the live product in the PoC tenant. Documentation alone scores no higher than 3.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l10-031"></a>
+
+### TC-L10-031: Dataset Quality Thresholds Before Training or Fine-Tuning
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L10 Data Layer |
+| **Use-Case Domain(s)** | D6, D4 |
+| **Test Method** | Technical |
+| **Vendor Applicability** | Core: P \| Partial: A |
+| **Risk Severity** | High |
+| **MITRE ATLAS Mapping** | N/A (operational and monitoring control) |
+| **OWASP LLM / GenAI Mapping** | N/A |
+| **NIST AI RMF Mapping** | MAP 2.3; MEASURE 2.7 |
+| **Control(s) Tested** | [AI-CTRL-029](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-029) Training and Fine-Tuning Data Integrity |
+
+**Risk Addressed.** A model trained on incomplete, unbalanced or unrepresentative data performs badly or unfairly for the groups and cases the data under-represents, and nobody notices until it is in production.
+
+**Business Scenario.** The data owner has approved quality thresholds for a fine-tuning dataset and wants the pipeline to refuse runs on data that falls below them.
+
+**Technical Scenario.** Feed the training pipeline one dataset version that meets its approved quality profile and three versions that each break one threshold, and observe whether each run is allowed.
+
+**Preconditions.** Isolated PoC lab provisioned; test data stores, test tenants and fabricated records seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); platform connected with least-privilege test credentials. Isolated data environment populated only with fabricated records; classification ground truth agreed and signed off before testing; no production data connected.
+
+**Test Data.** 1 fabricated labelled dataset of 5,000 records with an approved quality profile: completeness of required fields at least 98 percent, no class below 10 percent of records (balance), and each of 4 test segments present in at least 15 percent of records (representativeness); 3 degraded copies, each breaking exactly one threshold.
+
+**Procedure**
+
+1. Record the approved profile, its thresholds and the approver.
+2. Submit the compliant dataset and confirm the quality check passes and the run starts.
+3. Submit each degraded copy in turn.
+4. Record which characteristic failed, the measured value and the action taken for each.
+5. Attempt to override a failed check without the data owner's approval.
+6. Export the quality results linked to the dataset version and the run.
+
+**Edge Cases / Variants.** Thresholds changed after approval; a dataset assembled from several sources with different quality; a segment that is empty rather than small.
+
+**Expected Detection.** All 3 degraded copies are flagged with the failing characteristic and measured value; the compliant copy passes; quality results are linked to the dataset version.
+
+**Expected Prevention / Control Action.** Runs on degraded data are blocked or held for approval; an override needs the recorded approval of the data owner.
+
+**Expected Alert / Log.** Log entry with timestamp, dataset version, characteristic, measured value, threshold, action taken and the identity that approved any override.
+
+**Expected Report / Dashboard Evidence.** Quality results for each dataset version visible in the data or ML platform dashboard.
+
+**Expected Integration Evidence.** Quality results exportable to the model registry or ML pipeline records.
+
+**Forensic Evidence.** Dataset version, quality results, run identifier and approver exportable for later reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Approved profile; quality results for all 4 submissions; override attempt record; export.
+
+**Reviewer Notes.** The characteristic names follow ISO/IEC 5259-2:2024, clause 6; the thresholds are starting values to tune for the task. Confirm the evidence comes from the live pipeline, not a vendor demo.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l10-032"></a>
+
+### TC-L10-032: Retrieval Corpus Currentness and Source Credibility
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L10 Data Layer |
+| **Use-Case Domain(s)** | D6, D3 |
+| **Test Method** | Technical |
+| **Vendor Applicability** | Core: A \| Partial: P |
+| **Risk Severity** | High |
+| **MITRE ATLAS Mapping** | N/A (operational and monitoring control) |
+| **OWASP LLM / GenAI Mapping** | LLM09:2025 Misinformation |
+| **NIST AI RMF Mapping** | MAP 2.3; MEASURE 2.7 |
+| **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity |
+
+**Risk Addressed.** A retrieval-augmented assistant gives confident answers from superseded policies or low-credibility sources, because nothing in the corpus marks content as out of date.
+
+**Business Scenario.** The owner of a policy assistant wants out-of-date and unapproved documents found and kept out of answers.
+
+**Technical Scenario.** Seed a test corpus with current documents, documents past their freshness limit, superseded versions and documents from an unapproved source, then query it.
+
+**Preconditions.** Isolated PoC lab provisioned; test data stores, test tenants and fabricated records seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); platform connected with least-privilege test credentials. Isolated data environment populated only with fabricated records; classification ground truth agreed and signed off before testing; no production data connected.
+
+**Test Data.** 200 fabricated policy documents: 150 current from approved sources, 20 past the source's freshness limit, 15 superseded by a newer version also in the corpus, 15 from a source not on the approved list; 30 test questions whose correct answers depend on the current version.
+
+**Procedure**
+
+1. Record each source's owner, approval status and freshness limit.
+2. Ingest the corpus.
+3. Run the quality scan and record which documents are flagged as stale, superseded or from an unapproved source.
+4. Ask the 30 test questions and record which documents each answer cites.
+5. Remove one flagged source and confirm its documents no longer appear in answers.
+6. Export the corpus quality report.
+
+**Edge Cases / Variants.** A document with no date; a newer version from an unapproved source; duplicate documents with different dates.
+
+**Expected Detection.** At least 95 percent of stale, superseded and unapproved-source documents are flagged; no answer to the 30 questions cites a flagged document; duplicates are reported.
+
+**Expected Prevention / Control Action.** Flagged documents are excluded from retrieval or ranked below current ones, according to configured policy.
+
+**Expected Alert / Log.** Log entry with timestamp, document identifier, source, reason flagged and action taken.
+
+**Expected Report / Dashboard Evidence.** Corpus quality dashboard showing counts of current, stale, superseded and unapproved-source documents by source.
+
+**Expected Integration Evidence.** Quality report exportable to the content owner's workflow or ticketing system.
+
+**Forensic Evidence.** Document identifier, source, version, ingestion date and the answers that cited it exportable for reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Source register; quality scan results; answer citations for the 30 questions; removal test; export.
+
+**Reviewer Notes.** Currentness, credibility and consistency are data quality characteristics named in ISO/IEC 5259-2:2024, clause 6.2. Record the configured freshness limits with the result.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l10-033"></a>
+
+### TC-L10-033: Data Quality Profile and Evidence for Audit
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L10 Data Layer |
+| **Use-Case Domain(s)** | D6, D7 |
+| **Test Method** | Evidence |
+| **Vendor Applicability** | Core: P \| Partial: W |
+| **Risk Severity** | Medium |
+| **MITRE ATLAS Mapping** | N/A (governance and policy control) |
+| **OWASP LLM / GenAI Mapping** | N/A |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MAP 2.3 |
+| **Control(s) Tested** | [AI-CTRL-029](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-029) Training and Fine-Tuning Data Integrity |
+
+**Risk Addressed.** An organization cannot show an auditor or regulator which data quality requirements applied to a model's data, who approved them, or whether they were met.
+
+**Business Scenario.** Internal audit samples a production model and asks for the data quality evidence behind it.
+
+**Technical Scenario.** Trace a deployed model to the dataset versions it was trained on, and retrieve the approved quality profile and measured results for each.
+
+**Preconditions.** Isolated PoC lab provisioned; test data stores, test tenants and fabricated records seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); platform connected with least-privilege test credentials. Isolated data environment populated only with fabricated records; classification ground truth agreed and signed off before testing; no production data connected.
+
+**Test Data.** 1 deployed test model trained on 3 dataset versions over 6 months (simulated), each with a quality profile and results.
+
+**Procedure**
+
+1. Select the deployed model.
+2. Trace it to its dataset versions.
+3. For each version, retrieve the approved quality profile, the approver and the approval date.
+4. Retrieve the measured results for the run that produced the model.
+5. Check that any threshold failure has a recorded decision.
+6. Export the evidence pack.
+
+**Edge Cases / Variants.** A dataset version whose profile was changed after the run; a profile approved by someone other than the named data owner.
+
+**Expected Detection.** For all 3 dataset versions, the profile, approver, approval date and measured results are retrieved and match the run; any failure has a recorded decision.
+
+**Expected Prevention / Control Action.** N/A (evidence control).
+
+**Expected Alert / Log.** Configuration state, audit record or export that supports the claim, with timestamp and the identity of the person who produced it.
+
+**Expected Report / Dashboard Evidence.** Evidence pack available from the model registry or governance workflow.
+
+**Expected Integration Evidence.** Evidence exportable in a format the GRC tool can store against the control.
+
+**Forensic Evidence.** Model version, dataset versions, quality profiles and results exportable for later review.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Model-to-data trace; profiles and approvals; measured results; export.
+
+**Reviewer Notes.** Supports the data owner role in the AI Governance Operating Model and ISO/IEC 5259-3:2024 clause 12.8 (data quality justification). Documentation alone scores no higher than 3.
 
 [Back to layer index](#top)
 

@@ -72,6 +72,22 @@ Sample of 10 decisions: explanation produced? Understandable to affected person?
 
 Release / Release with conditions / Block. Approver and date:
 
-## 7. Retention
+## 7. Bias profile
+
+Keep one versioned bias profile per system and update it at each test. The fields follow the structure that public sources describe for IEEE 7003-2024 (Algorithmic Bias Considerations); the clause numbers have not been checked against the published standard. See the [Trustworthy AI and Ethics Standards Crosswalk](../23_Framework_Crosswalks/16_Trustworthy_AI_Ethics_Crosswalk.md).
+
+| Field | Entry |
+|---|---|
+| Profile version and date | |
+| Intended differences in treatment, and why they are justified | |
+| Unintended differences to detect, and the acceptability boundary for each | |
+| Stakeholder groups and protected attributes considered, with the reason for each | |
+| Representativeness of the test and validation data for those groups, and known imbalances | |
+| Validation dataset selection rationale | |
+| Validated application boundaries (populations, languages, settings and inputs the system was tested for) | |
+| Risks accepted, and who accepted them | |
+| Drift monitoring in operation (data, concept and outcome), and its trigger for retest | |
+
+## 8. Retention
 
 Keep this record, data snapshot reference and code or notebook hash as audit evidence.

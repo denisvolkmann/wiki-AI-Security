@@ -37,6 +37,8 @@ AI risk cannot be delegated to the security team alone. Product owners, data own
 
 *Descriptions summarise the sources cited; consult each document for authoritative scope and wording.*
 
+**Further instruments.** Other standards and instruments are mapped clause by clause in the Framework Crosswalks section: ISO/IEC 38507, 42005, 42006, TR 24028, 5338, 23053, 22989 and the 5259 data quality series in the [ISO/IEC AI Standards Crosswalk](../23_Framework_Crosswalks/15_ISO_IEC_AI_Standards_Crosswalk.md); the attack classes of NIST AI 100-2 in the [NIST AI 100-2 Crosswalk](../23_Framework_Crosswalks/14_NIST_AI_100_2_Crosswalk.md); the EU Ethics Guidelines for Trustworthy AI, the UNESCO Recommendation and the IEEE 7000-series standards in the [Trustworthy AI and Ethics Standards Crosswalk](../23_Framework_Crosswalks/16_Trustworthy_AI_Ethics_Crosswalk.md); and the Council of Europe Framework Convention and the G7 Hiroshima Code of Conduct in the [International AI Instruments Crosswalk](../23_Framework_Crosswalks/17_International_AI_Instruments_Crosswalk.md).
+
 ## 9.3 EU AI Act status (verify before relying)
 
 The AI Act is Regulation (EU) 2024/1689 [7]. General-purpose AI obligations have applied since 2 August 2025. In 2026 EU institutions agreed an "AI Omnibus" amending the timetable. Secondary sources report **[Reported]** that:

@@ -65,3 +65,17 @@ Approval Date:
 Expiry Date:
 Review Status:
 ```
+
+## Preparing for ISO/IEC 42001 Certification
+
+Certification bodies that certify AI management systems against ISO/IEC 42001 work to ISO/IEC 42006:2025, which adds AI-specific requirements to ISO/IEC 17021-1. Knowing what it asks of them helps you prepare. The clause numbers and headings below were checked against the publisher's contents preview on 15 October 2026; the clause text was not read.
+
+| ISO/IEC 42006 clause | What it means for the organization being audited | Wiki evidence to prepare |
+|---|---|---|
+| 7.1.3 Specific technical competence requirements | Expect auditors, or technical experts with them, who can examine AI-specific controls, not only management-system documents. | The evidence in the table above, by control |
+| 8.4.2 Access to the documentation of the organization | Agree in advance how auditors will see confidential material such as model documentation and test results. | Evidence packs ([AI-CTRL-038](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-038)) |
+| 9.1.3 Scope of certification | The certificate states which AI systems and activities are in scope. Make sure the scope matches the AI systems you actually run. | AI use-case registry ([AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011)) |
+| 9.1.4 Determining audit time, and Annex A (normative) Audit time | Audit effort depends on the AI management system's scope. A secondary source reports that the factors include the number of AI systems, high-risk uses and third-party AI; check this against the standard. | Registry counts by risk tier; vendor AI list ([AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014)) |
+| 9.6 Maintaining certification | Surveillance audits sample controls between certification cycles, so evidence must stay current. | Review dates in the control library; [AI-CTRL-038](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-038) |
+
+When you rely on a supplier's ISO/IEC 42001 certificate, ask which AI systems it covers and which body issued it. See the [AI Security Vendor Evaluation Master Framework](../05_Vendor_Evaluation/11_AI_Security_Vendor_Evaluation_Master_Framework.md) and the [ISO/IEC AI Standards Crosswalk](../23_Framework_Crosswalks/15_ISO_IEC_AI_Standards_Crosswalk.md).
