@@ -11,9 +11,9 @@ nav_order: 11
 
 **Primary test focus:** inline policy, DLP, guardrails, bypass resistance, latency
 
-**Controls tested:** [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) Policy Enforcement (16 cases), [AI-CTRL-002](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-002) Prompt Inspection (9 cases), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (4 cases), [AI-CTRL-004](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-004) IDE AI Governance (3 cases), [AI-CTRL-005](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-005) Runtime AI Security (3 cases), [AI-CTRL-003](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-003) File Upload Protection (2 cases), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (2 cases), [AI-CTRL-020](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-020) Output Handling (2 cases), [AI-CTRL-031](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-031) AI Supply Chain and AI-BOM (2 cases), [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls (2 cases), [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039) Output Reliability and Content Safety (2 cases), [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty (1 case), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines (1 case), [AI-CTRL-021](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-021) Multimodal and Voice Input Security (1 case)
+**Controls tested:** [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) Policy Enforcement (17 cases), [AI-CTRL-002](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-002) Prompt Inspection (9 cases), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (4 cases), [AI-CTRL-004](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-004) IDE AI Governance (3 cases), [AI-CTRL-005](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-005) Runtime AI Security (3 cases), [AI-CTRL-003](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-003) File Upload Protection (2 cases), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (2 cases), [AI-CTRL-020](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-020) Output Handling (2 cases), [AI-CTRL-031](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-031) AI Supply Chain and AI-BOM (2 cases), [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls (2 cases), [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039) Output Reliability and Content Safety (2 cases), [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty (1 case), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-012](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-012) AI Policy, Roles and Acceptable Use (1 case), [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines (1 case), [AI-CTRL-021](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-021) Multimodal and Voice Input Security (1 case)
 
-**Cases:** 42 (TC-L08-001 to TC-L08-042)
+**Cases:** 43 (TC-L08-001 to TC-L08-043)
 > **Safety boundary.** All test cases in this layer use synthetic, non-functional or clearly marked test data only. Card numbers must come from published test ranges; keys, identifiers and records must be fabricated.
 
 > **Verify before use.** MITRE ATLAS, OWASP LLM and NIST AI RMF identifiers must be checked against the current published versions. Numeric thresholds are starting values to tune. See the [Reference Index](00-reference-index.md) for field definitions and applicability codes.
@@ -64,6 +64,7 @@ nav_order: 11
 | [TC-L08-040](#tc-l08-040) | Log Content, Masking and Retention Controls | High | Evidence | D6, D7 | [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008), [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) |
 | [TC-L08-041](#tc-l08-041) | Repository-Aware Policy for AI Assistance (Restricted Repositories and File Types) | High | Technical | D2, D6 | [AI-CTRL-004](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-004), [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) |
 | [TC-L08-042](#tc-l08-042) | Coding Assistant Model, Provider and Local-Model Allow-List | High | Technical | D2, D4 | [AI-CTRL-004](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-004), [AI-CTRL-031](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-031) |
+| [TC-L08-043](#tc-l08-043) | Guardrail Policy Ownership, Approval and Review | Medium | Evidence | D3, D7 | [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010), [AI-CTRL-012](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-012) |
 
 ---
 
@@ -2800,6 +2801,70 @@ nav_order: 11
 **Evidence to Capture.** Event export per configuration; block evidence; developer report.
 
 **Reviewer Notes.** Confirm evidence comes from the live PoC environment, not vendor-supplied demo data. Record the build and policy version tested.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l08-043"></a>
+
+### TC-L08-043: Guardrail Policy Ownership, Approval and Review
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L08 AI Gateway & Security Controls |
+| **Use-Case Domain(s)** | D3, D7 |
+| **Test Method** | Evidence |
+| **Vendor Applicability** | Core: G, A \| Partial: W |
+| **Risk Severity** | Medium |
+| **MITRE ATLAS Mapping** | N/A (governance and policy control) |
+| **OWASP LLM / GenAI Mapping** | N/A |
+| **NIST AI RMF Mapping** | GOVERN 1.1; GOVERN (policies, accountability and oversight) |
+| **Control(s) Tested** | [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) Policy Enforcement; [AI-CTRL-012](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-012) AI Policy, Roles and Acceptable Use |
+
+**Risk Addressed.** Guardrail rules are changed by whoever has console access, so nobody owns the policy and nobody can say why a rule exists or was relaxed.
+
+**Business Scenario.** Security wants each guardrail policy to have a named owner, an approved version and a review date, with changes approved by the owner.
+
+**Technical Scenario.** Inspect guardrail policies for owner, version, approval and review date, then make an unapproved change and an approved change.
+
+**Preconditions.** Isolated PoC lab provisioned; gateway or agent deployed in the documented mode; test users and synthetic data seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); baseline traffic captured without the platform. Guardrail policies configured for two lab applications; policy owner and a separate administrator account available.
+
+**Test Data.** 2 guardrail policies; 1 change that relaxes a rule; 1 change that tightens a rule.
+
+**Procedure**
+
+1. Retrieve owner, version, approver, approval date and next review date for each policy.
+2. As the administrator, make the relaxing change without owner approval and check whether it is held, blocked or flagged.
+3. Make the tightening change through approval.
+4. Check the policy history shows who changed what, when and with whose approval.
+5. Check that a policy past its review date is flagged.
+
+**Edge Cases / Variants.** An emergency change made under break-glass access; a rule inherited from a vendor default.
+
+**Expected Detection.** Both policies show owner, version, approver and review date; the unapproved relaxing change is held or flagged; the history is complete.
+
+**Expected Prevention / Control Action.** N/A (evidence control).
+
+**Expected Alert / Log.** Configuration state, audit record or export that supports the claim, with timestamp and the identity of the person who produced it.
+
+**Expected Report / Dashboard Evidence.** Policy decision and rule hit visible in the enforcement dashboard within the documented refresh interval.
+
+**Expected Integration Evidence.** Policy change events forwarded to the SIEM with approver identity.
+
+**Forensic Evidence.** Rule identifier, policy version, direction (prompt or response), identity, destination and decision exportable for incident reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Policy records; change history; held or flagged change; overdue review flag.
+
+**Reviewer Notes.** Complements [TC-L08-036](#tc-l08-036) (change propagation) and [TC-L08-039](#tc-l08-039) (administrator RBAC). Documentation alone scores no higher than 3.
 
 [Back to layer index](#top)
 

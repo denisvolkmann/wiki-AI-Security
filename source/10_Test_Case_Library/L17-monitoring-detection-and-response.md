@@ -11,9 +11,9 @@ nav_order: 20
 
 **Primary test focus:** telemetry, SIEM/SOAR integration, AI incident response, forensics
 
-**Controls tested:** [AI-CTRL-009](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-009) SOC Integration (18 cases), [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics (10 cases), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (7 cases), [AI-CTRL-004](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-004) IDE AI Governance (1 case), [AI-CTRL-006](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-006) Agent Governance (1 case), [AI-CTRL-013](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-013) Privacy and Regulatory Compliance (1 case), [AI-CTRL-025](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-025) Agent Containment and Kill Switch (1 case), [AI-CTRL-034](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-034) Adversarial Testing and Continuous Evaluation (1 case), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (1 case)
+**Controls tested:** [AI-CTRL-009](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-009) SOC Integration (18 cases), [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics (11 cases), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (8 cases), [AI-CTRL-004](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-004) IDE AI Governance (1 case), [AI-CTRL-006](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-006) Agent Governance (1 case), [AI-CTRL-013](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-013) Privacy and Regulatory Compliance (1 case), [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines (1 case), [AI-CTRL-025](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-025) Agent Containment and Kill Switch (1 case), [AI-CTRL-034](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-034) Adversarial Testing and Continuous Evaluation (1 case), [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039) Output Reliability and Content Safety (1 case), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (1 case)
 
-**Cases:** 31 (TC-L17-001 to TC-L17-031)
+**Cases:** 33 (TC-L17-001 to TC-L17-033)
 > **Safety boundary.** Infrastructure and SOC cases use a lab cluster, mock inference servers, a test cloud account and a lab SIEM and SOAR only. Probe and compromise-simulation scripts are harmless lab tools that only attempt connections and reads of canary resources. Never run them against production systems, and never connect lab alerting to production on-call routing. Cases marked Attestation rest on vendor documents and score below demonstrated evidence.
 
 > **Verify before use.** MITRE ATLAS, OWASP LLM and NIST AI RMF identifiers must be checked against the current published versions. Numeric thresholds are starting values to tune. See the [Reference Index](00-reference-index.md) for field definitions and applicability codes.
@@ -53,6 +53,8 @@ nav_order: 20
 | [TC-L17-029](#tc-l17-029) | Purple-Team Detection Validation: Replay of Earlier Attacks | High | Technical | D3, D5, D6 | [AI-CTRL-034](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-034), [AI-CTRL-009](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-009) |
 | [TC-L17-030](#tc-l17-030) | SOC Analyst Access to Raw Prompts: Masking, Role Separation and Unmask Audit | High | Technical | D1, D7 | [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) |
 | [TC-L17-031](#tc-l17-031) | Developer AI Activity Telemetry and Investigation Timeline | High | Technical | D2, D6 | [AI-CTRL-004](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-004), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) |
+| [TC-L17-032](#tc-l17-032) | AI Tracing and Evaluation Platform Access, Masking and Retention | High | Technical | D3, D6, D7 | [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008), [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) |
+| [TC-L17-033](#tc-l17-033) | Quality Failure Ownership, Triage and Review | Medium | Evidence | D3 | [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039), [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) |
 
 ---
 
@@ -2088,6 +2090,135 @@ nav_order: 20
 **Evidence to Capture.** SIEM event export; timeline; delivery-time measurements.
 
 **Reviewer Notes.** Confirm evidence comes from the live PoC environment, not vendor-supplied demo data. Record the build and policy version tested.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l17-032"></a>
+
+### TC-L17-032: AI Tracing and Evaluation Platform Access, Masking and Retention
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L17 Monitoring, Detection & Response |
+| **Use-Case Domain(s)** | D3, D6, D7 |
+| **Test Method** | Technical |
+| **Vendor Applicability** | Core: A, P |
+| **Risk Severity** | High |
+| **MITRE ATLAS Mapping** | N/A (data handling control) |
+| **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure |
+| **NIST AI RMF Mapping** | MEASURE 2.10; MANAGE 4.1 |
+| **Control(s) Tested** | [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability; [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines |
+
+**Risk Addressed.** Tracing and evaluation tools used by engineers store full prompts, retrieved content, tool calls and outputs, often with wider access and longer retention than any production system.
+
+**Business Scenario.** Data protection wants AI traces held to the same rules as the data in them: masked, access-controlled, retained only as long as needed and kept in an approved region.
+
+**Technical Scenario.** Send traces containing sensitive fabricated data to the tracing platform and check masking, who can read them, how long they are kept and where they are stored.
+
+**Preconditions.** Isolated PoC lab provisioned; lab SIEM and SOAR, the platform's event feed, simulated incident scenarios, test analysts and mock ticketing seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); no production alerting connected. Lab application instrumented to send traces to a tracing or evaluation platform; two engineer accounts with different roles; retention policy configured.
+
+**Test Data.** 50 traces, 10 containing fabricated personal or confidential data; retention set to a short test period.
+
+**Procedure**
+
+1. Generate the 50 traces.
+2. Check whether the 10 sensitive traces are masked before storage or at view time.
+3. As the lower-privilege engineer, try to view unmasked content and export traces.
+4. Check the storage region of traces and of any evaluation datasets built from them.
+5. Wait out the retention period and confirm the traces are deleted.
+6. Check that trace access is logged.
+
+**Edge Cases / Variants.** Traces copied into an evaluation dataset; traces sent to a hosted tracing provider outside the approved region.
+
+**Expected Detection.** All 10 sensitive traces masked per policy; the lower-privilege engineer cannot view unmasked content or export; traces deleted after retention; access logged.
+
+**Expected Prevention / Control Action.** Mask sensitive values; restrict unmasked access and export.
+
+**Expected Alert / Log.** Log entry with timestamp, user or application identity, device or host, destination, policy or rule matched, action taken and classification, within the vendor's documented SLA.
+
+**Expected Report / Dashboard Evidence.** Detection, alert and case state visible in the platform and SIEM within the documented refresh interval.
+
+**Expected Integration Evidence.** Trace access and export events forwarded to the SIEM.
+
+**Forensic Evidence.** Event, alert, case and action identifiers with actor, source layer, decision and timestamp, plus evidence hashes, exportable for incident reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = detected or enforced but one or more attribution or evidence fields missing, or SLA exceeded; 5 = fully met with complete evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection and Expected Prevention / Control Action are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Masked and unmasked views; access attempt results; storage region evidence; deletion evidence; access log.
+
+**Reviewer Notes.** Extends [TC-L17-030](#tc-l17-030), which covers SOC access to raw prompts, to engineering tracing tools. Confirm evidence comes from the live PoC environment, not vendor-supplied demo data.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l17-033"></a>
+
+### TC-L17-033: Quality Failure Ownership, Triage and Review
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L17 Monitoring, Detection & Response |
+| **Use-Case Domain(s)** | D3 |
+| **Test Method** | Evidence |
+| **Vendor Applicability** | Core: W, P \| Partial: A |
+| **Risk Severity** | Medium |
+| **MITRE ATLAS Mapping** | N/A (governance and policy control) |
+| **OWASP LLM / GenAI Mapping** | LLM09:2025 Misinformation |
+| **NIST AI RMF Mapping** | MANAGE 4.1; MEASURE 2.5 |
+| **Control(s) Tested** | [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039) Output Reliability and Content Safety; [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics |
+
+**Risk Addressed.** Wrong answers, bad tool choices and regressions that are not security incidents fall between teams, so nobody investigates them or learns from them.
+
+**Business Scenario.** The AI product owner wants every reported AI failure triaged to a named owner, investigated with trace evidence and reviewed, whether or not it is a security incident.
+
+**Technical Scenario.** Raise simulated quality failures through user feedback, evaluation alerts and support tickets, and follow each from intake to review.
+
+**Preconditions.** Isolated PoC lab provisioned; lab SIEM and SOAR, the platform's event feed, simulated incident scenarios, test analysts and mock ticketing seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); no production alerting connected. Lab application with user feedback, an evaluation or monitoring alert and a ticketing integration; owner assignment rules configured.
+
+**Test Data.** 5 simulated failures: 2 wrong answers, 1 wrong tool choice, 1 regression after a model update, 1 that turns out to be a security incident.
+
+**Procedure**
+
+1. Raise the 5 failures through their channels.
+2. Check each is assigned to a named owner within the documented time.
+3. Check each investigation links the trace, model version, prompt version and retrieved content.
+4. Check the security incident is handed to the SOC under the incident process.
+5. Check that a review record with root cause and follow-up exists for each closed failure.
+
+**Edge Cases / Variants.** A failure reported only once by one user; a failure caused by a third-party model provider.
+
+**Expected Detection.** All 5 failures assigned to a named owner; 4 investigated with linked trace evidence; 1 handed to the SOC; review records exist for the closed ones.
+
+**Expected Prevention / Control Action.** N/A (evidence control).
+
+**Expected Alert / Log.** Configuration state, audit record or export that supports the claim, with timestamp and the identity of the person who produced it.
+
+**Expected Report / Dashboard Evidence.** Detection, alert and case state visible in the platform and SIEM within the documented refresh interval.
+
+**Expected Integration Evidence.** Failure records linked to traces and tickets; security hand-off reaches the SIEM or case tool.
+
+**Forensic Evidence.** Event, alert, case and action identifiers with actor, source layer, decision and timestamp, plus evidence hashes, exportable for incident reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Intake records; assignments; linked traces; SOC hand-off; review records.
+
+**Reviewer Notes.** Supports the observability row of the component ownership table in the [AI Governance Operating Model](../08_Governance/16_AI_Governance_Operating_Model.md#component-ownership). Security incidents follow [D12](D12-ai-incident-response-and-forensics.md). Documentation alone scores no higher than 3.
 
 [Back to layer index](#top)
 

@@ -81,7 +81,7 @@ AI BCF controls have identifiers (for example GV.1) but no titles. The short lab
 
 **Gaps in the wiki.** Four AI BCF controls have no control objective here: marking AI content as AI (CM.2), weighing proportionality against alternatives (RG.3), decommissioning and offboarding (RG.4), and collecting internal feedback on AI use (TR.2). CM.3, AC.4, TR.1 and TR.3 are covered only in part. These are candidates for new control objectives. Until then, use the AI BCF wording for them.
 
-**What the wiki adds.** The wiki goes well beyond a 20-control baseline in security depth: runtime and prompt-injection controls, agent containment and memory integrity, supply chain, data protection in pipelines, adversarial testing, incident response, cost abuse and 656 test cases. None of these have an AI BCF equivalent, because AI BCF is a governance baseline and not a security control set.
+**What the wiki adds.** The wiki goes well beyond a 20-control baseline in security depth: runtime and prompt-injection controls, agent containment and memory integrity, supply chain, data protection in pipelines, adversarial testing, incident response, cost abuse and 668 test cases. None of these have an AI BCF equivalent, because AI BCF is a governance baseline and not a security control set.
 
 **Where AI BCF is stronger.** Its Trigger and Tier II types tell a small organisation which controls to start with. The wiki's tiering in [T01](../11_GCC_AI_Compliance/T01_AI_Use_Case_Intake_and_Risk_Tiering.md) scores each use case but does not give a starter set of controls.
 

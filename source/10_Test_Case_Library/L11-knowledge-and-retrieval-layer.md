@@ -11,9 +11,9 @@ nav_order: 14
 
 **Primary test focus:** RAG poisoning, vector-store access control, retrieval leakage
 
-**Controls tested:** [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity (10 cases), [AI-CTRL-018](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-018) Retrieval Access Control (6 cases), [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines (4 cases), [AI-CTRL-005](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-005) Runtime AI Security (2 cases), [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening (2 cases), [AI-CTRL-001](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-001) AI Discovery (1 case), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (1 case), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (1 case)
+**Controls tested:** [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity (12 cases), [AI-CTRL-018](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-018) Retrieval Access Control (7 cases), [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines (5 cases), [AI-CTRL-005](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-005) Runtime AI Security (2 cases), [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening (2 cases), [AI-CTRL-001](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-001) AI Discovery (1 case), [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty (1 case), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance (1 case), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (1 case), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (1 case)
 
-**Cases:** 25 (TC-L11-001 to TC-L11-025)
+**Cases:** 28 (TC-L11-001 to TC-L11-028)
 > **Safety boundary.** Retrieval, model, training, pipeline and supply chain cases use fabricated corpora and datasets, small lab models, mock hubs and indexes and harmless marker artefacts only (an EICAR-style file that writes a marker, never real malware). Never load untrusted model files outside an isolated sandbox, and never connect the lab to production knowledge sources, models, pipelines, registries or credentials. Cases marked Attestation rest on vendor documents and score below demonstrated evidence.
 
 > **Verify before use.** MITRE ATLAS, OWASP LLM and NIST AI RMF identifiers must be checked against the current published versions. Numeric thresholds are starting values to tune. See the [Reference Index](00-reference-index.md) for field definitions and applicability codes.
@@ -47,6 +47,9 @@ nav_order: 14
 | [TC-L11-023](#tc-l11-023) | Knowledge Base Backup and Export Controls | Medium | Evidence | D6 | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) |
 | [TC-L11-024](#tc-l11-024) | Retrieval Logging and Audit Completeness | High | Technical | D6 | [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) |
 | [TC-L11-025](#tc-l11-025) | Security Control Impact on Answer Quality | Medium | Technical | D3 | [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) |
+| [TC-L11-026](#tc-l11-026) | Embedding Model Approval and Change Record | Medium | Evidence | D3, D4 | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019), [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) |
+| [TC-L11-027](#tc-l11-027) | Content Sent to External Embedding Providers | High | Technical | D6, D7 | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017), [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) |
+| [TC-L11-028](#tc-l11-028) | Index and Collection Creation Approval and Owner | High | Evidence | D3, D6 | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019), [AI-CTRL-018](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-018) |
 
 ---
 
@@ -1667,3 +1670,194 @@ nav_order: 14
 
 ---
 
+<a id="tc-l11-026"></a>
+
+### TC-L11-026: Embedding Model Approval and Change Record
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L11 Knowledge & Retrieval Layer |
+| **Use-Case Domain(s)** | D3, D4 |
+| **Test Method** | Evidence |
+| **Vendor Applicability** | Core: P, W \| Partial: A |
+| **Risk Severity** | Medium |
+| **MITRE ATLAS Mapping** | N/A (governance and policy control) |
+| **OWASP LLM / GenAI Mapping** | LLM08:2025 Vector and Embedding Weaknesses |
+| **NIST AI RMF Mapping** | GOVERN 1.1; GOVERN 6.1 |
+| **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity; [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
+
+**Risk Addressed.** Teams pick or change embedding models without review, so content may be sent to an unapproved provider and retrieval behaviour changes without anyone deciding it should.
+
+**Business Scenario.** Governance wants each embedding model approved like any other model, with a named approver and a record of each change.
+
+**Technical Scenario.** Check that every index records the embedding model and version it uses, and that a change of embedding model goes through approval.
+
+**Preconditions.** Isolated PoC lab provisioned; lab RAG application, test vector store, fabricated corpus and test users seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); platform connected to the lab knowledge sources with least-privilege test credentials. Two lab indexes built with different embedding models; one index whose embedding model is not on the approved list.
+
+**Test Data.** 2 indexes; approved embedding model list with 1 entry; 1 simulated change request to a new embedding model.
+
+**Procedure**
+
+1. List each index with its embedding model, version and provider.
+2. Check each model against the approved list and flag the unapproved one.
+3. Submit the change request for one index.
+4. Check the approval record names the approver, the reason and the re-indexing plan.
+5. Confirm the index is not switched before approval.
+
+**Edge Cases / Variants.** An embedding model hosted inside a vector database service rather than called separately; a silent version change by the provider.
+
+**Expected Detection.** Both indexes show model, version and provider; the unapproved model is flagged; the change shows approver, date and re-indexing plan.
+
+**Expected Prevention / Control Action.** N/A (evidence control).
+
+**Expected Alert / Log.** Configuration state, audit record or export that supports the claim, with timestamp and the identity of the person who produced it.
+
+**Expected Report / Dashboard Evidence.** Finding or retrieval decision visible in the knowledge and retrieval dashboard within the documented refresh interval.
+
+**Expected Integration Evidence.** Approval record exportable to the model registry or GRC tool.
+
+**Forensic Evidence.** Query, rewritten query, retrieved chunk and document identifiers, source, requesting user, filters applied, decision and timestamp exportable for incident reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Index-to-model listing; approved list; flag; change approval record.
+
+**Reviewer Notes.** Pairs with [TC-L11-013](#tc-l11-013), which tests re-indexing integrity after the change. Documentation alone scores no higher than 3.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l11-027"></a>
+
+### TC-L11-027: Content Sent to External Embedding Providers
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L11 Knowledge & Retrieval Layer |
+| **Use-Case Domain(s)** | D6, D7 |
+| **Test Method** | Technical |
+| **Vendor Applicability** | Core: G, A \| Partial: P |
+| **Risk Severity** | High |
+| **MITRE ATLAS Mapping** | N/A (data handling control) |
+| **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure; LLM08:2025 Vector and Embedding Weaknesses |
+| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 6.1 |
+| **Control(s) Tested** | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines; [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty |
+
+**Risk Addressed.** Every document embedded through a hosted API is sent to that provider in full, which can move restricted data out of region or to a provider without approved terms.
+
+**Business Scenario.** Data protection wants embedding calls treated as data transfers: restricted content kept off unapproved providers and regions.
+
+**Technical Scenario.** Run ingestion through the platform with content of different classifications and observe what reaches each embedding endpoint.
+
+**Preconditions.** Isolated PoC lab provisioned; lab RAG application, test vector store, fabricated corpus and test users seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); platform connected to the lab knowledge sources with least-privilege test credentials. Mock embedding endpoints representing an approved in-region provider and an unapproved out-of-region provider; ingestion pipeline routed through the platform.
+
+**Test Data.** 20 fabricated documents: 10 public, 6 confidential, 4 restricted; policy allowing restricted content only to the approved in-region endpoint.
+
+**Procedure**
+
+1. Baseline: ingest all 20 documents to both endpoints without the platform and record what each receives.
+2. Enable the platform policy.
+3. Ingest the 20 documents to each endpoint.
+4. Record what each endpoint receives.
+5. Check the log for each blocked, masked or rerouted call.
+
+**Edge Cases / Variants.** Restricted text inside an image or table; metadata fields sent with the chunk; batch calls that mix classifications.
+
+**Expected Detection.** All 4 restricted documents kept from the unapproved endpoint; confidential documents handled per policy; each decision logged.
+
+**Expected Prevention / Control Action.** Block, mask or reroute embedding calls that breach policy.
+
+**Expected Alert / Log.** Log entry with timestamp, user or application identity, device or host, destination, policy or rule matched, action taken and classification, within the vendor's documented SLA.
+
+**Expected Report / Dashboard Evidence.** Finding or retrieval decision visible in the knowledge and retrieval dashboard within the documented refresh interval.
+
+**Expected Integration Evidence.** Embedding call decisions forwarded to the SIEM with document and endpoint identifiers.
+
+**Forensic Evidence.** Query, rewritten query, retrieved chunk and document identifiers, source, requesting user, filters applied, decision and timestamp exportable for incident reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = detected or enforced but one or more attribution or evidence fields missing, or SLA exceeded; 5 = fully met with complete evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection and Expected Prevention / Control Action are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Mock endpoint request logs; policy decision log; documents ingested.
+
+**Reviewer Notes.** Confirm evidence comes from the live PoC environment, not vendor-supplied demo data. Record the build and policy version tested.
+
+[Back to layer index](#top)
+
+---
+
+<a id="tc-l11-028"></a>
+
+### TC-L11-028: Index and Collection Creation Approval and Owner
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L11 Knowledge & Retrieval Layer |
+| **Use-Case Domain(s)** | D3, D6 |
+| **Test Method** | Evidence |
+| **Vendor Applicability** | Core: P, W \| Partial: A |
+| **Risk Severity** | High |
+| **MITRE ATLAS Mapping** | N/A (governance and policy control) |
+| **OWASP LLM / GenAI Mapping** | LLM08:2025 Vector and Embedding Weaknesses |
+| **NIST AI RMF Mapping** | GOVERN 1.1; MAP 4.1 |
+| **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity; [AI-CTRL-018](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-018) Retrieval Access Control |
+
+**Risk Addressed.** New vector indexes and collections appear without review, so nobody has decided what data may be indexed, who may query it, or who owns it.
+
+**Business Scenario.** The data owner wants every new index or collection approved before data is loaded, with a named owner and an agreed scope.
+
+**Technical Scenario.** Create indexes and collections through the approved route and outside it, and check that approval, owner and scope are recorded and that unapproved ones are found.
+
+**Preconditions.** Isolated PoC lab provisioned; lab RAG application, test vector store, fabricated corpus and test users seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); platform connected to the lab knowledge sources with least-privilege test credentials. Lab vector store with an approval workflow or registry; one test engineer allowed to create collections.
+
+**Test Data.** 3 new collections: 1 created through the approved route, 1 created directly in the vector store, 1 created by an agent at runtime.
+
+**Procedure**
+
+1. Create the 3 collections.
+2. Check that the approved collection records owner, data sources, classification, permitted readers and retention.
+3. Check that the 2 unapproved collections are discovered and flagged.
+4. Load data into one flagged collection and check whether the load is blocked or alerted.
+5. Export the index inventory with owners.
+
+**Edge Cases / Variants.** A collection created by a framework at start-up; a collection renamed to look like an approved one.
+
+**Expected Detection.** Approved collection shows all five recorded fields; both unapproved collections flagged; loading data into a flagged collection is blocked or alerted.
+
+**Expected Prevention / Control Action.** N/A (evidence control).
+
+**Expected Alert / Log.** Configuration state, audit record or export that supports the claim, with timestamp and the identity of the person who produced it.
+
+**Expected Report / Dashboard Evidence.** Finding or retrieval decision visible in the knowledge and retrieval dashboard within the documented refresh interval.
+
+**Expected Integration Evidence.** Index inventory exportable with owners to the GRC tool; alerts to SIEM.
+
+**Forensic Evidence.** Query, rewritten query, retrieved chunk and document identifiers, source, requesting user, filters applied, decision and timestamp exportable for incident reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Approval record; discovery output and flags; load attempt result; inventory export.
+
+**Reviewer Notes.** Supports the vector database row of the component ownership table in the [AI Governance Operating Model](../08_Governance/16_AI_Governance_Operating_Model.md#component-ownership). Documentation alone scores no higher than 3.
+
+[Back to layer index](#top)
+
+---

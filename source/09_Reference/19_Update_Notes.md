@@ -3,7 +3,7 @@ title: "Update Notes"
 author: Nachiket Sathaye
 parent: "Reference"
 nav_order: 2
-description: "What changed in the wiki and when, starting with the 15 October 2026 update on AI governance frameworks, with what was verified and what is still work in progress."
+description: "What changed in the wiki and when, starting with the 15 October 2026 updates on AI governance frameworks and component ownership, with what was verified and what is still work in progress."
 document_type: AI Security Wiki Reference
 version: 1.0
 last_reviewed: 2026-10-15
@@ -12,6 +12,25 @@ last_reviewed: 2026-10-15
 # Update Notes
 
 This page records each substantial update to the wiki, newest first, with what was checked and what is still work in progress. The full version history is in [section 20 of the home page](../index.md#20-version-history).
+
+## 15 October 2026: component ownership
+
+This update compared the wiki's 17 layers with a nine-part list of AI application stack components: LLMs, agents, embeddings, RAG, AI security, MCP and tools, observability, vector databases and memory. Each part came with an ownership question, such as "who decides which models are approved for use?". The original source of that list was not verified. Every part already had a home in the 17 layers, but the wiki answered only two of the nine ownership questions in full. Agent memory had no owner at all, and observability covered security incidents but not quality failures.
+
+### What is new
+
+- **Component ownership:** the [AI Governance Operating Model](../08_Governance/16_AI_Governance_Operating_Model.md#component-ownership) now has a table that names the accountable role for each of the nine components, the roles to consult, and the test cases that check each decision. Two roles were added: AI Platform Owner and Agent Sponsor. The table is one workable allocation, not a requirement of any standard.
+- **Agent memory:** four new cases, [TC-L07-042](../10_Test_Case_Library/L07-prompt-and-context-layer.md#tc-l07-042) to [TC-L07-045](../10_Test_Case_Library/L07-prompt-and-context-layer.md#tc-l07-045), cover a memory store inventory with owners, a policy on what may be remembered, user visibility and control, and memory in data subject access and erasure requests. [AI-CTRL-026](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-026) now asks for all four.
+- **Embeddings and vector databases:** [TC-L11-026](../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.md#tc-l11-026) to [TC-L11-028](../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.md#tc-l11-028) cover approval of embedding models, content sent to external embedding providers, and approval and ownership of new indexes and collections.
+- **Approval records:** [TC-L12-032](../10_Test_Case_Library/L12-model-layer.md#tc-l12-032) checks that each approved model has a decision record with a named approver, [TC-L08-043](../10_Test_Case_Library/L08-ai-gateway-and-security-controls.md#tc-l08-043) that each guardrail policy has an owner and approved changes, and [TC-L06-047](../10_Test_Case_Library/L06-agent-orchestration-layer.md#tc-l06-047) that each tool or system grant to an agent is approved by the system owner and the agent's sponsor.
+- **Observability:** [TC-L17-032](../10_Test_Case_Library/L17-monitoring-detection-and-response.md#tc-l17-032) covers access, masking, retention and residency of AI tracing and evaluation tools, and [TC-L17-033](../10_Test_Case_Library/L17-monitoring-detection-and-response.md#tc-l17-033) covers ownership and review of AI failures that are not security incidents.
+- The library now holds 668 cases: 535 in the 17 layers and 133 in the six emerging domains.
+
+### What is still work in progress
+
+- The OWASP and NIST AI RMF mappings on the new cases reuse identifiers already used elsewhere in the library. Like all mappings in the library, check them against the current published versions before relying on them.
+- The thresholds in the new cases are starting values to tune, as for every case in the library.
+- The layer-to-domain coverage matrix in the [Reference Index](../10_Test_Case_Library/00-reference-index.md) was not changed.
 
 ## 15 October 2026: AI governance frameworks
 
