@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Update Notes | AI Security Wiki</title>
 <meta name="author" content="Nachiket Sathaye">
-<meta name="description" content="What changed in the wiki and when, starting with the 15 October 2026 update on AI governance frameworks, with what was verified and what is still work in progress.">
+<meta name="description" content="What changed in the wiki and when, starting with the 15 October 2026 updates on AI governance frameworks and component ownership, with what was verified and what is still work in progress.">
 <link rel="canonical" href="https://nachi065.github.io/AI-Security-Wiki/09_Reference/19_Update_Notes.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI Security Wiki">
 <meta property="og:title" content="Update Notes | AI Security Wiki">
-<meta property="og:description" content="What changed in the wiki and when, starting with the 15 October 2026 update on AI governance frameworks, with what was verified and what is still work in progress.">
+<meta property="og:description" content="What changed in the wiki and when, starting with the 15 October 2026 updates on AI governance frameworks and component ownership, with what was verified and what is still work in progress.">
 <meta property="og:url" content="https://nachi065.github.io/AI-Security-Wiki/09_Reference/19_Update_Notes.html">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/style.css?v=8368346b">
@@ -272,9 +272,92 @@
 <article>
 <h1 id="update-notes">Update Notes</h1>
 <p>This page records each substantial update to the wiki, newest first, with what was checked and what is still work in progress. The full version history is in <a href="../index.html#20-version-history">section 20 of the home page</a>.</p>
+<h2 id="15-october-2026-component-ownership">15 October 2026: component ownership</h2>
+<p>This update compared the wiki's 17 layers with a nine-part list of AI application stack components: LLMs, agents, embeddings, RAG, AI security, MCP and tools, observability, vector databases and memory. Each part came with an ownership question, such as "who decides which models are approved for use?". The original source of that list was not verified. Every part already had a home in the 17 layers, but the wiki answered only two of the nine ownership questions in full. Agent memory had no owner at all, and observability covered security incidents but not quality failures.</p>
+<h3 id="what-is-new">What is new</h3>
+<ul>
+<li><strong>Component ownership:</strong> the <a href="../08_Governance/16_AI_Governance_Operating_Model.html#component-ownership">AI Governance Operating Model</a> now has a table that names the accountable role for each of the nine components, the roles to consult, and the test cases that check each decision. Two roles were added: AI Platform Owner and Agent Sponsor. The table is one workable allocation, not a requirement of any standard.</li>
+<li><strong>Agent memory:</strong> four new cases, <a class="chip" href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-042">TC-L07-042</a> to <a class="chip" href="../10_Test_Case_Library/L07-prompt-and-context-layer.html#tc-l07-045">TC-L07-045</a>, cover a memory store inventory with owners, a policy on what may be remembered, user visibility and control, and memory in data subject access and erasure requests. <a class="chip" href="../03_Control_Library/03_AI_Security_Control_Objectives_Library.html#ai-ctrl-026">AI-CTRL-026</a> now asks for all four.</li>
+<li><strong>Embeddings and vector databases:</strong> <a class="chip" href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-026">TC-L11-026</a> to <a class="chip" href="../10_Test_Case_Library/L11-knowledge-and-retrieval-layer.html#tc-l11-028">TC-L11-028</a> cover approval of embedding models, content sent to external embedding providers, and approval and ownership of new indexes and collections.</li>
+<li><strong>Approval records:</strong> <a class="chip" href="../10_Test_Case_Library/L12-model-layer.html#tc-l12-032">TC-L12-032</a> checks that each approved model has a decision record with a named approver, <a class="chip" href="../10_Test_Case_Library/L08-ai-gateway-and-security-controls.html#tc-l08-043">TC-L08-043</a> that each guardrail policy has an owner and approved changes, and <a class="chip" href="../10_Test_Case_Library/L06-agent-orchestration-layer.html#tc-l06-047">TC-L06-047</a> that each tool or system grant to an agent is approved by the system owner and the agent's sponsor.</li>
+<li><strong>Observability:</strong> <a class="chip" href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-032">TC-L17-032</a> covers access, masking, retention and residency of AI tracing and evaluation tools, and <a class="chip" href="../10_Test_Case_Library/L17-monitoring-detection-and-response.html#tc-l17-033">TC-L17-033</a> covers ownership and review of AI failures that are not security incidents.</li>
+<li>The library now holds 668 cases: 535 in the 17 layers and 133 in the six emerging domains.</li>
+</ul>
+<h3 id="what-was-checked">What was checked</h3>
+<p>The OWASP and NIST AI RMF mappings on the 12 new cases were checked on 15 October 2026. The OWASP identifiers and titles were checked against the OWASP GenAI Security Project's pages for the <a href="https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/" rel="noopener">Top 10 for LLM Applications 2025</a>. The NIST identifiers were checked against the subcategory text in <a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/" rel="noopener">section 5 of the AI RMF 1.0 Core</a>. Every identifier exists, but several did not fit the case and were changed:</p>
+<ul>
+<li>GOVERN 1.1 covers legal and regulatory requirements, not roles or approvals. On the ownership and approval cases it was replaced with GOVERN 2.1 (roles and responsibilities), and on the policy cases with GOVERN 1.4 (transparent policies and procedures).</li>
+<li>MANAGE 2.3 (responding to previously unknown risks) was removed from TC-L06-047.</li>
+<li>LLM08:2025 Vector and Embedding Weaknesses does not cover sending content to third-party embedding providers. It was removed from TC-L11-027, and on TC-L11-026 it was replaced with LLM03:2025 Supply Chain, which covers vetting third-party models.</li>
+<li>TC-L07-044 now maps to LLM02:2025, which recommends transparency about how user data is used and a way to opt out. TC-L17-033 adds MANAGE 4.3 (incidents and errors communicated and tracked).</li>
+</ul>
+<p>The same check was run on the 128 existing cases that cited GOVERN 1.1, which many of them used as a general governance tag. GOVERN 1.1 was kept on the 26 cases whose subject is a legal or regulatory requirement (data residency and sovereignty, privacy and data subject rights, biometric and recording consent, legal hold, licences and copyright, and regulatory incident reporting). On the other 102 cases it was replaced with the GOVERN subcategory that matches the case:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Replacement</th>
+<th>What it covers</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOVERN 1.4</td>
+<td>Policies, procedures and controls</td>
+<td>66 (policy enforcement, hardening, change control, policy as code)</td>
+</tr>
+<tr>
+<td>GOVERN 6.1</td>
+<td>Third-party AI risk policies</td>
+<td>11 (vendor assessment, terms and assurance)</td>
+</tr>
+<tr>
+<td>GOVERN 1.6</td>
+<td>AI system inventory</td>
+<td>5</td>
+</tr>
+<tr>
+<td>GOVERN 1.7</td>
+<td>Decommissioning AI systems</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GOVERN 2.1</td>
+<td>Roles and responsibilities</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GOVERN 4.3</td>
+<td>Testing, incident identification and information sharing</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GOVERN 1.5</td>
+<td>Ongoing monitoring and periodic review</td>
+<td>3 (access recertification, false-positive review)</td>
+</tr>
+<tr>
+<td>GOVERN 6.2</td>
+<td>Contingency for third-party failures</td>
+<td>3</td>
+</tr>
+<tr>
+<td>GOVERN 1.3</td>
+<td>Risk management effort set by risk tolerance</td>
+<td>2 (risk tiering)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each choice is a judgement about the closest fit, not a mapping published by NIST. The second identifier on each case (usually MANAGE 4.1 or MEASURE 2.10) was not reviewed. The four GOVERN 1.1 citations in the control library were checked and kept, because those controls cover data sovereignty, privacy and regulatory compliance, impact assessment, and regulator engagement.</p>
+<h3 id="what-is-still-work-in-progress">What is still work in progress</h3>
+<ul>
+<li>The second NIST AI RMF identifier on older cases, often MANAGE 4.1, was not reviewed and may be a general tag in the same way.</li>
+<li>The thresholds in the new cases are starting values to tune, as for every case in the library.</li>
+<li>The layer-to-domain coverage matrix in the <a href="../10_Test_Case_Library/00-reference-index.html">Reference Index</a> was not changed.</li>
+</ul>
 <h2 id="15-october-2026-ai-governance-frameworks">15 October 2026: AI governance frameworks</h2>
 <p>This update compared the wiki against a widely shared list of 30 AI governance frameworks and standards, and filled the gaps it found. Before it, the wiki mapped 10 of the 30 in depth, cited 2 without mapping them, and did not name the other 18.</p>
-<h3 id="what-is-new">What is new</h3>
+<h3 id="what-is-new_1">What is new</h3>
 <ul>
 <li><strong>Four new crosswalk pages</strong>, bringing the Framework Crosswalks section to 17 pages:</li>
 <li><a href="../23_Framework_Crosswalks/14_NIST_AI_100_2_Crosswalk.html">NIST AI 100-2 Crosswalk</a>: every NISTAML attack class identifier mapped to controls and test case layers.</li>

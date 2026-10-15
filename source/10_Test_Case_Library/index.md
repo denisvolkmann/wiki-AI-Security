@@ -1,14 +1,14 @@
 ---
 title: "Test Case Library"
 author: Nachiket Sathaye
-description: "656 AI security test cases for vendor evaluation and PoC across 17 AI lifecycle layers and 6 emerging domains: prompt injection, DLP, agents, MCP, RAG."
+description: "668 AI security test cases for vendor evaluation and PoC across 17 AI lifecycle layers and 6 emerging domains: prompt injection, DLP, agents, MCP, RAG."
 nav_order: 11
 has_children: true
 ---
 
 # AI Security Vendor Evaluation: Test Case Library
 
-A library of **656 test cases** for evaluating AI security products in a controlled proof of concept: **523 cases organised by the 17 layers of the AI lifecycle**, tagged with seven buyer-facing use-case domains, and **133 cases in six emerging domains** that cut across the layers.
+A library of **668 test cases** for evaluating AI security products in a controlled proof of concept: **535 cases organised by the 17 layers of the AI lifecycle**, tagged with seven buyer-facing use-case domains, and **133 cases in six emerging domains** that cut across the layers.
 
 > **Status: draft for review.** Reference identifiers (MITRE ATLAS, OWASP LLM, NIST AI RMF) must be verified against current published versions, and numeric thresholds are starting values to tune to your risk appetite and vendor SLAs.
 
@@ -23,7 +23,7 @@ A library of **656 test cases** for evaluating AI security products in a control
 
 Every case names the control it tests, by ID, from the [AI Security Control Objectives Library](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md).
 
-To find a specific case, type its ID (for example `TC-L08-014`) or a keyword into the search box at the top of any page. Each of the 656 cases is indexed individually.
+To find a specific case, type its ID (for example `TC-L08-014`) or a keyword into the search box at the top of any page. Each of the 668 cases is indexed individually.
 
 ## Layers
 
@@ -34,19 +34,19 @@ To find a specific case, type its ID (for example `TC-L08-014`) or a keyword int
 | L03 | [Legal, Privacy & Compliance](L03-legal-privacy-and-compliance.md) | UAE/GCC residency, PDPL-type obligations, evidence export, DPIA support, fairness, transparency, human oversight, intellectual property and authority engagement | 42 | 12 | 23 | 7 | 0 |
 | L04 | [Human Interaction Layer](L04-human-interaction-layer.md) | browser/workforce AI, user coaching, approval prompts, multimodal input | 32 | 6 | 16 | 10 | 0 |
 | L05 | [AI Applications](L05-ai-applications.md) | discovery, app-level runtime protection, output handling | 35 | 8 | 19 | 8 | 0 |
-| L06 | [Agent Orchestration Layer](L06-agent-orchestration-layer.md) | agent and MCP discovery, tool governance, delegation chains, agent-to-agent trust, kill switch | 46 | 19 | 24 | 3 | 0 |
-| L07 | [Prompt & Context Layer](L07-prompt-and-context-layer.md) | prompt injection (direct/indirect), jailbreak, context and memory poisoning | 41 | 11 | 24 | 6 | 0 |
-| L08 | [AI Gateway & Security Controls](L08-ai-gateway-and-security-controls.md) | inline policy, DLP, guardrails, bypass resistance, latency | 42 | 8 | 26 | 7 | 1 |
+| L06 | [Agent Orchestration Layer](L06-agent-orchestration-layer.md) | agent and MCP discovery, tool governance, access grant approval, delegation chains, agent-to-agent trust, kill switch | 47 | 19 | 25 | 3 | 0 |
+| L07 | [Prompt & Context Layer](L07-prompt-and-context-layer.md) | prompt injection (direct/indirect), jailbreak, context and memory poisoning, memory governance | 45 | 11 | 27 | 7 | 0 |
+| L08 | [AI Gateway & Security Controls](L08-ai-gateway-and-security-controls.md) | inline policy, DLP, guardrails, guardrail policy ownership, bypass resistance, latency | 43 | 8 | 26 | 8 | 1 |
 | L09 | [Identity & Access Mgmt](L09-identity-and-access-mgmt.md) | user and agent (non-human) identity, scoped tokens, RBAC | 26 | 9 | 14 | 3 | 0 |
 | L10 | [Data Layer](L10-data-layer.md) | sensitive-data classification, DLP, lineage, tenant isolation, data quality | 33 | 9 | 16 | 8 | 0 |
-| L11 | [Knowledge & Retrieval Layer](L11-knowledge-and-retrieval-layer.md) | RAG poisoning, vector-store access control, retrieval leakage | 25 | 6 | 10 | 9 | 0 |
-| L12 | [Model Layer](L12-model-layer.md) | model theft, extraction, adversarial inputs, model scanning, identity for model access | 31 | 7 | 10 | 13 | 1 |
+| L11 | [Knowledge & Retrieval Layer](L11-knowledge-and-retrieval-layer.md) | RAG poisoning, vector-store access control, retrieval leakage, embedding and index governance | 28 | 6 | 12 | 10 | 0 |
+| L12 | [Model Layer](L12-model-layer.md) | model theft, extraction, adversarial inputs, model scanning, identity for model access, model approval | 32 | 7 | 11 | 13 | 1 |
 | L13 | [Training & Fine-Tuning Layer](L13-training-and-fine-tuning-layer.md) | data poisoning, dataset provenance, fine-tune integrity, training job identity | 26 | 4 | 14 | 8 | 0 |
 | L14 | [MLOps / LLMOps Layer](L14-mlops-llmops-layer.md) | pipeline and registry security, CI/CD gates, artifact signing | 22 | 4 | 12 | 6 | 0 |
 | L15 | [Infrastructure Layer](L15-infrastructure-layer.md) | GPU/cluster hardening, secrets, network segmentation, sovereignty of control plane | 20 | 8 | 10 | 2 | 0 |
 | L16 | [Supply Chain & Third Party](L16-supply-chain-and-third-party.md) | AI-BOM, model and package provenance, third-party SaaS AI risk | 26 | 4 | 13 | 9 | 0 |
-| L17 | [Monitoring, Detection & Response](L17-monitoring-detection-and-response.md) | telemetry, SIEM/SOAR integration, AI incident response, forensics | 31 | 4 | 20 | 7 | 0 |
-| | **Total** | | **523** | **132** | **270** | **118** | **3** |
+| L17 | [Monitoring, Detection & Response](L17-monitoring-detection-and-response.md) | telemetry, SIEM/SOAR integration, AI incident response, forensics, tracing platforms, quality failures | 33 | 4 | 21 | 8 | 0 |
+| | **Total** | | **535** | **132** | **278** | **122** | **3** |
 
 ## Emerging domains
 
@@ -64,25 +64,25 @@ Six further domains cut across the layers and use their own ID series, `TC-D##-#
 
 ## Coverage at a glance
 
-Counts are taken from the case index of each layer and domain file. Test method covers all 656 cases; the domain tags below apply to the 523 layer cases.
+Counts are taken from the case index of each layer and domain file. Test method covers all 668 cases; the domain tags below apply to the 535 layer cases.
 
 | Test method | Cases | Meaning |
 |---|---|---|
-| Technical | 547 | Executed live in the PoC lab |
-| Evidence | 95 | Verified by configuration, export, workflow or document inspection |
+| Technical | 551 | Executed live in the PoC lab |
+| Evidence | 103 | Verified by configuration, export, workflow or document inspection |
 | Attestation | 14 | Vendor written declaration, scored lower than demonstrated evidence |
 
 | Tag | Use-case domain | Cases tagged |
 |---|---|---|
 | D1 | Workforce / Browser AI Governance | 55 |
 | D2 | Developer / IDE AI Security | 29 |
-| D3 | Custom AI Application Runtime Security | 187 |
-| D4 | Model Security / AI Supply Chain | 118 |
-| D5 | Agentic AI / MCP / Tool Governance | 87 |
-| D6 | Data Protection / DLP / Investigation | 106 |
-| D7 | Sovereignty / Compliance / UAE Requirements | 161 |
+| D3 | Custom AI Application Runtime Security | 195 |
+| D4 | Model Security / AI Supply Chain | 120 |
+| D5 | Agentic AI / MCP / Tool Governance | 89 |
+| D6 | Data Protection / DLP / Investigation | 111 |
+| D7 | Sovereignty / Compliance / UAE Requirements | 167 |
 
-A case can carry more than one domain tag, so the domain counts add up to more than 523. D2 covers the developer workflow end to end: IDE prompts, assistant extensions, coding agents, MCP configuration, repository policy, pipeline bots and SOC telemetry, with L05 as its primary layer.
+A case can carry more than one domain tag, so the domain counts add up to more than 535. D2 covers the developer workflow end to end: IDE prompts, assistant extensions, coding agents, MCP configuration, repository policy, pipeline bots and SOC telemetry, with L05 as its primary layer.
 
 ## Numbering and structure
 

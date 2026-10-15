@@ -266,7 +266,7 @@ nav_order: 23
 | **Related Layer Cases** | [TC-L06-026](L06-agent-orchestration-layer.md#tc-l06-026) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-022](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-022) Deterministic Action Authorization |
 
 **Risk Addressed.** Allow-lists fail on redirects, subdomains and look-alike domains.
@@ -1131,7 +1131,7 @@ nav_order: 23
 | **Related Layer Cases** | [TC-L04-020](L04-human-interaction-layer.md#tc-l04-020) |
 | **MITRE ATLAS Mapping** | AML.T0057 LLM Data Leakage (secondary) |
 | **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure |
-| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 1.1 |
+| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 1.4 |
 | **Control(s) Tested** | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines |
 
 **Risk Addressed.** Agents rely on screenshots, which capture whatever is on screen, including unrelated sensitive items.
@@ -1467,7 +1467,7 @@ nav_order: 23
 | **Related Layer Cases** | [TC-L04-002](L04-human-interaction-layer.md#tc-l04-002), [TC-L04-023](L04-human-interaction-layer.md#tc-l04-023) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-024](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-024) Tool and MCP Server Governance; [AI-CTRL-001](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-001) AI Discovery |
 
 **Risk Addressed.** Extensions request broad permissions, update silently, and a harmless extension can be replaced by a harmful release.

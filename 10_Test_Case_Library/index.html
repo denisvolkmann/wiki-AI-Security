@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Test Case Library | AI Security Wiki</title>
 <meta name="author" content="Nachiket Sathaye">
-<meta name="description" content="656 AI security test cases for vendor evaluation and PoC across 17 AI lifecycle layers and 6 emerging domains: prompt injection, DLP, agents, MCP, RAG.">
+<meta name="description" content="668 AI security test cases for vendor evaluation and PoC across 17 AI lifecycle layers and 6 emerging domains: prompt injection, DLP, agents, MCP, RAG.">
 <link rel="canonical" href="https://nachi065.github.io/AI-Security-Wiki/10_Test_Case_Library/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI Security Wiki">
 <meta property="og:title" content="Test Case Library | AI Security Wiki">
-<meta property="og:description" content="656 AI security test cases for vendor evaluation and PoC across 17 AI lifecycle layers and 6 emerging domains: prompt injection, DLP, agents, MCP, RAG.">
+<meta property="og:description" content="668 AI security test cases for vendor evaluation and PoC across 17 AI lifecycle layers and 6 emerging domains: prompt injection, DLP, agents, MCP, RAG.">
 <meta property="og:url" content="https://nachi065.github.io/AI-Security-Wiki/10_Test_Case_Library/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/style.css?v=8368346b">
@@ -271,7 +271,7 @@
 <p class="crumbs"><a href="../index.html">Home</a> / <span>Test Case Library</span></p>
 <article>
 <h1 id="ai-security-vendor-evaluation-test-case-library">AI Security Vendor Evaluation: Test Case Library</h1>
-<p>A library of <strong>656 test cases</strong> for evaluating AI security products in a controlled proof of concept: <strong>523 cases organised by the 17 layers of the AI lifecycle</strong>, tagged with seven buyer-facing use-case domains, and <strong>133 cases in six emerging domains</strong> that cut across the layers.</p>
+<p>A library of <strong>668 test cases</strong> for evaluating AI security products in a controlled proof of concept: <strong>535 cases organised by the 17 layers of the AI lifecycle</strong>, tagged with seven buyer-facing use-case domains, and <strong>133 cases in six emerging domains</strong> that cut across the layers.</p>
 <blockquote class="callout caution">
 <p><strong>Status: draft for review.</strong> Reference identifiers (MITRE ATLAS, OWASP LLM, NIST AI RMF) must be verified against current published versions, and numeric thresholds are starting values to tune to your risk appetite and vendor SLAs.</p>
 </blockquote>
@@ -285,7 +285,7 @@
 <li><a href="../12_EU_AI_Compliance/07_Regulatory_Crosswalk.html">EU Regulatory Crosswalk</a>: the AI Act, GDPR and related EU instruments mapped to controls and to the same control themes</li>
 </ul>
 <p>Every case names the control it tests, by ID, from the <a href="../03_Control_Library/03_AI_Security_Control_Objectives_Library.html">AI Security Control Objectives Library</a>.</p>
-<p>To find a specific case, type its ID (for example <code>TC-L08-014</code>) or a keyword into the search box at the top of any page. Each of the 656 cases is indexed individually.</p>
+<p>To find a specific case, type its ID (for example <code>TC-L08-014</code>) or a keyword into the search box at the top of any page. Each of the 668 cases is indexed individually.</p>
 <h2 id="layers">Layers</h2>
 <div class="table-wrap"><table>
 <thead>
@@ -354,31 +354,31 @@
 <tr>
 <td>L06</td>
 <td><a href="L06-agent-orchestration-layer.html">Agent Orchestration Layer</a></td>
-<td>agent and MCP discovery, tool governance, delegation chains, agent-to-agent trust, kill switch</td>
-<td>46</td>
+<td>agent and MCP discovery, tool governance, access grant approval, delegation chains, agent-to-agent trust, kill switch</td>
+<td>47</td>
 <td>19</td>
-<td>24</td>
+<td>25</td>
 <td>3</td>
 <td>0</td>
 </tr>
 <tr>
 <td>L07</td>
 <td><a href="L07-prompt-and-context-layer.html">Prompt &amp; Context Layer</a></td>
-<td>prompt injection (direct/indirect), jailbreak, context and memory poisoning</td>
-<td>41</td>
+<td>prompt injection (direct/indirect), jailbreak, context and memory poisoning, memory governance</td>
+<td>45</td>
 <td>11</td>
-<td>24</td>
-<td>6</td>
+<td>27</td>
+<td>7</td>
 <td>0</td>
 </tr>
 <tr>
 <td>L08</td>
 <td><a href="L08-ai-gateway-and-security-controls.html">AI Gateway &amp; Security Controls</a></td>
-<td>inline policy, DLP, guardrails, bypass resistance, latency</td>
-<td>42</td>
+<td>inline policy, DLP, guardrails, guardrail policy ownership, bypass resistance, latency</td>
+<td>43</td>
 <td>8</td>
 <td>26</td>
-<td>7</td>
+<td>8</td>
 <td>1</td>
 </tr>
 <tr>
@@ -404,20 +404,20 @@
 <tr>
 <td>L11</td>
 <td><a href="L11-knowledge-and-retrieval-layer.html">Knowledge &amp; Retrieval Layer</a></td>
-<td>RAG poisoning, vector-store access control, retrieval leakage</td>
-<td>25</td>
+<td>RAG poisoning, vector-store access control, retrieval leakage, embedding and index governance</td>
+<td>28</td>
 <td>6</td>
+<td>12</td>
 <td>10</td>
-<td>9</td>
 <td>0</td>
 </tr>
 <tr>
 <td>L12</td>
 <td><a href="L12-model-layer.html">Model Layer</a></td>
-<td>model theft, extraction, adversarial inputs, model scanning, identity for model access</td>
-<td>31</td>
+<td>model theft, extraction, adversarial inputs, model scanning, identity for model access, model approval</td>
+<td>32</td>
 <td>7</td>
-<td>10</td>
+<td>11</td>
 <td>13</td>
 <td>1</td>
 </tr>
@@ -464,21 +464,21 @@
 <tr>
 <td>L17</td>
 <td><a href="L17-monitoring-detection-and-response.html">Monitoring, Detection &amp; Response</a></td>
-<td>telemetry, SIEM/SOAR integration, AI incident response, forensics</td>
-<td>31</td>
+<td>telemetry, SIEM/SOAR integration, AI incident response, forensics, tracing platforms, quality failures</td>
+<td>33</td>
 <td>4</td>
-<td>20</td>
-<td>7</td>
+<td>21</td>
+<td>8</td>
 <td>0</td>
 </tr>
 <tr>
 <td></td>
 <td><strong>Total</strong></td>
 <td></td>
-<td><strong>523</strong></td>
+<td><strong>535</strong></td>
 <td><strong>132</strong></td>
-<td><strong>270</strong></td>
-<td><strong>118</strong></td>
+<td><strong>278</strong></td>
+<td><strong>122</strong></td>
 <td><strong>3</strong></td>
 </tr>
 </tbody>
@@ -572,7 +572,7 @@
 </tbody>
 </table></div>
 <h2 id="coverage-at-a-glance">Coverage at a glance</h2>
-<p>Counts are taken from the case index of each layer and domain file. Test method covers all 656 cases; the domain tags below apply to the 523 layer cases.</p>
+<p>Counts are taken from the case index of each layer and domain file. Test method covers all 668 cases; the domain tags below apply to the 535 layer cases.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -584,12 +584,12 @@
 <tbody>
 <tr>
 <td><span class="badge method">Technical</span></td>
-<td>547</td>
+<td>551</td>
 <td>Executed live in the PoC lab</td>
 </tr>
 <tr>
 <td><span class="badge method">Evidence</span></td>
-<td>95</td>
+<td>103</td>
 <td>Verified by configuration, export, workflow or document inspection</td>
 </tr>
 <tr>
@@ -621,31 +621,31 @@
 <tr>
 <td>D3</td>
 <td>Custom AI Application Runtime Security</td>
-<td>187</td>
+<td>195</td>
 </tr>
 <tr>
 <td>D4</td>
 <td>Model Security / AI Supply Chain</td>
-<td>118</td>
+<td>120</td>
 </tr>
 <tr>
 <td>D5</td>
 <td>Agentic AI / MCP / Tool Governance</td>
-<td>87</td>
+<td>89</td>
 </tr>
 <tr>
 <td>D6</td>
 <td>Data Protection / DLP / Investigation</td>
-<td>106</td>
+<td>111</td>
 </tr>
 <tr>
 <td>D7</td>
 <td>Sovereignty / Compliance / UAE Requirements</td>
-<td>161</td>
+<td>167</td>
 </tr>
 </tbody>
 </table></div>
-<p>A case can carry more than one domain tag, so the domain counts add up to more than 523. D2 covers the developer workflow end to end: IDE prompts, assistant extensions, coding agents, MCP configuration, repository policy, pipeline bots and SOC telemetry, with L05 as its primary layer.</p>
+<p>A case can carry more than one domain tag, so the domain counts add up to more than 535. D2 covers the developer workflow end to end: IDE prompts, assistant extensions, coding agents, MCP configuration, repository policy, pipeline bots and SOC telemetry, with L05 as its primary layer.</p>
 <h2 id="numbering-and-structure">Numbering and structure</h2>
 <p>Layer case IDs take the form <code>TC-L##-###</code>: the lifecycle layer and a sequence within it, for example <code>TC-L08-014</code>. Emerging-domain case IDs take the form <code>TC-D##-###</code>, for example <code>TC-D10-007</code>. IDs are unique across the library and stable once issued. Where a case is the detailed version of a quick-start scenario, the <strong>Quick-Start Scenario</strong> field links to it by ID, for example <code>AI-POC-ID-004</code>.</p>
 <p>Each case records: lifecycle layer, use-case domains, test method (Technical, Evidence or Attestation), vendor applicability (E endpoint or browser agent, G inline gateway or proxy, A application or API-level control, P posture or AI-SPM, R red-team tool, W governance workflow), risk, scenarios, test data, numbered procedure, expected results, pass and fail criteria, scoring, evidence to capture, and reference mappings.</p>
@@ -669,18 +669,18 @@
 <a class="card" style="--h:145" href="L03-legal-privacy-and-compliance.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L03 Legal, Privacy &amp; Compliance</span><span class="card-text">42 AI security test cases for the Legal, Privacy &amp; Compliance: UAE/GCC residency, PDPL-type obligations, evidence export, DPIA support, fairness…</span></a>
 <a class="card" style="--h:145" href="L04-human-interaction-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L04 Human Interaction Layer</span><span class="card-text">32 AI security test cases for the Human Interaction Layer: browser/workforce AI, user coaching, approval prompts, multimodal input.</span></a>
 <a class="card" style="--h:145" href="L05-ai-applications.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L05 AI Applications</span><span class="card-text">35 AI security test cases for the AI Applications: discovery, app-level runtime protection, output handling.</span></a>
-<a class="card" style="--h:145" href="L06-agent-orchestration-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L06 Agent Orchestration Layer</span><span class="card-text">46 AI security test cases for the Agent Orchestration Layer: agent and MCP discovery, tool governance, delegation chains, agent-to-agent trust, kill switch.</span></a>
-<a class="card" style="--h:145" href="L07-prompt-and-context-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L07 Prompt &amp; Context Layer</span><span class="card-text">41 AI security test cases for the Prompt &amp; Context Layer: prompt injection (direct/indirect), jailbreak, context and memory poisoning.</span></a>
-<a class="card" style="--h:145" href="L08-ai-gateway-and-security-controls.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L08 AI Gateway &amp; Security Controls</span><span class="card-text">42 AI security test cases for the AI Gateway &amp; Security Controls: inline policy, DLP, guardrails, bypass resistance, latency.</span></a>
+<a class="card" style="--h:145" href="L06-agent-orchestration-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L06 Agent Orchestration Layer</span><span class="card-text">47 AI security test cases for the Agent Orchestration Layer: agent and MCP discovery, tool governance, delegation chains, agent-to-agent trust, kill switch.</span></a>
+<a class="card" style="--h:145" href="L07-prompt-and-context-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L07 Prompt &amp; Context Layer</span><span class="card-text">45 AI security test cases for the Prompt &amp; Context Layer: prompt injection (direct/indirect), jailbreak, context and memory poisoning.</span></a>
+<a class="card" style="--h:145" href="L08-ai-gateway-and-security-controls.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L08 AI Gateway &amp; Security Controls</span><span class="card-text">43 AI security test cases for the AI Gateway &amp; Security Controls: inline policy, DLP, guardrails, bypass resistance, latency.</span></a>
 <a class="card" style="--h:145" href="L09-identity-and-access-mgmt.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L09 Identity &amp; Access Mgmt</span><span class="card-text">26 AI security test cases for the Identity &amp; Access Mgmt: user and agent (non-human) identity, scoped tokens, RBAC.</span></a>
 <a class="card" style="--h:145" href="L10-data-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L10 Data Layer</span><span class="card-text">33 AI security test cases for the Data Layer: sensitive-data classification, DLP, lineage, tenant isolation.</span></a>
-<a class="card" style="--h:145" href="L11-knowledge-and-retrieval-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L11 Knowledge &amp; Retrieval Layer</span><span class="card-text">25 AI security test cases for the Knowledge &amp; Retrieval Layer: RAG poisoning, vector-store access control, retrieval leakage.</span></a>
-<a class="card" style="--h:145" href="L12-model-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L12 Model Layer</span><span class="card-text">31 AI security test cases for the Model Layer: model theft, extraction, adversarial inputs, model scanning, identity for model access.</span></a>
+<a class="card" style="--h:145" href="L11-knowledge-and-retrieval-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L11 Knowledge &amp; Retrieval Layer</span><span class="card-text">28 AI security test cases for the Knowledge &amp; Retrieval Layer: RAG poisoning, vector-store access control, retrieval leakage.</span></a>
+<a class="card" style="--h:145" href="L12-model-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L12 Model Layer</span><span class="card-text">32 AI security test cases for the Model Layer: model theft, extraction, adversarial inputs, model scanning, identity for model access.</span></a>
 <a class="card" style="--h:145" href="L13-training-and-fine-tuning-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L13 Training &amp; Fine-Tuning Layer</span><span class="card-text">26 AI security test cases for the Training &amp; Fine-Tuning Layer: data poisoning, dataset provenance, fine-tune integrity, training job identity.</span></a>
 <a class="card" style="--h:145" href="L14-mlops-llmops-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L14 MLOps / LLMOps Layer</span><span class="card-text">22 AI security test cases for the MLOps / LLMOps Layer: pipeline and registry security, CI/CD gates, artifact signing.</span></a>
 <a class="card" style="--h:145" href="L15-infrastructure-layer.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L15 Infrastructure Layer</span><span class="card-text">20 AI security test cases for the Infrastructure Layer: GPU/cluster hardening, secrets, network segmentation, sovereignty of control plane.</span></a>
 <a class="card" style="--h:145" href="L16-supply-chain-and-third-party.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L16 Supply Chain &amp; Third Party</span><span class="card-text">26 AI security test cases for the Supply Chain &amp; Third Party: AI-BOM, model and package provenance, third-party SaaS AI risk.</span></a>
-<a class="card" style="--h:145" href="L17-monitoring-detection-and-response.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L17 Monitoring, Detection &amp; Response</span><span class="card-text">31 AI security test cases for the Monitoring, Detection &amp; Response: telemetry, SIEM/SOAR integration, AI incident response, forensics.</span></a>
+<a class="card" style="--h:145" href="L17-monitoring-detection-and-response.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">L17 Monitoring, Detection &amp; Response</span><span class="card-text">33 AI security test cases for the Monitoring, Detection &amp; Response: telemetry, SIEM/SOAR integration, AI incident response, forensics.</span></a>
 <a class="card" style="--h:145" href="D08-ai-red-teaming-and-continuous-testing.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">D08 AI Red Teaming and Continuous Testing</span><span class="card-text">25 AI security test cases for AI Red Teaming and Continuous Testing: ground-truth accuracy, coverage, judging, reproducibility, CI/CD, safe execution.</span></a>
 <a class="card" style="--h:145" href="D09-agent-and-non-human-identity-governance.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">D09 Agent and Non-Human Identity Governance</span><span class="card-text">20 AI security test cases for Agent and Non-Human Identity Governance: registry, sponsors, recertification, drift, delegation, revocation.</span></a>
 <a class="card" style="--h:145" href="D10-browser-and-computer-use-agents.html"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17M11 6h9M11 12h9M11 18h9"/></svg></span><span class="card-title">D10 Browser and Computer-Use Agents</span><span class="card-text">23 AI security test cases for Browser and Computer-Use Agents: isolation, credentials, action policy, injection via web content, approvals, kill switch.</span></a>

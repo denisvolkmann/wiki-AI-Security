@@ -19,7 +19,7 @@ version: 2.0
 
 ## Relationship to the full Test Case Library
 
-This page is the short list. The [Test Case Library](../10_Test_Case_Library/index.md) holds **656 detailed cases: 523 across 17 AI lifecycle layers and 133 in six emerging domains**, each with test data, a numbered procedure, expected results, pass and fail criteria and evidence to capture.
+This page is the short list. The [Test Case Library](../10_Test_Case_Library/index.md) holds **668 detailed cases: 535 across 17 AI lifecycle layers and 133 in six emerging domains**, each with test data, a numbered procedure, expected results, pass and fail criteria and evidence to capture.
 
 | Quick-start area | Scenarios here | Detailed cases in the full library | Domain tags |
 |---|---|---|---|

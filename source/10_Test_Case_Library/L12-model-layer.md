@@ -11,9 +11,9 @@ nav_order: 15
 
 **Primary test focus:** model theft, extraction, adversarial inputs, model scanning, identity for model access
 
-**Controls tested:** [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) Model Protection (14 cases), [AI-CTRL-031](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-031) AI Supply Chain and AI-BOM (6 cases), [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity (5 cases), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (5 cases), [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011) AI Use-Case Registry and Risk Tiering (2 cases), [AI-CTRL-030](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-030) ML Pipeline and Model Registry Security (2 cases), [AI-CTRL-034](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-034) Adversarial Testing and Continuous Evaluation (2 cases), [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls (2 cases), [AI-CTRL-001](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-001) AI Discovery (1 case), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) Policy Enforcement (1 case), [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening (1 case), [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039) Output Reliability and Content Safety (1 case), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (1 case)
+**Controls tested:** [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) Model Protection (15 cases), [AI-CTRL-031](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-031) AI Supply Chain and AI-BOM (6 cases), [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity (5 cases), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials (5 cases), [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011) AI Use-Case Registry and Risk Tiering (2 cases), [AI-CTRL-030](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-030) ML Pipeline and Model Registry Security (2 cases), [AI-CTRL-034](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-034) Adversarial Testing and Continuous Evaluation (2 cases), [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls (2 cases), [AI-CTRL-001](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-001) AI Discovery (1 case), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) Auditability (1 case), [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) Policy Enforcement (1 case), [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening (1 case), [AI-CTRL-033](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-033) AI Security Review and Release Gate (1 case), [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039) Output Reliability and Content Safety (1 case), [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation (1 case)
 
-**Cases:** 31 (TC-L12-001 to TC-L12-031)
+**Cases:** 32 (TC-L12-001 to TC-L12-032)
 > **Safety boundary.** Retrieval, model, training, pipeline and supply chain cases use fabricated corpora and datasets, small lab models, mock hubs and indexes and harmless marker artefacts only (an EICAR-style file that writes a marker, never real malware). Never load untrusted model files outside an isolated sandbox, and never connect the lab to production knowledge sources, models, pipelines, registries or credentials. Cases marked Attestation rest on vendor documents and score below demonstrated evidence.
 
 > **Verify before use.** MITRE ATLAS, OWASP LLM and NIST AI RMF identifiers must be checked against the current published versions. Numeric thresholds are starting values to tune. See the [Reference Index](00-reference-index.md) for field definitions and applicability codes.
@@ -53,6 +53,7 @@ nav_order: 15
 | [TC-L12-029](#tc-l12-029) | Tenant and Owner Isolation for Fine-Tuned Models | Critical | Technical | D4, D7 | [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016), [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) |
 | [TC-L12-030](#tc-l12-030) | Access Recertification for Model Registry and Serving Entitlements | Medium | Evidence | D4 | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015), [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) |
 | [TC-L12-031](#tc-l12-031) | Identity Audit Trail for Model Access: Download, Load and Promotion Events | High | Technical | D4, D7 | [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008), [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) |
+| [TC-L12-032](#tc-l12-032) | Model Approval Decision Record and Named Approver | High | Evidence | D4, D7 | [AI-CTRL-033](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-033), [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) |
 
 ---
 
@@ -263,7 +264,7 @@ nav_order: 15
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) Model Protection; [AI-CTRL-030](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-030) ML Pipeline and Model Registry Security |
 
 **Risk Addressed.** Policies banning unsafe formats are useless if not enforced at load and download.
@@ -1234,7 +1235,7 @@ nav_order: 15
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.6; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-031](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-031) AI Supply Chain and AI-BOM |
 
 **Risk Addressed.** Missing model documentation blocks risk review, audit and regulatory response.
@@ -1299,7 +1300,7 @@ nav_order: 15
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening |
 
 **Risk Addressed.** Default settings for guardrails, tool access, logging and network exposure are often unsafe in production.
@@ -1364,7 +1365,7 @@ nav_order: 15
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) Policy Enforcement; [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation |
 
 **Risk Addressed.** Failover to a cheaper, weaker or less compliant model can bypass guardrails, residency and licence limits.
@@ -1560,7 +1561,7 @@ nav_order: 15
 | **Risk Severity** | Low |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.7; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) Model Protection; [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011) AI Use-Case Registry and Risk Tiering |
 
 **Risk Addressed.** Retired models keep weights, endpoints, keys and access, extending exposure and cost.
@@ -1625,7 +1626,7 @@ nav_order: 15
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.3; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011) AI Use-Case Registry and Risk Tiering |
 
 **Risk Addressed.** Applying the same scrutiny to every model wastes effort on low risk and under-reviews high risk.
@@ -1951,7 +1952,7 @@ nav_order: 15
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.5; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity; [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials |
 
 **Risk Addressed.** Access to the registry and to endpoints builds up as people change role and applications retire, and nobody removes it.
@@ -2068,3 +2069,66 @@ nav_order: 15
 
 ---
 
+<a id="tc-l12-032"></a>
+
+### TC-L12-032: Model Approval Decision Record and Named Approver
+
+| Field | Value |
+|---|---|
+| **Lifecycle Layer** | L12 Model Layer |
+| **Use-Case Domain(s)** | D4, D7 |
+| **Test Method** | Evidence |
+| **Vendor Applicability** | Core: W, P \| Partial: G |
+| **Risk Severity** | High |
+| **MITRE ATLAS Mapping** | N/A (governance and policy control) |
+| **OWASP LLM / GenAI Mapping** | LLM03:2025 Supply Chain |
+| **NIST AI RMF Mapping** | GOVERN 2.1; GOVERN 6.1; MAP 4.1 |
+| **Control(s) Tested** | [AI-CTRL-033](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-033) AI Security Review and Release Gate; [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) Model Protection |
+
+**Risk Addressed.** Models reach the approved list without a recorded decision, so nobody can show who approved a model, on what evidence, or for which uses.
+
+**Business Scenario.** Governance wants each model on the approved list to carry a decision record naming the approver, the evidence reviewed and the permitted uses.
+
+**Technical Scenario.** Submit models of different risk for approval, then trace each model on the allow-list back to its decision record.
+
+**Preconditions.** Isolated PoC lab provisioned; lab model hosting, test models, mock registry and test users seeded per the [Lab Prerequisites appendix](appendix-lab-prerequisites.md); platform connected to the lab model environment with least-privilege test credentials. Model approval workflow or registry connected to the gateway allow-list; approval authority set by model risk tier.
+
+**Test Data.** 3 models: 1 low-risk, 1 high-risk, 1 added to the allow-list directly without a decision record.
+
+**Procedure**
+
+1. Submit the low-risk and high-risk models through the workflow.
+2. Check that the high-risk model needs the higher approval authority set for its tier.
+3. For each approved model, retrieve approver, date, evidence reviewed, permitted uses and data classifications, and review date.
+4. Check that the model added directly is flagged.
+5. Withdraw approval for one model and confirm the allow-list changes.
+
+**Edge Cases / Variants.** A new version of an approved model; a model approved for one use being called by another.
+
+**Expected Detection.** Both submitted models have complete decision records with the correct approver for their tier; the directly added model is flagged; withdrawal reaches the allow-list within the documented time.
+
+**Expected Prevention / Control Action.** N/A (evidence control).
+
+**Expected Alert / Log.** Configuration state, audit record or export that supports the claim, with timestamp and the identity of the person who produced it.
+
+**Expected Report / Dashboard Evidence.** Model finding or decision visible in the model security dashboard within the documented refresh interval.
+
+**Expected Integration Evidence.** Decision records exportable; allow-list changes linked to decision IDs.
+
+**Forensic Evidence.** Model identifier, version, hash, source, requesting identity, action and timestamp exportable for incident reconstruction.
+
+**Compliance Evidence.** Test execution log and captured evidence retained in the Test Case Execution Register for audit.
+
+**Scoring Criteria.** 0 = not demonstrated; 3 = partially shown or shown only on documentation; 5 = shown in the live product with exportable evidence; N/A = architecture out of scope.
+
+**Pass Criteria.** Expected Detection are met in full within the vendor's documented SLA, and the evidence listed under Evidence to Capture is obtained from the live PoC.
+
+**Fail Criteria.** Any seeded item is missed, the control action does not occur where required, SLA is exceeded, attribution fields are missing, or the result can only be reproduced with vendor-supplied data.
+
+**Evidence to Capture.** Decision records; tier-to-approver rule; flag; allow-list before and after withdrawal.
+
+**Reviewer Notes.** Pairs with [TC-L12-025](#tc-l12-025) (risk tiering) and [TC-L08-028](L08-ai-gateway-and-security-controls.md#tc-l08-028) (allow-list enforcement). Documentation alone scores no higher than 3.
+
+[Back to layer index](#top)
+
+---
