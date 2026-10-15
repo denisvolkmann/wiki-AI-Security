@@ -4,7 +4,7 @@ This wiki is open to everyone, and contributions of any size are welcome: fixing
 
 ## The quick way: edit in your browser
 
-1. Open the page on the [site](https://nachi065.github.io/AI-Security-Wiki/) and click **Suggest an edit to this page** in the footer.
+1. Open the page on the [site](https://denisvolkmann.github.io/wiki-AI-Security/) and click **Suggest an edit to this page** in the footer.
 2. GitHub opens the page's Markdown file and creates your own copy (fork) of the repository automatically.
 3. Make your change, describe it briefly, and choose **Propose changes**, then **Create pull request**.
 
@@ -47,12 +47,12 @@ The footer also shows the date the page last changed, taken from the repository 
 - Every pull request is reviewed by the maintainer before it is merged.
 - Two automated checks run on every pull request. One protects author credit. The other fails if a link inside the wiki points to a page or heading that does not exist, or if a page cites a risk, control or test case ID that is not defined. Links to other websites are checked weekly on the main branch, so a pull request never fails because an outside site moved a page.
 - Keep content vendor-neutral and free of confidential, personal or organization-specific information.
-- Not sure whether an idea fits? [Open an issue](https://github.com/nachi065/AI-Security-Wiki/issues) first.
-- Think a rule should change? Suggestions are welcome. Rules change when a proposal is justified and mutually agreed with the maintainer; see [Suggesting changes to these rules](https://nachi065.github.io/AI-Security-Wiki/community-rules.html#suggesting-changes-to-these-rules).
+- Not sure whether an idea fits? [Open an issue](https://github.com/denisvolkmann/wiki-AI-Security/issues) first.
+- Think a rule should change? Suggestions are welcome. Rules change when a proposal is justified and mutually agreed with the maintainer; see [Suggesting changes to these rules](https://denisvolkmann.github.io/wiki-AI-Security/community-rules.html#suggesting-changes-to-these-rules).
 
 ## Credit and licence
 
-Every page names its author in the page header, and the footer of the published page shows it. Credit can be added but never taken away. The [Community Rules](https://nachi065.github.io/AI-Security-Wiki/community-rules.html) page shows worked examples of what is allowed and what is blocked.
+Every page names its author in the page header, and the footer of the published page shows it. Credit can be added but never taken away. The [Community Rules](https://denisvolkmann.github.io/wiki-AI-Security/community-rules.html) page shows worked examples of what is allowed and what is blocked.
 
 - **A page you add is yours.** Put your own name in its `author:` line.
 - **A substantial addition to someone else's page** is credited by adding a `coauthors:` line under `author:`, for example `coauthors: Your Name`. Several names are separated by commas.

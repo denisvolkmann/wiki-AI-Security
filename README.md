@@ -4,7 +4,7 @@ I built this AI security wiki over the past year and have published it here on G
 
 ## Ready-to-browse site
 
-**https://nachi065.github.io/AI-Security-Wiki/**
+**https://denisvolkmann.github.io/wiki-AI-Security/**
 
 - A sidebar with every section and page
 - Full-text search across the whole wiki
@@ -13,26 +13,26 @@ I built this AI security wiki over the past year and have published it here on G
 
 | Start here | Link |
 |---|---|
-| Wiki home, lifecycle and role navigation | https://nachi065.github.io/AI-Security-Wiki/ |
-| Foundations: AI Security vs. Security of AI (research paper) | https://nachi065.github.io/AI-Security-Wiki/00_Foundations/ |
-| Risk management | https://nachi065.github.io/AI-Security-Wiki/02_Risk_Management/ |
-| Control library | https://nachi065.github.io/AI-Security-Wiki/03_Control_Library/ |
-| Domain standards | https://nachi065.github.io/AI-Security-Wiki/04_Domain_Standards/ |
-| Vendor evaluation | https://nachi065.github.io/AI-Security-Wiki/05_Vendor_Evaluation/ |
-| Testing and assurance | https://nachi065.github.io/AI-Security-Wiki/06_Testing_and_Assurance/ |
-| Role-based playbooks | https://nachi065.github.io/AI-Security-Wiki/07_Role_Based_Playbooks/ |
-| GCC AI compliance (regulatory hub, role guides, templates) | https://nachi065.github.io/AI-Security-Wiki/11_GCC_AI_Compliance/ |
-| EU AI compliance (AI Act hub, role guides, templates) | https://nachi065.github.io/AI-Security-Wiki/12_EU_AI_Compliance/ |
-| Australia AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/13_Australia_AI_Compliance/ |
-| Brazil AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/14_Brazil_AI_Compliance/ |
-| Canada AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/15_Canada_AI_Compliance/ |
-| China AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/16_China_AI_Compliance/ |
-| India AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/17_India_AI_Compliance/ |
-| Japan AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/18_Japan_AI_Compliance/ |
-| Singapore AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/19_Singapore_AI_Compliance/ |
-| South Korea AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/20_South_Korea_AI_Compliance/ |
-| UK AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/21_UK_AI_Compliance/ |
-| US AI compliance (regulatory hub, role guide, templates) | https://nachi065.github.io/AI-Security-Wiki/22_US_AI_Compliance/ |
+| Wiki home, lifecycle and role navigation | https://denisvolkmann.github.io/wiki-AI-Security/ |
+| Foundations: AI Security vs. Security of AI (research paper) | https://denisvolkmann.github.io/wiki-AI-Security/00_Foundations/ |
+| Risk management | https://denisvolkmann.github.io/wiki-AI-Security/02_Risk_Management/ |
+| Control library | https://denisvolkmann.github.io/wiki-AI-Security/03_Control_Library/ |
+| Domain standards | https://denisvolkmann.github.io/wiki-AI-Security/04_Domain_Standards/ |
+| Vendor evaluation | https://denisvolkmann.github.io/wiki-AI-Security/05_Vendor_Evaluation/ |
+| Testing and assurance | https://denisvolkmann.github.io/wiki-AI-Security/06_Testing_and_Assurance/ |
+| Role-based playbooks | https://denisvolkmann.github.io/wiki-AI-Security/07_Role_Based_Playbooks/ |
+| GCC AI compliance (regulatory hub, role guides, templates) | https://denisvolkmann.github.io/wiki-AI-Security/11_GCC_AI_Compliance/ |
+| EU AI compliance (AI Act hub, role guides, templates) | https://denisvolkmann.github.io/wiki-AI-Security/12_EU_AI_Compliance/ |
+| Australia AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/13_Australia_AI_Compliance/ |
+| Brazil AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/14_Brazil_AI_Compliance/ |
+| Canada AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/15_Canada_AI_Compliance/ |
+| China AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/16_China_AI_Compliance/ |
+| India AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/17_India_AI_Compliance/ |
+| Japan AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/18_Japan_AI_Compliance/ |
+| Singapore AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/19_Singapore_AI_Compliance/ |
+| South Korea AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/20_South_Korea_AI_Compliance/ |
+| UK AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/21_UK_AI_Compliance/ |
+| US AI compliance (regulatory hub, role guide, templates) | https://denisvolkmann.github.io/wiki-AI-Security/22_US_AI_Compliance/ |
 
 The pages are plain HTML, so the site also works offline: download the repository and open `index.html` in a browser.
 
@@ -42,9 +42,9 @@ This wiki is open to everyone. Corrections, new pages, better examples and updat
 
 - **Quick fix:** every page on the site has a "Suggest an edit to this page" link in the footer. It opens the page's Markdown on GitHub; make your change and GitHub turns it into a pull request for you. No setup needed.
 - **Bigger change or new page:** fork the repository, edit the Markdown under `source/`, and open a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
-- **Idea or question:** [open an issue](https://github.com/nachi065/AI-Security-Wiki/issues).
+- **Idea or question:** [open an issue](https://github.com/denisvolkmann/wiki-AI-Security/issues).
 
-Contributors are credited in [AUTHORS](AUTHORS). The [Community Rules](https://nachi065.github.io/AI-Security-Wiki/community-rules.html) explain how author and co-author credit works and which changes are blocked automatically.
+Contributors are credited in [AUTHORS](AUTHORS). The [Community Rules](https://denisvolkmann.github.io/wiki-AI-Security/community-rules.html) explain how author and co-author credit works and which changes are blocked automatically.
 
 ## Licence and author
 

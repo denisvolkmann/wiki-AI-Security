@@ -10,8 +10,8 @@ from markdown.extensions.toc import slugify
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "source")
 SITE_TITLE = "AI Security Wiki"
-REPO_URL = "https://github.com/nachi065/AI-Security-Wiki"
-SITE_URL = "https://nachi065.github.io/AI-Security-Wiki"
+REPO_URL = "https://github.com/denisvolkmann/wiki-AI-Security"
+SITE_URL = "https://denisvolkmann.github.io/wiki-AI-Security"
 HOME_TITLE = "AI Security Wiki: Governance, Risk, Standards and Test Cases"
 
 

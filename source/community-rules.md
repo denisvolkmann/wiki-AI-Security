@@ -123,7 +123,7 @@ A rule changes when two conditions are met:
 
 How to propose a change:
 
-1. [Open an issue](https://github.com/nachi065/AI-Security-Wiki/issues) titled "Rule proposal: …" and set out the justification.
+1. [Open an issue](https://github.com/denisvolkmann/wiki-AI-Security/issues) titled "Rule proposal: …" and set out the justification.
 2. Discuss it in the issue. Other contributors are welcome to add their views.
 3. Once agreed, the change is made to this page, and to the automated check if the rule is one it enforces.
 
@@ -131,7 +131,7 @@ Until a proposal is agreed, the current rules continue to apply. A pull request 
 
 ## Licence
 
-Everything in the wiki is published under the [Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). You may copy, share and adapt it for any purpose, including commercially, as long as you credit the authors and release anything you build from it under the same licence. The full terms are in the [LICENSE](https://github.com/nachi065/AI-Security-Wiki/blob/main/LICENSE) file.
+Everything in the wiki is published under the [Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). You may copy, share and adapt it for any purpose, including commercially, as long as you credit the authors and release anything you build from it under the same licence. The full terms are in the [LICENSE](https://github.com/denisvolkmann/wiki-AI-Security/blob/main/LICENSE) file.
 
 ### Rules for reusing the wiki
 
@@ -155,7 +155,7 @@ A credit line can look like this:
 
 ```
 "Enterprise AI Risk Register" by Nachiket Sathaye, AI Security Wiki
-(https://nachi065.github.io/AI-Security-Wiki/), licensed under CC BY-SA 4.0.
+(https://denisvolkmann.github.io/wiki-AI-Security/), licensed under CC BY-SA 4.0.
 Changes: adapted for a retail bank; risk scores removed.
 ```
 
@@ -169,4 +169,4 @@ By contributing, you agree to license your contribution under [CC BY 4.0](https:
 
 Contribute only material you can license that way: your own writing, or material that is in the public domain or released under CC0 or CC BY, with the source cited. Text taken from a source under a NonCommercial or NoDerivatives licence cannot be accepted.
 
-The step-by-step guide to making a change is in [CONTRIBUTING.md](https://github.com/nachi065/AI-Security-Wiki/blob/main/CONTRIBUTING.md).
+The step-by-step guide to making a change is in [CONTRIBUTING.md](https://github.com/denisvolkmann/wiki-AI-Security/blob/main/CONTRIBUTING.md).

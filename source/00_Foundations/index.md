@@ -74,7 +74,7 @@ The paper explains the concepts and the sources. The other sections of the wiki 
 
 ## Suggested citation
 
-> Sathaye, N. *AI Security vs. Security of AI: A Practitioner Research Paper.* AI Security Wiki, living document, revision October 2026. https://nachi065.github.io/AI-Security-Wiki/00_Foundations/
+> Sathaye, N. *AI Security vs. Security of AI: A Practitioner Research Paper.* AI Security Wiki, living document, revision October 2026. https://denisvolkmann.github.io/wiki-AI-Security/00_Foundations/
 
 ## Important notice
 
