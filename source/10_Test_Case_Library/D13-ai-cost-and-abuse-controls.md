@@ -63,7 +63,7 @@ nav_order: 26
 | **Related Layer Cases** | [TC-L08-031](L08-ai-gateway-and-security-controls.md#tc-l08-031), [TC-L05-025](L05-ai-applications.md#tc-l05-025) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls |
 
 **Risk Addressed.** Spend that cannot be attributed cannot be controlled, charged back or investigated.
@@ -197,7 +197,7 @@ nav_order: 26
 | **Related Layer Cases** | [TC-L08-031](L08-ai-gateway-and-security-controls.md#tc-l08-031) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls |
 
 **Risk Addressed.** A single global cap protects the organisation but lets one runaway key consume everyone's budget.
@@ -799,7 +799,7 @@ nav_order: 26
 | **Related Layer Cases** | [TC-L12-021](L12-model-layer.md#tc-l12-021), [TC-L08-028](L08-ai-gateway-and-security-controls.md#tc-l08-028) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls |
 
 **Risk Addressed.** Routing everything to the most expensive model, or silently to a cheaper and weaker one, changes both cost and risk.
@@ -1201,7 +1201,7 @@ nav_order: 26
 | **Related Layer Cases** | [TC-L02-010](L02-governance-and-risk-mgmt.md#tc-l02-010) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 2.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls |
 
 **Risk Addressed.** Costly choices made by individual teams commit the organisation beyond its plan.
@@ -1402,7 +1402,7 @@ nav_order: 26
 | **Related Layer Cases** | [TC-L08-030](L08-ai-gateway-and-security-controls.md#tc-l08-030), [TC-L08-039](L08-ai-gateway-and-security-controls.md#tc-l08-039) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-036](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-036) AI Cost and Abuse Controls |
 
 **Risk Addressed.** Authenticated users can abuse allowances by automation, sharing accounts or hammering expensive features, and heavy-handed bans harm genuine users.

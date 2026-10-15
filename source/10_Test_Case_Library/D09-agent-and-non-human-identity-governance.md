@@ -62,7 +62,7 @@ nav_order: 22
 | **Related Layer Cases** | [TC-L09-001](L09-identity-and-access-mgmt.md#tc-l09-001), [TC-L06-002](L06-agent-orchestration-layer.md#tc-l06-002) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.6; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity |
 
 **Risk Addressed.** Identities for agents live in the identity provider, cloud IAM, SaaS tenants and code repositories, with no single record of why each exists, who is accountable and what risk tier it carries.
@@ -129,7 +129,7 @@ nav_order: 22
 | **Related Layer Cases** | [TC-L01-003](L01-business-and-use-cases.md#tc-l01-003) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 2.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity |
 
 **Risk Addressed.** An agent with no accountable human is not reviewed, rotated or shut down.
@@ -196,7 +196,7 @@ nav_order: 22
 | **Related Layer Cases** | [TC-L06-034](L06-agent-orchestration-layer.md#tc-l06-034) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity |
 
 **Risk Addressed.** Agents created ad hoc get broad access and no review.
@@ -530,7 +530,7 @@ nav_order: 22
 | **Related Layer Cases** | [TC-L06-035](L06-agent-orchestration-layer.md#tc-l06-035), [TC-L13-026](L13-training-and-fine-tuning-layer.md#tc-l13-026) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.7; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity |
 
 **Risk Addressed.** Unused identities remain valid targets for years.
@@ -664,7 +664,7 @@ nav_order: 22
 | **Related Layer Cases** | [TC-L06-015](L06-agent-orchestration-layer.md#tc-l06-015) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 2.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials; [AI-CTRL-022](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-022) Deterministic Action Authorization |
 
 **Risk Addressed.** An agent that can request, approve and execute the same action defeats every control, and conflicts often appear only through combinations of roles.
@@ -731,7 +731,7 @@ nav_order: 22
 | **Related Layer Cases** | [TC-L09-006](L09-identity-and-access-mgmt.md#tc-l09-006) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity |
 
 **Risk Addressed.** When an agent acts for a person, the organisation must be able to show what that person allowed, for how long, and when it was withdrawn.
@@ -1333,7 +1333,7 @@ nav_order: 22
 | **Related Layer Cases** | [TC-L06-035](L06-agent-orchestration-layer.md#tc-l06-035) |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.7; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity; [AI-CTRL-006](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-006) Agent Governance |
 
 **Risk Addressed.** Retiring an agent without removing every credential and trust leaves usable access behind.

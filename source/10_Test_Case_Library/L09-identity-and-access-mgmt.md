@@ -1357,7 +1357,7 @@ nav_order: 12
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.5; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-015](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-015) Human and Agent Identity |
 
 **Risk Addressed.** Entitlements accumulate unless periodically reviewed.
@@ -1421,7 +1421,7 @@ nav_order: 12
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials |
 
 **Risk Addressed.** Nobody can protect what they cannot see; effective access combines roles, groups, tokens and inheritance.

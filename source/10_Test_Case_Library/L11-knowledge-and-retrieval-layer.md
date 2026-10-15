@@ -198,7 +198,7 @@ nav_order: 14
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-032](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-032) AI Infrastructure Hardening |
 
 **Risk Addressed.** Missing authentication, weak roles and open admin interfaces on vector stores allow bulk reading or tampering.
@@ -650,7 +650,7 @@ nav_order: 14
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity |
 
 **Risk Addressed.** Anyone who can add content to a source can change what the assistant says.
@@ -842,7 +842,7 @@ nav_order: 14
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity |
 
 **Risk Addressed.** Changing the embedding model silently changes retrieval and can drop access filters or leave mixed vectors.
@@ -1164,7 +1164,7 @@ nav_order: 14
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity |
 
 **Risk Addressed.** Outdated policies and withdrawn documents keep being quoted.
@@ -1487,7 +1487,7 @@ nav_order: 14
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 1.4; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines |
 
 **Risk Addressed.** Exports and backups hold a full copy of indexed content outside the normal access controls.

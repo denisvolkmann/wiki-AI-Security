@@ -517,7 +517,7 @@ nav_order: 19
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Approved SaaS tools add AI features and sub-processors without a new review.
@@ -581,7 +581,7 @@ nav_order: 19
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Certificates and reports are only useful if scope, dates and exceptions are read, and some claims cover only part of the service.
@@ -646,7 +646,7 @@ nav_order: 19
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Customer data may pass through several parties, including model providers, that the customer never contracted.
@@ -710,7 +710,7 @@ nav_order: 19
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Weak terms leave customer data open to retention, training use, slow breach notice and unclear liability, and these are very hard to fix after signature.
@@ -776,7 +776,7 @@ nav_order: 19
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.2; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation; [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Dependence on one provider creates availability, price and lock-in risk, and failover paths often break policy.
@@ -1171,7 +1171,7 @@ nav_order: 19
 | **Risk Severity** | Critical |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** A security product with weak internal security is a high-value target with deep access to prompts, data and endpoints.
@@ -1237,7 +1237,7 @@ nav_order: 19
 | **Risk Severity** | Critical |
 | **MITRE ATLAS Mapping** | AML.T0057 LLM Data Leakage (secondary) |
 | **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure |
-| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 1.1 |
+| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 6.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance; [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty |
 
 **Risk Addressed.** Vendor systems and staff may see prompts, files and metadata through telemetry and support tooling, contrary to residency and confidentiality commitments.
@@ -1303,7 +1303,7 @@ nav_order: 19
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.2; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance; [AI-CTRL-040](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-040) AI Service Resilience and Fail-Safe Operation |
 
 **Risk Addressed.** Acquisition, failure or exit can leave customers without service, configuration or data.
@@ -1368,7 +1368,7 @@ nav_order: 19
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.2; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance; [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics |
 
 **Risk Addressed.** Slow or unclear vendor notification extends damage and delays the customer's own regulatory duties.
@@ -1433,7 +1433,7 @@ nav_order: 19
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Slow patching of the security product itself leaves defenders exposed.
@@ -1498,7 +1498,7 @@ nav_order: 19
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Several shortlisted tools may depend on the same model provider or cloud, so one failure disables many controls at once.
@@ -1628,7 +1628,7 @@ nav_order: 19
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Without the right to test or audit, customers rely entirely on the vendor's word about its controls.

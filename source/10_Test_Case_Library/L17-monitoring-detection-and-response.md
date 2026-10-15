@@ -926,7 +926,7 @@ nav_order: 20
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 4.3; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-009](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-009) SOC Integration |
 
 **Risk Addressed.** Detections without a framework mapping are hard to compare, prioritise and report.
@@ -1189,7 +1189,7 @@ nav_order: 20
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 4.3; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics |
 
 **Risk Addressed.** Teams practised only on malware and phishing struggle with prompt injection, model misbehaviour and agent incidents.
@@ -1516,7 +1516,7 @@ nav_order: 20
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 4.3; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics |
 
 **Risk Addressed.** Lessons that never become rules or detections turn into repeat incidents.
@@ -1779,7 +1779,7 @@ nav_order: 20
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 4.3; MANAGE 4.1 |
 | **Control(s) Tested** | [AI-CTRL-009](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-009) SOC Integration; [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics |
 
 **Risk Addressed.** An alert at 2am is worthless if no one is accountable for it, and managed services often have narrower coverage than the sales material suggests.

@@ -291,9 +291,67 @@
 <li>LLM08:2025 Vector and Embedding Weaknesses does not cover sending content to third-party embedding providers. It was removed from TC-L11-027, and on TC-L11-026 it was replaced with LLM03:2025 Supply Chain, which covers vetting third-party models.</li>
 <li>TC-L07-044 now maps to LLM02:2025, which recommends transparency about how user data is used and a way to opt out. TC-L17-033 adds MANAGE 4.3 (incidents and errors communicated and tracked).</li>
 </ul>
+<p>The same check was run on the 128 existing cases that cited GOVERN 1.1, which many of them used as a general governance tag. GOVERN 1.1 was kept on the 26 cases whose subject is a legal or regulatory requirement (data residency and sovereignty, privacy and data subject rights, biometric and recording consent, legal hold, licences and copyright, and regulatory incident reporting). On the other 102 cases it was replaced with the GOVERN subcategory that matches the case:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Replacement</th>
+<th>What it covers</th>
+<th>Cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOVERN 1.4</td>
+<td>Policies, procedures and controls</td>
+<td>66 (policy enforcement, hardening, change control, policy as code)</td>
+</tr>
+<tr>
+<td>GOVERN 6.1</td>
+<td>Third-party AI risk policies</td>
+<td>11 (vendor assessment, terms and assurance)</td>
+</tr>
+<tr>
+<td>GOVERN 1.6</td>
+<td>AI system inventory</td>
+<td>5</td>
+</tr>
+<tr>
+<td>GOVERN 1.7</td>
+<td>Decommissioning AI systems</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GOVERN 2.1</td>
+<td>Roles and responsibilities</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GOVERN 4.3</td>
+<td>Testing, incident identification and information sharing</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GOVERN 1.5</td>
+<td>Ongoing monitoring and periodic review</td>
+<td>3 (access recertification, false-positive review)</td>
+</tr>
+<tr>
+<td>GOVERN 6.2</td>
+<td>Contingency for third-party failures</td>
+<td>3</td>
+</tr>
+<tr>
+<td>GOVERN 1.3</td>
+<td>Risk management effort set by risk tolerance</td>
+<td>2 (risk tiering)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each choice is a judgement about the closest fit, not a mapping published by NIST. The second identifier on each case (usually MANAGE 4.1 or MEASURE 2.10) was not reviewed. The four GOVERN 1.1 citations in the control library were checked and kept, because those controls cover data sovereignty, privacy and regulatory compliance, impact assessment, and regulator engagement.</p>
 <h3 id="what-is-still-work-in-progress">What is still work in progress</h3>
 <ul>
-<li>Elsewhere in the library, GOVERN 1.1 is often used as a general governance tag, although it covers only legal and regulatory requirements. Those older mappings were not changed in this update.</li>
+<li>The second NIST AI RMF identifier on older cases, often MANAGE 4.1, was not reviewed and may be a general tag in the same way.</li>
 <li>The thresholds in the new cases are starting values to tune, as for every case in the library.</li>
 <li>The layer-to-domain coverage matrix in the <a href="../10_Test_Case_Library/00-reference-index.html">Reference Index</a> was not changed.</li>
 </ul>

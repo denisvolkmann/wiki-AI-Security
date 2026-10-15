@@ -1471,7 +1471,7 @@ nav_order: 24
 | **Related Layer Cases** | [TC-L10-020](L10-data-layer.md#tc-l10-020), [TC-L10-021](L10-data-layer.md#tc-l10-021) |
 | **MITRE ATLAS Mapping** | AML.T0057 LLM Data Leakage (secondary) |
 | **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure |
-| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 1.1 |
+| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 1.4 |
 | **Control(s) Tested** | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines; [AI-CTRL-021](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-021) Multimodal and Voice Input Security |
 
 **Risk Addressed.** Images, recordings and documents are often kept for convenience in places with weak controls and no expiry.

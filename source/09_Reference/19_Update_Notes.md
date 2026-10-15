@@ -35,9 +35,25 @@ The OWASP and NIST AI RMF mappings on the 12 new cases were checked on 15 Octobe
 - LLM08:2025 Vector and Embedding Weaknesses does not cover sending content to third-party embedding providers. It was removed from TC-L11-027, and on TC-L11-026 it was replaced with LLM03:2025 Supply Chain, which covers vetting third-party models.
 - TC-L07-044 now maps to LLM02:2025, which recommends transparency about how user data is used and a way to opt out. TC-L17-033 adds MANAGE 4.3 (incidents and errors communicated and tracked).
 
+The same check was run on the 128 existing cases that cited GOVERN 1.1, which many of them used as a general governance tag. GOVERN 1.1 was kept on the 26 cases whose subject is a legal or regulatory requirement (data residency and sovereignty, privacy and data subject rights, biometric and recording consent, legal hold, licences and copyright, and regulatory incident reporting). On the other 102 cases it was replaced with the GOVERN subcategory that matches the case:
+
+| Replacement | What it covers | Cases |
+|---|---|---|
+| GOVERN 1.4 | Policies, procedures and controls | 66 (policy enforcement, hardening, change control, policy as code) |
+| GOVERN 6.1 | Third-party AI risk policies | 11 (vendor assessment, terms and assurance) |
+| GOVERN 1.6 | AI system inventory | 5 |
+| GOVERN 1.7 | Decommissioning AI systems | 4 |
+| GOVERN 2.1 | Roles and responsibilities | 4 |
+| GOVERN 4.3 | Testing, incident identification and information sharing | 4 |
+| GOVERN 1.5 | Ongoing monitoring and periodic review | 3 (access recertification, false-positive review) |
+| GOVERN 6.2 | Contingency for third-party failures | 3 |
+| GOVERN 1.3 | Risk management effort set by risk tolerance | 2 (risk tiering) |
+
+Each choice is a judgement about the closest fit, not a mapping published by NIST. The second identifier on each case (usually MANAGE 4.1 or MEASURE 2.10) was not reviewed. The four GOVERN 1.1 citations in the control library were checked and kept, because those controls cover data sovereignty, privacy and regulatory compliance, impact assessment, and regulator engagement.
+
 ### What is still work in progress
 
-- Elsewhere in the library, GOVERN 1.1 is often used as a general governance tag, although it covers only legal and regulatory requirements. Those older mappings were not changed in this update.
+- The second NIST AI RMF identifier on older cases, often MANAGE 4.1, was not reviewed and may be a general tag in the same way.
 - The thresholds in the new cases are starting values to tune, as for every case in the library.
 - The layer-to-domain coverage matrix in the [Reference Index](../10_Test_Case_Library/00-reference-index.md) was not changed.
 
