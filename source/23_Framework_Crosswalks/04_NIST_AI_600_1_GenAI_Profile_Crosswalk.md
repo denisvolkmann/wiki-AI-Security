@@ -1,6 +1,6 @@
 ---
 title: "NIST AI 600-1 Generative AI Profile Crosswalk"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Framework Crosswalks"
 nav_order: 4
 description: "The twelve generative AI risks in NIST AI 600-1 mapped to this wiki's risks and control objectives, with the risks the wiki covers only in part or not at all."

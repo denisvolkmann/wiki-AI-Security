@@ -1,6 +1,6 @@
 ---
 title: "US-T1 State AI Law Applicability Matrix"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "US AI Compliance"
 nav_order: 4
 description: "Fill-in matrix of US state and local AI laws with effective dates and key duties, to record which apply to you and in which role."

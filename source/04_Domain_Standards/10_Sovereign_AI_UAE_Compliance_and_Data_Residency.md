@@ -1,6 +1,6 @@
 ---
 title: "Sovereign AI, UAE Compliance and Data Residency Requirements"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Domain Standards"
 nav_order: 5
 document_type: AI Security Wiki Reference

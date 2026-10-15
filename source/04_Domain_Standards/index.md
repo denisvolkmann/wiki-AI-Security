@@ -1,6 +1,6 @@
 ---
 title: "Domain Standards"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "AI security standards for browser AI, IDE coding assistants, custom LLM applications, agentic AI and tool governance, sovereignty and data residency."
 nav_order: 6
 has_children: true

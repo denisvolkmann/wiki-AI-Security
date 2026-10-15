@@ -1,6 +1,6 @@
 ---
 title: "D12 AI Incident Response and Forensics"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Test Case Library"
 nav_order: 25
 ---

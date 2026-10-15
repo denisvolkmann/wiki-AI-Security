@@ -1,6 +1,6 @@
 ---
 title: "AI Governance Operating Model"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Governance"
 nav_order: 1
 document_type: AI Security Wiki Reference

@@ -1,6 +1,6 @@
 ---
 title: "L13 Training & Fine-Tuning Layer"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Test Case Library"
 nav_order: 16
 ---

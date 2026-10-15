@@ -1,6 +1,6 @@
 ---
 title: "T09 AI System Inventory (EU)"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "EU AI Compliance"
 nav_order: 17
 description: "Column definitions, a CSV header row and maintenance rules for an inventory of AI systems that records AI Act role, risk tier and applicable date."

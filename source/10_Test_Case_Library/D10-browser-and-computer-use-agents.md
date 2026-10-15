@@ -1,6 +1,6 @@
 ---
 title: "D10 Browser and Computer-Use Agents"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Test Case Library"
 nav_order: 23
 ---

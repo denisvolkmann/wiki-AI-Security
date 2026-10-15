@@ -1,6 +1,6 @@
 ---
 title: "T02 Impact Assessment (FRIA and DPIA Combined)"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "EU AI Compliance"
 nav_order: 10
 description: "Combined fill-in form for a GDPR data protection impact assessment and an AI Act fundamental rights impact assessment of an AI system."

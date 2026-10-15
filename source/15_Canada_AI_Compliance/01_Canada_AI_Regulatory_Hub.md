@@ -1,6 +1,6 @@
 ---
 title: "Canada AI Regulatory Hub"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Canada AI Compliance"
 nav_order: 1
 description: "Canadian AI-relevant law mapped to AI security controls: PIPEDA, Quebec Law 25, the federal automated decision directive, OSFI E-23 and pending bills."

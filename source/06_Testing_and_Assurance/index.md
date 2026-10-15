@@ -1,6 +1,6 @@
 ---
 title: "Testing and Assurance"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "AI security testing and assurance: PoC test cases, AI red team playbook and an audit and evidence checklist for AI systems."
 nav_order: 8
 has_children: true

@@ -1,6 +1,6 @@
 ---
 title: "ISO/IEC AI Standards Crosswalk"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Framework Crosswalks"
 nav_order: 15
 description: "Nine ISO/IEC AI standards beyond ISO/IEC 42001 (38507, 42005, 42006, 23894, TR 24028, 5338, 23053, 22989 and the 5259 series) mapped clause by clause to this wiki's pages and controls."

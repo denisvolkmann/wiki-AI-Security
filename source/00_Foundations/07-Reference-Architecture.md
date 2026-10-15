@@ -1,7 +1,7 @@
 ---
 title: "7. Reference Architecture"
 description: "Reference architecture for secure AI systems: layered trust boundaries, model gateway, policy enforcement point, tool gateway and telemetry."
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Foundations"
 nav_order: 7
 document_type: Practitioner Research Paper

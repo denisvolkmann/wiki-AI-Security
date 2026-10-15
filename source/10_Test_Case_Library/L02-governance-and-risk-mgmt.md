@@ -1,6 +1,6 @@
 ---
 title: "L02 Governance & Risk Mgmt"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Test Case Library"
 nav_order: 5
 ---

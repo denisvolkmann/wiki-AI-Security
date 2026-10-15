@@ -1,6 +1,6 @@
 ---
 title: "L06 Agent Orchestration Layer"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Test Case Library"
 nav_order: 9
 ---

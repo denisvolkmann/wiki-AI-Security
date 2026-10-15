@@ -1,6 +1,6 @@
 ---
 title: "D13 AI Cost and Abuse Controls"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Test Case Library"
 nav_order: 26
 ---

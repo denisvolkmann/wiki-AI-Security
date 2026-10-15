@@ -1,6 +1,6 @@
 ---
 title: "Framework Adoption Guide"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "How to map AI governance and compliance test cases to ISO/IEC 27001, DPDP, NESA, PDPL and other frameworks, with a reusable crosswalk template."
 parent: "Test Case Library"
 nav_order: 2

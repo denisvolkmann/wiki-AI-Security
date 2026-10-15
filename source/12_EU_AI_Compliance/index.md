@@ -1,6 +1,6 @@
 ---
 title: "EU AI Compliance"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "EU AI compliance resources: AI Act timeline and regulatory hub, role guides, 12 fill-in templates, control drivers and a crosswalk."
 nav_order: 11
 group: "Regional AI Regulatory Hub"

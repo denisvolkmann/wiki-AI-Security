@@ -1,6 +1,6 @@
 ---
 title: "Brazil AI Compliance"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "Brazil AI compliance resources: regulatory hub covering the LGPD and the pending AI bill PL 2338/2023, a role guide, two templates and a crosswalk."
 nav_order: 11
 group: "Regional AI Regulatory Hub"

@@ -1,6 +1,6 @@
 ---
 title: "Control Library"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "AI security control library: 46 control objectives in 11 families with evidence, audit tests and framework mappings, plus a baseline and Microsoft gap analysis."
 nav_order: 5
 has_children: true

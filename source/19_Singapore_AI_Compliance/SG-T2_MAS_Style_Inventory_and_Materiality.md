@@ -1,6 +1,6 @@
 ---
 title: "SG-T2 AI Inventory and Risk Materiality Assessment (Financial Institutions)"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Singapore AI Compliance"
 nav_order: 5
 description: "AI inventory record and risk materiality assessment for financial institutions, following the MAS Guidelines on Artificial Intelligence Risk Management of 7 October 2026."

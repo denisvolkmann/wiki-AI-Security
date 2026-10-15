@@ -1,6 +1,6 @@
 ---
 title: "Canada Regulatory Crosswalk"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Canada AI Compliance"
 nav_order: 3
 description: "Canadian instruments mapped one per row to AI security controls, with verification status. Also available as a CSV file."

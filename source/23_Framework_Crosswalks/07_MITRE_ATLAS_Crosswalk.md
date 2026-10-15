@@ -1,6 +1,6 @@
 ---
 title: "MITRE ATLAS Crosswalk"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Framework Crosswalks"
 nav_order: 7
 description: "MITRE ATLAS techniques and mitigations cited in the wiki, each with the control objectives that address it and the test cases that exercise it."

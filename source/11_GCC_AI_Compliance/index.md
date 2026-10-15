@@ -1,6 +1,6 @@
 ---
 title: "GCC AI Compliance"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "GCC AI compliance resources: regulatory hub for UAE, Saudi Arabia, Qatar, Bahrain and Oman, role guides, 12 fill-in templates and a control crosswalk."
 nav_order: 11
 group: "Regional AI Regulatory Hub"

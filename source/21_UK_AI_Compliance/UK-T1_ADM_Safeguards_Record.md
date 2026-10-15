@@ -1,6 +1,6 @@
 ---
 title: "UK-T1 Automated Decision-Making Safeguards Record"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "UK AI Compliance"
 nav_order: 4
 description: "Fill-in record of a solely automated decision and its safeguards under the UK's Data (Use and Access) Act 2025, with monitoring measures."

@@ -1,6 +1,6 @@
 ---
 title: "AU-T2 Guidance for AI Adoption Self-Assessment"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Australia AI Compliance"
 nav_order: 5
 description: "Self-assessment worksheet built on the themes reported for Australia's Guidance for AI Adoption, with a status and evidence column per practice."

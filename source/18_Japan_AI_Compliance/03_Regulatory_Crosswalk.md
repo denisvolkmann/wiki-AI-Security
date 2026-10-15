@@ -1,6 +1,6 @@
 ---
 title: "Japan Regulatory Crosswalk"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Japan AI Compliance"
 nav_order: 3
 description: "Japanese instruments mapped one per row to AI security controls, with verification status. Also available as a CSV file."

@@ -1,6 +1,6 @@
 ---
 title: "AI Risk to Control Mapping"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Risk Management"
 nav_order: 4
 document_type: AI Security Wiki Reference

@@ -1,6 +1,6 @@
 ---
 title: "NIST AI 100-2 Crosswalk"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Framework Crosswalks"
 nav_order: 14
 description: "The attack classes in NIST AI 100-2e2025, by their NISTAML identifiers, mapped to this wiki's control objectives and the test case layers that exercise them."

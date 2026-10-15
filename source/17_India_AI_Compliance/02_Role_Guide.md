@@ -1,6 +1,6 @@
 ---
 title: "India: Role Guide"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "India AI Compliance"
 nav_order: 2
 description: "What Indian rules ask of AI practitioners, product companies, auditors and implementors: DPDP consent and breach duties and sector regulator expectations."

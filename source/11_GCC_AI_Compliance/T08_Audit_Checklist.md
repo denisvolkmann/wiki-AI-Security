@@ -1,6 +1,6 @@
 ---
 title: "T08 AI Audit Checklist"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "GCC AI Compliance"
 nav_order: 16
 description: "Audit checklist of 34 tests across nine control families, from governance and inventory to incident response and evidence."

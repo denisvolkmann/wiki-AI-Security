@@ -1,7 +1,7 @@
 ---
 title: "2. The AI System Boundary and Assets"
 description: "What sits inside an AI system boundary, the trust boundaries to draw, the assets to protect and why the model is treated as an untrusted component."
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Foundations"
 nav_order: 2
 document_type: Practitioner Research Paper

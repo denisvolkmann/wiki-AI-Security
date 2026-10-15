@@ -1,6 +1,6 @@
 ---
 title: "Risk, Control and Test Traceability"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Risk Management"
 nav_order: 7
 description: "Every risk in the register traced to the control objectives that treat it and the test cases that exercise them, with the controls that have no test case yet."

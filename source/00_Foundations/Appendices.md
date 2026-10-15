@@ -1,7 +1,7 @@
 ---
 title: "Appendices"
 description: "AI security assessment questionnaire, threat-modelling worksheets for assets, attack paths and agents, and control testing procedures."
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Foundations"
 nav_order: 14
 document_type: Practitioner Research Paper

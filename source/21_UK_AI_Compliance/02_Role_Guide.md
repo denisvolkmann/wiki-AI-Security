@@ -1,6 +1,6 @@
 ---
 title: "UK: Role Guide"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "UK AI Compliance"
 nav_order: 2
 description: "What UK rules ask of AI practitioners, product companies, auditors and implementors: automated decision safeguards, equality law and sector regulators."

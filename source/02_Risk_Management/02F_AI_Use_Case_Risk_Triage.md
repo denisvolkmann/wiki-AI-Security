@@ -1,6 +1,6 @@
 ---
 title: "AI Use-Case Risk Triage"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Risk Management"
 nav_order: 6
 description: "Yes/No questions that decide which risks in the register apply to an AI use case, to use alongside the T01 intake form that sets the tier."

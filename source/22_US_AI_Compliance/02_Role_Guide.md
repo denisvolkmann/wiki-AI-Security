@@ -1,6 +1,6 @@
 ---
 title: "US: Role Guide"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "US AI Compliance"
 nav_order: 2
 description: "What US federal and state AI rules ask of practitioners, product companies, auditors and implementors, with a shared evidence list."

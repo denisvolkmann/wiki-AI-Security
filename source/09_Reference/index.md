@@ -1,6 +1,6 @@
 ---
 title: "Reference"
-author: Nachiket Sathaye
+author: Denis Volkmann
 description: "AI security glossary and taxonomy: plain definitions of prompt injection, RAG, agents, MCP, AI-SPM, guardrails and related terms."
 nav_order: 12
 has_children: true

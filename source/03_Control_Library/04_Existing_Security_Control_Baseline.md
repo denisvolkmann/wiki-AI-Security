@@ -1,6 +1,6 @@
 ---
 title: "Existing Security Control Baseline"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Control Library"
 nav_order: 2
 document_type: AI Security Wiki Reference

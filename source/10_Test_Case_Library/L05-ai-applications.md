@@ -1,6 +1,6 @@
 ---
 title: "L05 AI Applications"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Test Case Library"
 nav_order: 8
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Vendor Evaluation and Audit Playbook"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Role-Based Playbooks"
 nav_order: 4
 document_type: AI Security Wiki Reference

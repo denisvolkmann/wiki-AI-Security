@@ -1,6 +1,6 @@
 ---
 title: "Singapore AI Regulatory Hub"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "Singapore AI Compliance"
 nav_order: 1
 description: "Singapore AI frameworks and law mapped to AI security controls: IMDA governance frameworks including agentic AI, AI Verify, the PDPA, MAS and CSA guidance."

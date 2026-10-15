@@ -1,6 +1,6 @@
 ---
 title: "T10 Bias Testing Record"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "GCC AI Compliance"
 nav_order: 18
 description: "Record for a bias test: groups and attributes, data, metrics and thresholds, findings, an explainability check and the release decision."

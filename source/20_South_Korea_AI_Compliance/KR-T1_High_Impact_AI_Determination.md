@@ -1,6 +1,6 @@
 ---
 title: "KR-T1 High-Impact AI Determination and Impact Assessment"
-author: Nachiket Sathaye
+author: Denis Volkmann
 parent: "South Korea AI Compliance"
 nav_order: 4
 description: "Four-question record for deciding whether a system is high-impact AI under South Korea's AI Basic Act, and what to document if it is."
