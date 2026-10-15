@@ -1,6 +1,6 @@
 ---
 title: "Sector Overlays: Financial Services, Insurance, Health and Government"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Domain Standards"
 nav_order: 6
 description: "Sector expectations for AI in financial services, insurance, health and government, mapped to wiki controls, test cases, regional instruments and templates."

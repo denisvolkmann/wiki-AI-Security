@@ -1,6 +1,6 @@
 ---
 title: "Evidence Register"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 8
 description: "Starter list of 27 evidence items an auditor would request for an AI system in the GCC, by control family. Also available as a CSV file."

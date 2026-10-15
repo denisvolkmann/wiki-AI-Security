@@ -1,6 +1,6 @@
 ---
 title: "T08 AI Audit Checklist (EU)"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "EU AI Compliance"
 nav_order: 16
 description: "Audit checklist of 52 tests across ten areas under EU rules, from governance and classification to provider and deployer duties and incidents."

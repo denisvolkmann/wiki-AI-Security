@@ -1,6 +1,6 @@
 ---
 title: "L14 MLOps / LLMOps Layer"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Test Case Library"
 nav_order: 17
 ---

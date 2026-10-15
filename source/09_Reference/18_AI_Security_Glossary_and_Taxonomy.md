@@ -1,6 +1,6 @@
 ---
 title: "AI Security Glossary and Taxonomy"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Reference"
 nav_order: 1
 document_type: AI Security Wiki Reference

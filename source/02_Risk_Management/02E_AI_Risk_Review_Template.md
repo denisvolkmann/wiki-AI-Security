@@ -1,6 +1,6 @@
 ---
 title: "AI Risk Review Template"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Risk Management"
 nav_order: 5
 document_type: AI Security Wiki Reference

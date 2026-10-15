@@ -1,6 +1,6 @@
 ---
 title: "D08 AI Red Teaming and Continuous Testing"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Test Case Library"
 nav_order: 21
 ---

@@ -1,6 +1,6 @@
 ---
 title: "KR-T2 Generative AI Labelling and Notice Record"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "South Korea AI Compliance"
 nav_order: 5
 description: "Record of user notices and visible or audible labels by output type, with test results, for South Korea's generative AI duties."

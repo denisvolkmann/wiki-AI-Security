@@ -1,6 +1,6 @@
 ---
 title: "T03 Supplier Due-Diligence EU Addendum"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "EU AI Compliance"
 nav_order: 11
 description: "Questions to add to a third-party questionnaire for AI suppliers under EU rules: role, conformity documents, data and transfers, security and exit."

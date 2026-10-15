@@ -1,6 +1,6 @@
 ---
 title: "T07 AI Ethics Self-Assessment Worksheet"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 15
 description: "Worksheet of 14 ethics themes common to UAE and SDAIA AI ethics instruments, each with a question, a rating and an evidence column."

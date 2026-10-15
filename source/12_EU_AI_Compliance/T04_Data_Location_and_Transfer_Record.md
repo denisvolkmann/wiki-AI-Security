@@ -1,6 +1,6 @@
 ---
 title: "T04 Data Location and International Transfer Record"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "EU AI Compliance"
 nav_order: 12
 description: "Fill-in record of where each AI data component is stored and processed, the transfers outside the EEA, their mechanisms and who signs for them."

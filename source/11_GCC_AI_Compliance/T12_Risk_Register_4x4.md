@@ -1,6 +1,6 @@
 ---
 title: "T12 AI Risk Register (4x4)"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 20
 description: "Likelihood and impact scales, rating bands and a register layout for AI risks, with two example rows."

@@ -1,6 +1,6 @@
 ---
 title: "L16 Supply Chain & Third Party"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Test Case Library"
 nav_order: 19
 ---

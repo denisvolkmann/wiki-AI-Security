@@ -1,6 +1,6 @@
 ---
 title: "India AI Regulatory Hub"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "India AI Compliance"
 nav_order: 1
 description: "Indian AI-relevant law mapped to AI security controls: the DPDP Act and Rules, MeitY AI guidelines, RBI, SEBI and IRDAI expectations, and CERT-In reporting."

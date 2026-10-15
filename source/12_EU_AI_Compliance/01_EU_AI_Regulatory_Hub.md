@@ -1,6 +1,6 @@
 ---
 title: "EU AI Regulatory Hub"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "EU AI Compliance"
 nav_order: 1
 description: "EU AI Act timeline, risk tiers, roles and high-risk obligations, with GDPR, NIS2, DORA, CRA and standards mapped to AI security controls."

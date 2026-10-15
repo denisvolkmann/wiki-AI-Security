@@ -1,6 +1,6 @@
 ---
 title: "JP-T1 Guidelines for AI Business Self-Assessment"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Japan AI Compliance"
 nav_order: 4
 description: "Self-assessment grid of nine themes from Japan's Guidelines for AI Business, rated separately for developer, provider and business user."

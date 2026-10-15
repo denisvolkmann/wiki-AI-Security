@@ -1,6 +1,6 @@
 ---
 title: "ISO/IEC 27001 Crosswalk"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Framework Crosswalks"
 nav_order: 8
 description: "ISO/IEC 27001:2022 Annex A controls and management system clauses with the wiki control objectives and test cases that cite them, and the Annex A controls not yet cited."

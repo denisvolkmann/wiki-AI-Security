@@ -1,6 +1,6 @@
 ---
 title: "Guide for Implementors: Building an EU AI Governance Programme"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "EU AI Compliance"
 nav_order: 5
 description: "For programme leads, GRC teams, CISOs and DPOs: what applies when, a 90-day plan, RACI, early decisions, maturity steps and metrics under EU rules."

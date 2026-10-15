@@ -1,6 +1,6 @@
 ---
 title: "BR-T1 LGPD Automated Decision Review Record"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Brazil AI Compliance"
 nav_order: 4
 description: "Fill-in record of automated decisions and the review route offered to data subjects under LGPD Article 20."

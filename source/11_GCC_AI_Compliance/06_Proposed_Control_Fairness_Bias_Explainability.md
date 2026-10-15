@@ -1,6 +1,6 @@
 ---
 title: "GCC Drivers for AI-CTRL-041: Fairness, Bias Testing and Explainability"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 6
 description: "The GCC instruments behind AI-CTRL-041 on fairness, bias testing and explainability, with the template and test cases that support the control."

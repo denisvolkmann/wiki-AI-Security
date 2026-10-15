@@ -1,6 +1,6 @@
 ---
 title: "Vendor Evaluation"
-author: Denis Volkmann
+author: Nachiket Sathaye
 description: "AI security vendor evaluation: a vendor-neutral scoring framework, evaluation domains and PoC evidence requirements."
 nav_order: 7
 has_children: true

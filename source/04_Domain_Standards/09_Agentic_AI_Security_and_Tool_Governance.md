@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI Security and Tool Governance"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Domain Standards"
 nav_order: 4
 document_type: AI Security Wiki Reference

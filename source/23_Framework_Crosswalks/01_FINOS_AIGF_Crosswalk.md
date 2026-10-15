@@ -1,6 +1,6 @@
 ---
 title: "FINOS AI Governance Framework Crosswalk"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Framework Crosswalks"
 nav_order: 1
 description: "Index from every FINOS AI Governance Framework risk and mitigation to this wiki's risks, control objectives and tests, with the regulatory references FINOS lists."

@@ -1,6 +1,6 @@
 ---
 title: "Test Case Library"
-author: Denis Volkmann
+author: Nachiket Sathaye
 description: "668 AI security test cases for vendor evaluation and PoC across 17 AI lifecycle layers and 6 emerging domains: prompt injection, DLP, agents, MCP, RAG."
 nav_order: 11
 has_children: true

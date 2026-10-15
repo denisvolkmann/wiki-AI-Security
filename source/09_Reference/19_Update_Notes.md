@@ -1,6 +1,6 @@
 ---
 title: "Update Notes"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Reference"
 nav_order: 2
 description: "What changed in the wiki and when, starting with the 15 October 2026 updates on AI governance frameworks and component ownership, with what was verified and what is still work in progress."

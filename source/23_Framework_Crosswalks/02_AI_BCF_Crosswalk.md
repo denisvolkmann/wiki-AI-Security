@@ -1,6 +1,6 @@
 ---
 title: "AI BCF Crosswalk"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Framework Crosswalks"
 nav_order: 2
 description: "How the AI Baseline Control Framework (AI BCF) and this wiki each work on their own, and where each of the 20 AI BCF controls is implemented in the wiki."
@@ -21,7 +21,7 @@ version: 1.0
 | | AI BCF | AI Security Wiki |
 |---|---|---|
 | What it is | A short governance baseline: 20 controls in five domains (Govern, Comply, Register, Access, Track). Each control is typed Baseline, Tier II or Trigger. | An open, vendor-neutral reference for securing AI adoption: 46 control objectives with evidence and audit tests, a 28-risk register, domain standards, vendor evaluation, regional compliance hubs and 656 test cases. |
-| Author | Jan van Dijke | Denis Volkmann and Ankush Jain |
+| Author | Jan van Dijke | Nachiket Sathaye and Ankush Jain |
 | Version | v1.0, 2 October 2026 | See the [home page](../index.md) |
 | Where | [aibcf.org](https://aibcf.org/) | This site |
 | Licence | CC BY-SA 4.0 | CC BY-SA 4.0 |

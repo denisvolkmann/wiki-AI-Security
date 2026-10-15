@@ -1,6 +1,6 @@
 ---
 title: "KR-T3 Domestic Representative Threshold Check"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "South Korea AI Compliance"
 nav_order: 6
 description: "Three-test check of whether a foreign AI provider must appoint a domestic representative under South Korea's AI Basic Act."

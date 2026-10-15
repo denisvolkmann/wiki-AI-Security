@@ -1,6 +1,6 @@
 ---
 title: "Guide for Auditors of AI Systems Under EU Rules"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "EU AI Compliance"
 nav_order: 4
 description: "For auditors of AI systems under EU rules: setting criteria, scoping, tests by control family, sampling, common findings and report wording."

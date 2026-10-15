@@ -1,6 +1,6 @@
 ---
 title: "T12 General-Purpose AI Model Checklist"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "EU AI Compliance"
 nav_order: 20
 description: "Checklist of AI Act duties for providers of general-purpose AI models, including systemic-risk models, and for teams that build on one."

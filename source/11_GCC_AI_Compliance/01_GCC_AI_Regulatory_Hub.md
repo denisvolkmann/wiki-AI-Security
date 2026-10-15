@@ -1,6 +1,6 @@
 ---
 title: "GCC AI Regulatory Hub"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 1
 description: "UAE, Saudi, Qatar, Bahrain and Oman AI-relevant laws, policies and security baselines mapped to AI security controls, with verification status."

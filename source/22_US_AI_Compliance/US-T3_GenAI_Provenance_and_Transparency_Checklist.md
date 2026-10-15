@@ -1,6 +1,6 @@
 ---
 title: "US-T3 Generative AI Provenance and Transparency Checklist"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "US AI Compliance"
 nav_order: 6
 description: "Ten-item checklist for generative AI providers on California's provenance, detection, disclosure and training data transparency duties."

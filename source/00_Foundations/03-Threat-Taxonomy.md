@@ -1,7 +1,7 @@
 ---
 title: "3. Threat Taxonomy"
 description: "AI threat taxonomy by lifecycle stage: poisoning, evasion, prompt injection, extraction and supply chain, mapped to NIST AI 100-2, OWASP and MITRE ATLAS."
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Foundations"
 nav_order: 3
 document_type: Practitioner Research Paper

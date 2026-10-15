@@ -1,6 +1,6 @@
 ---
 title: "CA-T2 Quebec Law 25 Automated Decision Record"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Canada AI Compliance"
 nav_order: 5
 description: "Fill-in record of automated decisions under Quebec Law 25: notice given, principal factors, explanation route and human review route."

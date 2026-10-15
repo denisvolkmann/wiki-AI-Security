@@ -1,6 +1,6 @@
 ---
 title: "JP-T2 Training Data and Copyright Record"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Japan AI Compliance"
 nav_order: 5
 description: "Record of each training dataset's source, licence, purpose and copyright risk under the information analysis exception in Japan's Copyright Act."

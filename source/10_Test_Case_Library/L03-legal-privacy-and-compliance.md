@@ -1,6 +1,6 @@
 ---
 title: "L03 Legal, Privacy & Compliance"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Test Case Library"
 nav_order: 6
 ---

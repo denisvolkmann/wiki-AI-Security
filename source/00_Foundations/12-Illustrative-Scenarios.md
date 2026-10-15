@@ -1,7 +1,7 @@
 ---
 title: "12. Illustrative Scenarios"
 description: "Four hypothetical AI security scenarios: an internal LLM assistant, enterprise RAG search, a SOC copilot and an autonomous operations agent."
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Foundations"
 nav_order: 12
 document_type: Practitioner Research Paper

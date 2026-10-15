@@ -1,6 +1,6 @@
 ---
 title: "AI Security Audit and Evidence Checklist"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Testing and Assurance"
 nav_order: 2
 document_type: AI Security Wiki Reference

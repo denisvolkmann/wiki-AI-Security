@@ -1,6 +1,6 @@
 ---
 title: "Guide for AI Practitioners in the GCC"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 2
 description: "What changes when you build AI in the GCC: lifecycle checklist, residency, human oversight, fairness, Arabic testing and the evidence to keep."

@@ -1,6 +1,6 @@
 ---
 title: "Guide for Auditors of AI Systems in the GCC"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 4
 description: "For auditors of AI systems in the GCC: setting criteria, scoping, test steps by control family, sampling, common findings and report wording."

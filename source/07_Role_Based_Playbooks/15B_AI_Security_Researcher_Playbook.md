@@ -1,6 +1,6 @@
 ---
 title: "AI Security Researcher Playbook"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Role-Based Playbooks"
 nav_order: 2
 document_type: AI Security Wiki Reference

@@ -1,7 +1,7 @@
 ---
 title: "Community Rules"
 description: "Community rules for the AI Security Wiki: how author and co-author credit works, which changes are blocked automatically, how to contribute a page, and how to reuse the wiki under CC BY-SA 4.0."
-author: Denis Volkmann
+author: Nachiket Sathaye
 nav_order: 14
 ---
 
@@ -154,7 +154,7 @@ When you share wiki material, these rules apply:
 A credit line can look like this:
 
 ```
-"Enterprise AI Risk Register" by Denis Volkmann, AI Security Wiki
+"Enterprise AI Risk Register" by Nachiket Sathaye, AI Security Wiki
 (https://denisvolkmann.github.io/wiki-AI-Security/), licensed under CC BY-SA 4.0.
 Changes: adapted for a retail bank; risk scores removed.
 ```

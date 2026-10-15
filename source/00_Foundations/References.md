@@ -1,7 +1,7 @@
 ---
 title: "References"
 description: "References for the AI Security vs. Security of AI paper: standards, regulation, community frameworks and research literature, with verification status."
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Foundations"
 nav_order: 15
 document_type: Practitioner Research Paper

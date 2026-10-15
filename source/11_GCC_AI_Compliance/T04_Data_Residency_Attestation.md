@@ -1,6 +1,6 @@
 ---
 title: "T04 Data Residency and Sovereignty Attestation"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 12
 description: "Fill-in attestation of where each AI data component is stored and processed, the transfers involved and who signs for them."

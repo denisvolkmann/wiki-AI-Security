@@ -1,6 +1,6 @@
 ---
 title: "Australia AI Compliance"
-author: Denis Volkmann
+author: Nachiket Sathaye
 description: "Australia AI compliance resources: regulatory hub covering the Privacy Act automated-decision changes, a role guide, two templates and a crosswalk."
 nav_order: 11
 group: "Regional AI Regulatory Hub"

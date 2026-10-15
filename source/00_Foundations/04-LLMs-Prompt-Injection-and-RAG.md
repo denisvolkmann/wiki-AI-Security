@@ -1,7 +1,7 @@
 ---
 title: "4. LLMs, Prompt Injection and RAG"
 description: "LLM attack surface, direct and indirect prompt injection, RAG access control and hallucination as a security risk, against the OWASP LLM Top 10 2025."
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Foundations"
 nav_order: 4
 document_type: Practitioner Research Paper

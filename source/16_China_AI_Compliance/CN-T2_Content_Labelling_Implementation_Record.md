@@ -1,6 +1,6 @@
 ---
 title: "CN-T2 AI-Generated Content Labelling Implementation Record"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "China AI Compliance"
 nav_order: 5
 description: "Record of visible labels and metadata identifiers by content type, with test results, for China's AI content labelling measures."

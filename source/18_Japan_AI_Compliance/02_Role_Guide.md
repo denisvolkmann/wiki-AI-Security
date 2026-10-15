@@ -1,6 +1,6 @@
 ---
 title: "Japan: Role Guide"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Japan AI Compliance"
 nav_order: 2
 description: "What Japan's soft-law AI framework asks of practitioners, product companies, auditors and implementors, with a shared evidence list."

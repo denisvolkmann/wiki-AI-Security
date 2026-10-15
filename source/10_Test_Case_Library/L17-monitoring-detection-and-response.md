@@ -1,6 +1,6 @@
 ---
 title: "L17 Monitoring, Detection & Response"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Test Case Library"
 nav_order: 20
 ---

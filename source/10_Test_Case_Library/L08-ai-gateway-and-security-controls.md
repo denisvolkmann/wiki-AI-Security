@@ -1,6 +1,6 @@
 ---
 title: "L08 AI Gateway & Security Controls"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Test Case Library"
 nav_order: 11
 ---

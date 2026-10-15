@@ -1,7 +1,7 @@
 ---
 title: "13. Limitations and Research Gaps"
 description: "Limitations of the AI Security vs. Security of AI paper and open research problems in agent security, evaluation, provenance and detection."
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Foundations"
 nav_order: 13
 document_type: Practitioner Research Paper

@@ -1,7 +1,7 @@
 ---
 title: "6. Supply Chain and Infrastructure"
 description: "AI supply chain and infrastructure security: models, datasets, packages, tool servers, provenance, AI bill of materials, GPUs, cloud and secrets."
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Foundations"
 nav_order: 6
 document_type: Practitioner Research Paper

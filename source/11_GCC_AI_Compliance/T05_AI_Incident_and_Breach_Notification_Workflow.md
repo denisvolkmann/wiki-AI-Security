@@ -1,6 +1,6 @@
 ---
 title: "T05 AI Incident and Breach Notification Workflow"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "GCC AI Compliance"
 nav_order: 13
 description: "AI incident types, severity levels, a ten-step response workflow and a notification matrix to complete before an incident happens."

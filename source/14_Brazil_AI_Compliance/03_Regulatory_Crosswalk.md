@@ -1,6 +1,6 @@
 ---
 title: "Brazil Regulatory Crosswalk"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Brazil AI Compliance"
 nav_order: 3
 description: "Brazilian instruments mapped one per row to AI security controls, with verification status. Also available as a CSV file."

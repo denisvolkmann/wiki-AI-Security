@@ -1,6 +1,6 @@
 ---
 title: "AI Security Vendor Evaluation Master Framework"
-author: Denis Volkmann
+author: Nachiket Sathaye
 parent: "Vendor Evaluation"
 nav_order: 1
 document_type: AI Security Wiki Reference

@@ -15,7 +15,7 @@ import os
 import re
 import sys
 
-ORIGINAL_AUTHOR = "Denis Volkmann"
+ORIGINAL_AUTHOR = "Nachiket Sathaye"
 parser = argparse.ArgumentParser()
 parser.add_argument("--root", default=os.path.dirname(os.path.abspath(__file__)))
 parser.add_argument("--base")
