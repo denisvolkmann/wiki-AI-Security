@@ -404,6 +404,8 @@ def hero(page, details=""):
              (len(re.findall(r"^#### AI-CTRL-\d{3}:", text, re.M)), "Control Objectives"),
              (len(re.findall(r"^### AI-R\d\d: ", text, re.M)), "Register Risks"),
              (sum(1 for s in sections if s["meta"].get("group")), "Regional Sections"),
+             (sum(1 for p in pages if p["src"].replace(os.sep, "/").startswith("23_Framework_Crosswalks/")
+                  and not p["src"].endswith("index.md")), "Framework Crosswalks"),
              (len(pages), "Pages")]
     tiles = "".join(f'<div class="stat"><b>{n}</b><span>{html.escape(label)}</span></div>' for n, label in stats)
     return (f'<section class="hero"><p class="hero-kicker">Open &middot; Vendor-neutral &middot; {LICENCE_LINK}</p>'

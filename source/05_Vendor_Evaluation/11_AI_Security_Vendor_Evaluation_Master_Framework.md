@@ -64,6 +64,8 @@ Apply the same checklist to every supplier under evaluation, and score each doma
 - Access control and administrative audit model.
 - PoC test results mapped to control objectives.
 - Security documentation and contractual commitments.
+- Management system certificates, if claimed: for ISO/IEC 42001, the certificate, the certification body, and the list of AI systems and services in its scope (certificates can exclude the product you are buying).
+- For suppliers that develop advanced or general-purpose AI models: a link to any published report under the Hiroshima AI Process reporting framework run by the OECD, and their status under the EU GPAI Code of Practice ([T12](../12_EU_AI_Compliance/T12_GPAI_Model_Checklist.md)). See the [International AI Instruments Crosswalk](../23_Framework_Crosswalks/17_International_AI_Instruments_Crosswalk.md).
 
 ## PoC Decision Notes Template
 

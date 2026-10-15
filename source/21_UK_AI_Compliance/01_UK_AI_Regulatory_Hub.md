@@ -10,7 +10,7 @@ version: 1.0
 
 # UK AI Regulatory Hub
 
-> **Verification required.** Claims on this page about UK law were compiled on 7 October 2026 from secondary web sources and from memory of the law. No primary legal text was read, and each claim is tagged [Reported], [Recalled], [Conflict] or [Unverified] as explained on the [section home page](index.md). Check the primary text before relying on any of them. This is not legal advice.
+> **Verification required.** Claims on this page about UK law were compiled on 7 October 2026 from secondary web sources and from memory of the law. No primary legal text was read. Row UK13 (AI Management Essentials) was checked against the government's own documents on 15 October 2026 and is tagged [Verified]; every other claim is tagged [Reported], [Recalled], [Conflict] or [Unverified] as explained on the [section home page](index.md). Check the primary text before relying on any of them. This is not legal advice.
 
 This page maps UK laws, guidance and standards that bear on AI to the wiki's controls.
 
@@ -41,6 +41,7 @@ The EU AI Act reaches UK firms that have EU customers or whose outputs affect pe
 | UK10 | NCSC and DSIT guidance on secure AI (guidelines for secure AI system development; AI cyber security code of practice) | Voluntary guidance | Secure design, development, deployment and operation | [AI-CTRL-005](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-005), [AI-CTRL-008](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-008) | [Unverified] | Existence, titles, standard status |
 | UK11 | Algorithmic Transparency Recording Standard (ATRS) | Public-sector standard | Public bodies publish records of algorithmic tools | [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039), [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011) | [Recalled] | Whether it is mandatory for your body |
 | UK12 | Equality Act 2010 | Binding | Discrimination by automated tools | [AI-CTRL-041](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-041) | [Recalled] | Application to your use case |
+| UK13 | AI Management Essentials (AIME) self-assessment tool (DSIT) | **Withdrawn draft.** Consultation draft 6 Nov 2024; the government response (dated December 2025, published 6 Feb 2026) says DSIT will not publish it | Ten-section self-assessment for organisations that develop or use AI: AI system record, AI policy, fairness, impact assessment, risk assessment, data management, bias mitigation, data protection, issue reporting, third-party communication. Not required in public procurement | [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011), [AI-CTRL-012](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-012), [AI-CTRL-037](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-037), [AI-CTRL-041](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-041), [AI-CTRL-042](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-042) | [Verified] | DSIT's promised replacement guidance for SMEs |
 
 ## 3. Categories, tiers and roles
 
@@ -59,6 +60,8 @@ The EU AI Act reaches UK firms that have EU customers or whose outputs affect pe
 | Mar 2023 | White Paper sets the five principles | [Reported] |
 | 2025 | Data (Use and Access) Act enacted | [Reported] |
 | Mar 2025 | AI private member's bill reintroduced | [Reported] |
+| 6 Nov 2024 | AI Management Essentials (AIME) draft published for consultation (closed 29 Jan 2025) | [Verified] |
+| 6 Feb 2026 | Government response: AIME will not be published or required in procurement | [Verified] |
 | 2026 | Commencement of Arts 22A to 22D | [Unverified] |
 
 ## 5. Mapping of common wiki controls
@@ -89,6 +92,7 @@ The topics raised on this page are covered by the following controls, test cases
 - One source describes the position "as of 2025". Check for a government AI bill announcement in 2026.
 - The commencement dates for Arts 22A to 22D are not confirmed.
 - The details of the NCSC and DSIT codes come from a single source or from memory.
+- **AI Management Essentials (UK13) is withdrawn, not current.** Some third-party lists of AI governance frameworks, written before February 2026, still present AIME as a UK management standard. The government response says: "DSIT will not be publishing AIME and therefore will not be making it a requirement of the government procurement process." The reasons it gives are that the tool's scope was too broad for one instrument and that DSIT will instead write narrower guidance on foundational governance measures aimed at SMEs, and point organisations to other support. The ten sections of the 2024 draft are still a usable lightweight self-check, but do not describe AIME as a UK requirement or standard. Checked against the response PDF on 15 October 2026.
 
 ## 8. Verification checklist
 
@@ -107,6 +111,9 @@ All sources are secondary unless marked as a regulator or government page. Each 
 
 | Source | Status | Rows it relates to |
 |---|---|---|
+| [DSIT: AI Management Essentials tool consultation page](https://www.gov.uk/government/consultations/ai-management-essentials-tool) | Government page; fetched 15 Oct 2026 | UK13 |
+| [DSIT: AI Management Essentials tool, draft self-assessment (Nov 2024)](https://assets.publishing.service.gov.uk/media/672a5706094e4e60c466d19f/AI_Management_Essentials_tool_Self-Assessment.pdf) | Government document; fetched 15 Oct 2026 | UK13 |
+| [DSIT: AI Management Essentials tool, government response](https://assets.publishing.service.gov.uk/media/6981d0758c1e89ed1e91bb55/AI_Management_Essentials_tool_government_response.pdf) | Government document; fetched 15 Oct 2026 | UK13 |
 | [Bratby Law: UK AI regulation overview](https://bratby.law/uk-ai-regulation-overview/) | Fetched and summarised | UK1, UK3, UK4, UK5, UK7, UK8 |
 | [GDPRLocal: UK AI regulation status and outlook](https://gdprlocal.com/uk-ai-act/) | Fetched and summarised (describes the status as of 2025) | UK1, UK9 |
 | [RPC: UK AI regulation guide part 1](https://www.rpclegal.com/thinking/artificial-intelligence/ai-guide/part-1-uk-ai-regulation/) | Not read | Cross-check |

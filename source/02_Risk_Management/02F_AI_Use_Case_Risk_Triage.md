@@ -68,6 +68,10 @@ version: 1.0
 | D6 | Does it lack a registered purpose, or could it be reused for a purpose other than the approved one? | AI-R18, AI-R02 |
 | D7 | Might its outputs or actions later need to be investigated or evidenced (an incident, a dispute, an audit)? | AI-R09, AI-R15 |
 
+## When to run a full impact assessment
+
+Any **Yes** to C1, C3 or C4, or a **Yes** to both B2 and C2, should trigger a full impact assessment under [AI-CTRL-042](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-042) before go-live, in addition to the risk assessment. These are this wiki's thresholds for sensitive uses. ISO/IEC 42005:2025, clause 5.7, asks an organization to set its own thresholds for sensitive uses, restricted uses and impact scales, so adjust them to your own and record the version you use. Uses that your AI policy prohibits are stopped at intake and are not assessed.
+
 ## Worked examples
 
 These show how the answers combine. The answers are illustrative, not an assessment of any real system.

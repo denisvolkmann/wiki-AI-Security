@@ -13,7 +13,14 @@ This page organises threats to AI systems by lifecycle stage and cross-reference
 
 ## 3.1 How NIST classifies attacks
 
-NIST AI 100-2e2025, published 20 March 2025, is a taxonomy and terminology document for adversarial machine learning. The 2025 edition covers both predictive AI and generative AI systems. For generative AI it organises attacks into **evasion, poisoning, privacy and misuse** classes, across learning paradigms including supervised, unsupervised, semi-supervised, federated and reinforcement learning [1]. NIST states that it intends to update the report as the field evolves. **[Documented]**
+NIST AI 100-2e2025, published in March 2025, is a taxonomy and terminology document for adversarial machine learning. The 2025 edition has two taxonomies [1]:
+
+- **Predictive AI** (section 2), with sections on evasion attacks (2.2), poisoning attacks (2.3) and privacy attacks (2.4).
+- **Generative AI** (section 3), with sections on supply chain attacks (3.2), direct prompting attacks (3.3), indirect prompt injection (3.4), security of agents (3.5) and benchmarks for AML vulnerabilities (3.6).
+
+In both taxonomies, attacks are classified by the attacker's objective, and each attack class has a stable identifier of the form `NISTAML.0XY`. The objectives are availability violations (NISTAML.01), integrity violations (NISTAML.02), privacy compromises (NISTAML.03), misuse violations (NISTAML.04, generative AI) and supply chain attacks (NISTAML.05). For example, NISTAML.018 is prompt injection and NISTAML.015 is indirect prompt injection. NIST states that it intends to update the report as the field evolves. **[Documented]**
+
+> **Correction (15 October 2026).** An earlier version of this section said that the 2025 edition organises generative AI attacks into "evasion, poisoning, privacy and misuse" classes. That was inaccurate: evasion, poisoning and privacy are the section headings of the predictive AI taxonomy, and both taxonomies classify attacks by attacker objective, as set out above. The section headings and identifiers were checked against the published PDF on 15 October 2026. The [NIST AI 100-2 Crosswalk](../23_Framework_Crosswalks/14_NIST_AI_100_2_Crosswalk.md) maps each identifier to the wiki's controls.
 
 ## 3.2 Threats by lifecycle stage
 

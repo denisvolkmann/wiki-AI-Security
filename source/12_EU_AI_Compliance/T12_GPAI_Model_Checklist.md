@@ -57,6 +57,10 @@ For teams that integrate a GPAI model.
 | B7 | Content marking and disclosure obligations ([T06](T06_Transparency_Notice.md)) | | |
 | B8 | Fine-tuning: did you become a provider of a new model? Record the reasoning | | |
 
+| B9 | Has the supplier published a report under the G7 Hiroshima AI Process reporting framework (run by the OECD)? Record the link | | |
+
+The Hiroshima Process Code of Conduct (October 2023) is voluntary and global, and overlaps with the Code of Practice: its actions on public reporting of capabilities and limitations (3), security controls (6), content provenance (7) and data and intellectual property protections (11) correspond to items in this checklist. See the [International AI Instruments Crosswalk](../23_Framework_Crosswalks/17_International_AI_Instruments_Crosswalk.md).
+
 ## C. Decisions
 
 Owner: ______ Date: ______ Next review (on a model version change or a guideline update): ______
