@@ -2173,7 +2173,7 @@ nav_order: 20
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | LLM09:2025 Misinformation |
-| **NIST AI RMF Mapping** | MANAGE 4.1; MEASURE 2.5 |
+| **NIST AI RMF Mapping** | MANAGE 4.1; MANAGE 4.3; MEASURE 2.5 |
 | **Control(s) Tested** | [AI-CTRL-039](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-039) Output Reliability and Content Safety; [AI-CTRL-035](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-035) AI Incident Response and Forensics |
 
 **Risk Addressed.** Wrong answers, bad tool choices and regressions that are not security incidents fall between teams, so nobody investigates them or learns from them.

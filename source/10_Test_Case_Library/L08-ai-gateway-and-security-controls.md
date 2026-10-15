@@ -2819,7 +2819,7 @@ nav_order: 11
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; GOVERN (policies, accountability and oversight) |
+| **NIST AI RMF Mapping** | GOVERN 1.4; GOVERN 2.1 |
 | **Control(s) Tested** | [AI-CTRL-010](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-010) Policy Enforcement; [AI-CTRL-012](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-012) AI Policy, Roles and Acceptable Use |
 
 **Risk Addressed.** Guardrail rules are changed by whoever has console access, so nobody owns the policy and nobody can say why a rule exists or was relaxed.

@@ -2742,7 +2742,7 @@ nav_order: 10
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MAP 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 2.1; MAP 4.1 |
 | **Control(s) Tested** | [AI-CTRL-026](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-026) Agent Memory and Context Integrity; [AI-CTRL-011](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-011) AI Use-Case Registry and Risk Tiering |
 
 **Risk Addressed.** Agent and assistant memory is created by individual teams and frameworks, so nobody knows which memory stores exist, what they hold, or who answers for them.
@@ -2806,7 +2806,7 @@ nav_order: 10
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (data handling control) |
 | **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure |
-| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 1.1 |
+| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 1.4 |
 | **Control(s) Tested** | [AI-CTRL-026](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-026) Agent Memory and Context Integrity; [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines |
 
 **Risk Addressed.** An assistant stores personal, confidential or regulated data in long-term memory that its owner never approved it to keep.
@@ -2870,8 +2870,8 @@ nav_order: 10
 | **Vendor Applicability** | Core: A |
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (transparency control) |
-| **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN (policies, accountability and oversight) |
+| **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure |
+| **NIST AI RMF Mapping** | MEASURE 2.10 |
 | **Control(s) Tested** | [AI-CTRL-026](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-026) Agent Memory and Context Integrity; [AI-CTRL-013](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-013) Privacy and Regulatory Compliance |
 
 **Risk Addressed.** Users do not know what an assistant has remembered about them and cannot correct or remove it, which undermines transparency obligations and trust.
@@ -2936,7 +2936,7 @@ nav_order: 10
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | N/A |
-| **NIST AI RMF Mapping** | MEASURE 2.10; MAP and MEASURE (privacy risk examined and managed) |
+| **NIST AI RMF Mapping** | MEASURE 2.10 |
 | **Control(s) Tested** | [AI-CTRL-026](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-026) Agent Memory and Context Integrity; [AI-CTRL-013](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-013) Privacy and Regulatory Compliance |
 
 **Risk Addressed.** A data subject access or erasure request is answered from the main systems while copies of the person's data remain in agent memory.

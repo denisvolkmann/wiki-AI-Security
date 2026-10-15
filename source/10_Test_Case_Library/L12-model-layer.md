@@ -2082,7 +2082,7 @@ nav_order: 15
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | LLM03:2025 Supply Chain |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MAP 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 2.1; GOVERN 6.1; MAP 4.1 |
 | **Control(s) Tested** | [AI-CTRL-033](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-033) AI Security Review and Release Gate; [AI-CTRL-028](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-028) Model Protection |
 
 **Risk Addressed.** Models reach the approved list without a recorded decision, so nobody can show who approved a model, on what evidence, or for which uses.

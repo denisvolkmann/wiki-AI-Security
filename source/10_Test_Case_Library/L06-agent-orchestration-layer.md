@@ -3063,7 +3063,7 @@ nav_order: 9
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | LLM06:2025 Excessive Agency |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MANAGE 2.3 |
+| **NIST AI RMF Mapping** | GOVERN 2.1; MAP 4.1 |
 | **Control(s) Tested** | [AI-CTRL-024](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-024) Tool and MCP Server Governance; [AI-CTRL-016](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-016) Least Privilege and Scoped Credentials |
 
 **Risk Addressed.** Agents gain access to MCP servers, APIs and business systems without a recorded decision, so nobody can show who granted an access or why.

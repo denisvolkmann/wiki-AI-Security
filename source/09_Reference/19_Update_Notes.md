@@ -26,9 +26,18 @@ This update compared the wiki's 17 layers with a nine-part list of AI applicatio
 - **Observability:** [TC-L17-032](../10_Test_Case_Library/L17-monitoring-detection-and-response.md#tc-l17-032) covers access, masking, retention and residency of AI tracing and evaluation tools, and [TC-L17-033](../10_Test_Case_Library/L17-monitoring-detection-and-response.md#tc-l17-033) covers ownership and review of AI failures that are not security incidents.
 - The library now holds 668 cases: 535 in the 17 layers and 133 in the six emerging domains.
 
+### What was checked
+
+The OWASP and NIST AI RMF mappings on the 12 new cases were checked on 15 October 2026. The OWASP identifiers and titles were checked against the OWASP GenAI Security Project's pages for the [Top 10 for LLM Applications 2025](https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/). The NIST identifiers were checked against the subcategory text in [section 5 of the AI RMF 1.0 Core](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/). Every identifier exists, but several did not fit the case and were changed:
+
+- GOVERN 1.1 covers legal and regulatory requirements, not roles or approvals. On the ownership and approval cases it was replaced with GOVERN 2.1 (roles and responsibilities), and on the policy cases with GOVERN 1.4 (transparent policies and procedures).
+- MANAGE 2.3 (responding to previously unknown risks) was removed from TC-L06-047.
+- LLM08:2025 Vector and Embedding Weaknesses does not cover sending content to third-party embedding providers. It was removed from TC-L11-027, and on TC-L11-026 it was replaced with LLM03:2025 Supply Chain, which covers vetting third-party models.
+- TC-L07-044 now maps to LLM02:2025, which recommends transparency about how user data is used and a way to opt out. TC-L17-033 adds MANAGE 4.3 (incidents and errors communicated and tracked).
+
 ### What is still work in progress
 
-- The OWASP and NIST AI RMF mappings on the new cases reuse identifiers already used elsewhere in the library. Like all mappings in the library, check them against the current published versions before relying on them.
+- Elsewhere in the library, GOVERN 1.1 is often used as a general governance tag, although it covers only legal and regulatory requirements. Those older mappings were not changed in this update.
 - The thresholds in the new cases are starting values to tune, as for every case in the library.
 - The layer-to-domain coverage matrix in the [Reference Index](../10_Test_Case_Library/00-reference-index.md) was not changed.
 

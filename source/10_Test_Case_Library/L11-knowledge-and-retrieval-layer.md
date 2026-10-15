@@ -1682,8 +1682,8 @@ nav_order: 14
 | **Vendor Applicability** | Core: P, W \| Partial: A |
 | **Risk Severity** | Medium |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
-| **OWASP LLM / GenAI Mapping** | LLM08:2025 Vector and Embedding Weaknesses |
-| **NIST AI RMF Mapping** | GOVERN 1.1; GOVERN 6.1 |
+| **OWASP LLM / GenAI Mapping** | LLM03:2025 Supply Chain |
+| **NIST AI RMF Mapping** | GOVERN 6.1; MAP 4.1 |
 | **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity; [AI-CTRL-014](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-014) Third-Party and Vendor AI Assurance |
 
 **Risk Addressed.** Teams pick or change embedding models without review, so content may be sent to an unapproved provider and retrieval behaviour changes without anyone deciding it should.
@@ -1746,7 +1746,7 @@ nav_order: 14
 | **Vendor Applicability** | Core: G, A \| Partial: P |
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (data handling control) |
-| **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure; LLM08:2025 Vector and Embedding Weaknesses |
+| **OWASP LLM / GenAI Mapping** | LLM02:2025 Sensitive Information Disclosure |
 | **NIST AI RMF Mapping** | MEASURE 2.10; GOVERN 6.1 |
 | **Control(s) Tested** | [AI-CTRL-017](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-017) Data Protection in AI Pipelines; [AI-CTRL-007](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-007) Data Sovereignty |
 
@@ -1811,7 +1811,7 @@ nav_order: 14
 | **Risk Severity** | High |
 | **MITRE ATLAS Mapping** | N/A (governance and policy control) |
 | **OWASP LLM / GenAI Mapping** | LLM08:2025 Vector and Embedding Weaknesses |
-| **NIST AI RMF Mapping** | GOVERN 1.1; MAP 4.1 |
+| **NIST AI RMF Mapping** | GOVERN 2.1; MAP 4.1 |
 | **Control(s) Tested** | [AI-CTRL-019](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-019) Knowledge Base Integrity; [AI-CTRL-018](../03_Control_Library/03_AI_Security_Control_Objectives_Library.md#ai-ctrl-018) Retrieval Access Control |
 
 **Risk Addressed.** New vector indexes and collections appear without review, so nobody has decided what data may be indexed, who may query it, or who owns it.
